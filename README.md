@@ -1,15 +1,7 @@
-Code Institute
-==============
-
- 
-
-Full stack web development course with Code Institute.
-======================================================
-
- 
-
 Code Institute Diploma in Software Development
 ==============================================
+
+ 
 
 Syllabus Overview
 -----------------
@@ -18,32 +10,19 @@ Syllabus Overview
 
 ### Module 0 Pre-Programme
 
- 
-
 #### Technology Primer
 
- 
-
 The module covers all the necessary prerequisites for our main programme.
-Students must have a
-
-base level understanding of the technologies, concepts and languages before
-commencing. This
-
-module enables the later content to cover material at a level beyond first
-principles. By beginning
-
-at a point beyond the absolute basics, the programme exposes the student to more
-practical work
-
+Students must have a base level understanding of the technologies, concepts and
+languages before commencing. This module enables the later content to cover
+material at a level beyond first principles. By beginning at a point beyond the
+absolute basics, the programme exposes the student to more practical work
 throughout.
 
  
 
 The material is collated in a central resource. The content is sourced from
-verified pre-existing
-
-online video and text based material.
+verified pre-existing online video and text based material.
 
  
 
@@ -71,8 +50,6 @@ Specifically:
 
 #### This module will develop proficient skills in Front End coding technologies specifically:
 
- 
-
 `● HTML5,`
 
 `● CSS3,`
@@ -94,8 +71,6 @@ Text`
  
 
 ### exercises
-
- 
 
 #### Topic List:
 
@@ -190,8 +165,6 @@ Unstructured data using MongoDB and MySQL databases.`
 
 ### exercises
 
- 
-
 #### Topic List
 
 `1. Installing Python`
@@ -256,9 +229,7 @@ Unstructured data using MongoDB and MySQL databases.`
 
  
 
-#### This module will develop skills in the integration of modules, students will build and deploy a full stack application  framework using Django and advanced Python.
-
- 
+#### This module will develop skills in the integration of modules, students will build and deploy a full stack application framework using Django and advanced Python.
 
 Specifically:
 
