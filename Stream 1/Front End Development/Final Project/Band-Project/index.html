@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!-- we must include our main application here in the html tag to access it -->
+<html lang="en-gb" ng-app="bandApp">
+
+<head>
+    <!-- meta data -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1, user-scalable=no">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- fav icons -->
+    <link rel="icon" href="img/fav-icons/favicon.ico" alt="favicon">
+    <link rel="icon" type="image/png" href="img/fav-icons/favicon-32x32.png" alt="favicon32" sizes="32x32" />
+    <link rel="icon" type="image/png" href="img/fav-icons/favicon-16x16.png" alt="favicon16" sizes="16x16" />
+
+    <!-- page title -->
+    <title>Stream 1 Final Project - Band Website</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="css/vendor/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/vendor/normalize.css" rel="stylesheet" />
+
+    <!-- link our custom style sheet -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <!-- Main site navigation -->
+    <nav class="navbar navbar-fixed-top navbar-inverse">
+        <div class="nav navbar-header">
+            <a class="navbar-brand" href="#/">Swing &amp; Jive Hive</a>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myCollapsingList">
+                <span class="sr-only">Toggle Nav</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!-- button end -->
+        </div>
+        <!-- navbar header end -->
+        <div class="collapse navbar-collapse" id="myCollapsingList">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#/">Home</a></li>
+                <li><a href="#/meet-the-band">The Band</a></li>
+                <li><a href="#/tour-info">Touring</a></li>
+                <li><a href="#/services">Services</a></li>
+                <li id="last-nav-item"><a href="#/searchiTunes">Search iTunes</a></li>
+            </ul>
+        </div>
+        <!-- collapsing navbar end -->
+    </nav>
+    <!-- navigation end -->
+
+    <!-- ng-view start -->
+    <div ng-view>
+        <!-- inject our code here -->
+    </div>
+    <!-- ng-view end -->
+
+    <!-- footer -->
+    <footer class="nav navbar-fixed-bottom navbar-inverse">
+        <div class="container-fluid">
+            <p class="text-muted">&copy; 2016 David Gunner Jnr</p>
+            <ul>
+                <li><a href=""><span><i class="fa fa-google-plus-square"></i></span></a></li>
+                <li><a href=""><span><i class="fa fa-facebook-square"></i></span></a></li>
+                <li><a href=""><span><i class="fa fa-twitter-square"></i></span></a></li>
+                <li><a href=""><span><i class="fa fa-youtube-square"></i></span></a></li>
+                <li><a href="mailto:"><span><i class="fa fa-envelope"></i></span></a></li>
+            </ul>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+    <!-- Include the bootsstrap & jquery -->
+    <script src="js/vendor/jquery-1.11.3.min.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <!-- include the angular js -->
+    <script src="js/vendor/angular.min.js"></script>
+    <script src="js/vendor/angular-route.min.js"></script>
+    <!-- include google map api -->
+    <script src="//maps.google.com/maps/api/js?sensor=true"></script>
+
+    <!-- access our main application script -->
+    <script src="js/app.js"></script>
+    <!-- access our controllers script -->
+    <script src="js/controller.js"></script>
+    <!-- access our directives script -->
+    <script src="js/directive.js"></script>
+    <!-- access our service script -->
+    <script src="js/service.js"></script>
+</body>
+
+</html>

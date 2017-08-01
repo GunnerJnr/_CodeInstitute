@@ -1,0 +1,65 @@
+body {
+    font-family: Courier;
+    font-size: 20px;
+}
+
+h2 {
+    margin-top: 364px;
+}
+
+#container {
+    margin-right: auto;
+    /*center container with margins left & right set to auto*/
+    margin-left: auto;
+    display: flex;
+    /* We need to set the container up as a flex object */
+    background-color: #AA4639;
+    width: 80%;
+    height: 800px;
+    padding: 5px;
+    border: dashed 3px #Ffff00;
+    border-radius: 30px;
+    font-size: 0;
+    /* remove inline-block spacing*/
+}
+
+.box {
+    display: inline-block;
+    background-color: #81BBC9;
+    /* width: 150px; remove width */
+    margin: 5px;
+    text-align: center;
+    border: dashed 2.5px #3f3f3f;
+    border-radius: 30px;
+    font-size: 36px;
+    /*********************CHALLENGE*********************/
+    flex: 1;
+    /* give box class a flex of 1 - sets the boxes to equal widths */
+}
+
+#box1 {
+    order: 2;
+    /* order the boxes 4, 1, 2, 3 */
+}
+
+#box2 {
+    order: 3;
+    /* order the boxes 4, 1, 2, 3 */
+}
+
+#box3 {
+    order: 4;
+    /* order the boxes 4, 1, 2, 3 */
+}
+
+
+/* the id we just assigned for box number 4 */
+
+#box4 {
+    /* flex: 2;
+    give box 4 a flex of 2 */
+    flex: 4;
+    /* give box 4 a flex of 4 */
+    order: 1;
+    /* order the boxes 4, 1, 2, 3 */
+}

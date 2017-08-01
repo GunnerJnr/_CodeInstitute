@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Revisiting Box Model Exercise 1</title>
+	<style type="text/css">
+		#container {
+			margin-right: auto; /*Auto margins used for centering elements*/
+			margin-left: auto; /*See previous comment*/
+			width: 960px;
+			padding: 10px;
+			padding-top: 200px;
+			border-radius: 10px;
+			font-size: 0; /* remove spacing for the inline-block*/
+		}
+
+		.box {
+			position: relative;
+			background-color: #81BBC9;
+			width: 100%;
+			padding: 30px 0;			
+			/*margin:10px;*/ /*remove margin*/
+			margin-bottom: 10px;		
+			display: block;
+			font-size: 20px; /* important to declare font-size here, otherwise will be 0*/
+			text-align: center;
+			border-radius: 10px;
+		}
+
+		#header {
+			z-index: 100;
+			position: fixed;
+			border: dashed 1px #333;
+			top: 0px;
+			right: 0px;
+		}
+
+		.sidebar{
+			-webkit-box-sizing: border-box;
+       		-moz-box-sizing: border-box;
+            box-sizing: border-box;
+			display: inline-block;
+			width: 470px; /* 350.0 / 960.0 */
+			margin-right: 10px;
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+
+		.content{
+			-webkit-box-sizing: border-box;
+       		-moz-box-sizing: border-box;
+            box-sizing: border-box;
+			display: inline-block;
+			width:  470px; /* 600.0 / 960.0 */
+			margin-left: 10px;
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+
+		#linkToTop {
+			position: absolute;
+			bottom: 10px;
+			right: -80px;
+		}
+
+		#sideLinkToTop {
+			position: absolute;
+			bottom: 10px;
+			left: -80px;
+		}
+
+		p {
+			margin-bottom: 50px;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div class="box" id="header"><h1>Header</h1></div>
+
+		<div class="box sidebar">
+			<h1>Sidebar</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.lorem</p>
+		</div>
+
+		<div class="box content">
+			<h1>Content</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+
+		<div class="box sidebar">
+			<h1>Sidebar</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.lorem</p>
+			<img id="sideLinkToTop" src="img/arrow.png" />
+		</div>
+
+		<div class="box content">
+			<h1>Content</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<img id="linkToTop" src="img/arrow.png" />
+		</div>
+
+		<div class="box"><h1>Footer</h1></div>
+	</div>
+</body>
+</html>

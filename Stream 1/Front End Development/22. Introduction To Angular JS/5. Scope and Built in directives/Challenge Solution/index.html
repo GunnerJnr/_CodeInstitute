@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html ng-app="collegeApp" lang="en-gb">
+
+<head>
+	<meta charset="utf-8">
+	<title>Creating an Angular JS Application Challenge</title>
+	<!-- Include (Download) the angular js framework -->
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+</head>
+
+<body>
+	<!-- add the student controller -->
+	<div ng-controller="StudentController">
+		<!-- display/add greeting -->
+		<p>{{ greeting() }}</p>
+		<p>Student Fee: £ {{ student.fees }}</p>
+		<!-- display the show and hide buttons that will toggle the data -->
+		<button ng-click="showResults()">Show Results</button>
+		<button ng-click="hideResults()">Hide Results</button>
+		<!-- loop over the student subjects -->
+		<div ng-repeat="subject in student.subjects">
+			<!-- display the results -->
+			<div ng-hide="results">
+				<p>result for: {{ subject.name }} = {{ subject.marks }}</p>
+			</div>
+			<div ng-show="{{ subject.marks > 74 }}">
+				<p>result for: {{ subject.name }} = {{ subject.marks }}</p>
+			</div>
+		</div>
+	</div>
+	<!-- include our app.js file -->
+	<script src="javascript/app.js"></script>
+	<!-- include our controllers -->
+	<script src="javascript/controller.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,124 @@
+/* -------------------------Navigation --------------------------------------*/
+
+body {
+    background-color: #F5D76E;
+    /* give body new bg colour of #f5d76e */
+}
+
+a {
+    color: #fff;
+    /* change text colour to white */
+    flex: 1;
+    height: 30px;
+    padding: 20px;
+    text-decoration: none;
+    font-family: courier;
+    text-align: center;
+    font-size: 36px;
+    /* adjust to desired font size */
+    border-bottom: 1px solid #ffffff;
+    /* change border colour to white and change to border bottom only*/
+}
+
+nav {
+    font-family: courier;
+    /* background-color: #eee; remove grey background */
+    margin: 30px auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    border-radius: 10px;
+    list-style-type: none;
+    padding: 0;
+}
+
+#logoNav {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+
+/* ------------------Landing------------------------*/
+
+#landing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#landing-message {
+    text-align: center;
+    font-family: courier;
+    font-size: 50px;
+    margin: 50px 20px;
+}
+
+#landing-graphic {}
+
+
+/*--------------------CARDS----------------------------*/
+
+.cards {
+    /*code here*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.card {
+    /*code here*/
+    flex: 1;
+    background-color: #ededed;
+    padding: 20px 20px;
+    margin: 5px 5px;
+}
+
+.card h2 {
+    /*code here*/
+    font-family: courier;
+    font-size: 36px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card p {
+    font-family: courier;
+    font-size: 18px;
+}
+
+
+/* ------------------Desktop------------------------*/
+
+@media screen and (min-width: 700px) {
+    /* Navigation */
+    nav {
+        width: 80%;
+        flex-flow: row;
+        align-items: baseline;
+    }
+    a {
+        font-size: 18px;
+        border: none;
+    }
+    #logoNav {
+        flex: 6;
+        text-align: left;
+    }
+    /* Landing */
+    #landing {
+        flex-direction: row;
+        width: 80%;
+        margin: 100px auto;
+    }
+    /*Cards*/
+    .cards {
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+}

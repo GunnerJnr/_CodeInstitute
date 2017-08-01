@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+
+    <!--
+         Form with HTML5 tags and basic CSS
+      -->
+    <style type="text/css">
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        #container {
+            width: 550px;
+            margin: auto;
+        }
+        
+        legend {
+            font-size: 30px;
+            background-color: #fff;
+            border-radius: 5px;
+            border: 1px solid #999;
+            padding: 4px 15px;
+        }
+        
+        label.field {
+            display: block;
+            text-align: right;
+            width: 100px;
+            float: left;
+        }
+        
+        input {
+            width: 200px;
+            border-radius: 5px;
+            padding: 6px 8px;
+        }
+        
+        .field {
+            padding: 6px 8px;
+        }
+        
+        #currency {
+            width: 220px;
+            border-radius: 5px;
+            padding: 6px 8px;
+        }
+        
+        fieldset {
+            width: 450px;
+            border: 1px solid #999;
+            border-radius: 20px;
+            clear: both;
+            padding: 20px;
+            margin-bottom: 100px;
+            background-color: rgba(129, 187, 201, .2);
+        }
+        
+        :focus {
+            background-color: #FFECE9;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="input_types">
+            <!-- wrapper for form-->
+            <fieldset>
+                <legend> Personal Details </legend>
+                <!-- set of related fields  -->
+                <form>
+                    <label for="firstName" class="field">First Name*:</label>
+                    <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" autocomplete="on" required="" autofocus />
+                    <br />
+                    <label for="lastName" class="field">Last Name*:</label>
+                    <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" autocomplete="on" required="" />
+                    <label for="age" class="field">Age*:</label>
+                    <input type="number" id="age" name="age" min="0" max="120" placeholder="Enter your age" autocomplete="on" required="" />
+                    <br />
+                    <label for="telephone" class="field">Telephone:</label>
+                    <input type="tel" id="telephone" name="telephone" placeholder="Enter your telephone number" autocomplete="on" pattern="[0-9]{5}[0-9]{6}" title="please enter area code [5digits] and number [6digits]" />
+                    <br />
+                    <label for="e-mail" class="field">E-Mail*:</label>
+                    <input type="email" id="e-mail" name="e-mail" placeholder="Enter your email address" autocomplete="on" required="" />
+                    <br />
+                    <label for="website" class="field">Website:</label>
+                    <input type="url" id="website" name="website" placeholder="Enter your website url" autocomplete="on" />
+                    <br />
+                    <label for="eircode" class="field">Postcode:</label>
+                    <input id="eircode" name="eircode" type="text" placeholder="postcode " pattern="[0-9A-Za-z]{7}" title="Seven character alpha-numeric code." />
+                    <br />
+
+                    <label for="date" class="field"> Date:</label>
+                    <input id="date" name="date" type="date" />
+
+                    <label for="would_you_ike" class="field"> Would you like:</label>
+                    <label for="starter"> </label>
+                    <input type="checkbox" value="starter" />Starter
+                    <label for="main"> </label>
+                    <input type="checkbox" value="main" />Main
+                    <label for="desert"> </label>
+                    <input type="checkbox" value="desert" />Desert
+
+                    <label for="gender" class="field"> Gender:</label>
+                    <label for="male"> </label>
+                    <input id="male" type="radio" name="gender" value="male" />Male
+                    <label for="female"> </label>
+                    <input id="female" type="radio" name="gender" value="female" />Female
+                    <label for="other"> </label>
+                    <input id="other" type="radio" name="gender" value="other" />Other
+
+                    <label for="zodiac_signs" class="field">Zodiac signs</label>
+                    <select id="currency">
+                        <option value="aries">Aries</option>
+                        <option value="gemini">Gemini</option>
+                        <option value="cancer">Cancer</option>
+                        <option value="virgo">Virgo</option>
+                        <option value="leo">Leo</option>
+                        <option value="scorpio">Scorpio</option>
+                        <option value="sagittarius">Sagittarius</option>
+                        <option value="capricorn">Capricorn</option>
+                        <option value="aquarius">Aquarius</option>
+                        <option value="pisces">Pisces</option>
+                    </select>
+
+                    <label for="music_genre" class="field">Music Genre:</label>
+                    <input list="music_genre" name="music_genre" placeholder="type for autofill selections">
+                    <datalist id="music_genre">
+                        <option value="Indie"></option>
+                        <option value="Dance"></option>
+                        <option value="Folk"></option>
+                        <option value="Rock"></option>
+                        <option value="Punk"></option>
+                    </datalist>
+
+                    <label for="passport" class="field">Passport:</label>
+                    <input id="passport" name="passport" type="text" placeholder="passport number" pattern="[0-9]{7}[A-Za-z]{1}" title="Seven numbers followed by a single upper or lower case letter." />
+                    <br />
+                    <label for="credit_card" class="field">Credit Card:</label>
+                    <input id="credit_card" name="credit_card" placeholder="Credit Card number" pattern="[0-9]{16}" title="Credit car number 16 numbers long" type="text" />
+                    <br />
+                    <label for="pass" class="field">Password*:</label>
+                    <input type="password" id="pass" name="pass" placeholder="Enter a password" required="" />
+                    <br />
+                    <label for="submit" class="field">Submit</label>
+                    <input type="submit" class="submit" value="submit" />
+                </form>
+            </fieldset>
+        </div>
+    </div>
+</body>
+
+</html>

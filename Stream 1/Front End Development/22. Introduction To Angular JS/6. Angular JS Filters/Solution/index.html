@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!-- attach our main app -->
+<html ng-app="collegeApp" lang="en-gb">
+
+<head>
+	<meta charset="utf-8">
+	<title>Creating an Angular JS Application</title>
+	<!-- Include (Download) the angular js framework -->
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+</head>
+
+<body>
+	<!--add the student controller-->
+	<div ng-controller="StudentController">
+		<div>
+			<!--display greeting-->
+			<p>{{ greeting() }}</p>
+			<p>Student Fee: £ {{ student.fees}}</p>
+		</div>
+		<!-- filter by subject -->
+		<form class="form-inline">
+			<input ng-model="query" type="text" placeholder="Filter by Subject" autofocus />
+		</form>
+		<!--will toggle buttons-->
+		<button ng-click="showResults()">Show Results</button>
+		<button ng-click="hideResults()">Hide Results</button>
+		<!--iterate over student subjects-->
+		<div ng-repeat="subject in student.subjects | filter: { name: query } | filter: aGradeFilter | orderBy: '-marks' ">
+			<!--display results -->
+			<div ng-hide="results">
+				result for: {{subject.name}} = {{subject.marks}}
+			</div>
+		</div>
+	</div>
+	<!-- include our app.js file -->
+	<script src="javascript/app.js"></script>
+	<!-- include our controllers -->
+	<script src="javascript/controller.js"></script>
+</body>
+
+</html>

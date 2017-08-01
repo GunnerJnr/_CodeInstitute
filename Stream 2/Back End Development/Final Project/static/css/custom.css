@@ -1,0 +1,68 @@
+.body {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.html {
+    height: 100%
+}
+
+.page-header {
+    color: #ffa500;
+}
+
+#appearances-nd {
+   font-size: 60px;
+}
+
+#years-nd {
+   font-size: 60px;
+}
+
+.dc-chart g.row text {
+   fill: black;
+   font-size: 12px;
+}
+
+#total-projects {
+   background: #33CC99;
+   width: 200px;
+   position: relative;
+   height: 60px;
+   font-size: 29px;
+   color: white;
+   vertical-align: middle;
+   text-align: center;
+   padding-top: 12px;
+   padding-bottom: 0;
+}
+
+#net-donations {
+   background: #33CC99;
+   width: 200px;
+   position: relative;
+   height: 60px;
+   font-size: 29px;
+   color: white;
+   vertical-align: middle;
+   text-align: center;
+   padding-top: 12px;
+   padding-bottom: 0;
+}
+
+.dc-select-menu {
+   background: #33CC99;
+   width: 100%;
+   border: none;
+   position: relative;
+   height: 31px;
+   font-size: 15px;
+   color: white;
+   vertical-align: middle;
+   text-align: center;
+   padding-top: 4px;
+   padding-bottom: 0;
+}

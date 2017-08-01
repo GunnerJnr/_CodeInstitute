@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Bootstrap Challenge 3</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+            body {
+            padding-top: 70px
+            /*.navbar-toggle { float: left;}
+            .navbar-brand { float: right;} */
+        }
+        
+        footer {
+            padding-top: 5px;
+            background-color: #eee;
+            text-align: center;
+            height: 100px;
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="nav navbar-header">
+                <a class="navbar-brand" href="#">NAVBAR EXAMPLE</a>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myCollapsingList">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <ul id="myCollapsingList" class="nav navbar-nav navbar-right collapse navbar-collapse">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Who We Are</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="jumbotron">
+        <div class="container">
+            <h1>Jumbotron Example!!!</h1>
+            <p>A lightweight, flexible component... </p>
+            <p><a class="btn btn-primary btn-lg" href="#">Learn more</a></p>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <h3>Three Columns</h3>
+        <!-- Three Col-->
+        <div class="row">
+            <div class="col-md-4">
+                <h2>HTML</h2>
+                <p>Html is a major Web Technology that defines the structure of a webpage. If you're looking to build websites, you should know about HTML.</p>
+                <a href="#" class="btn btn-success btn-lg">Learn</a>
+            </div>
+            <div class="col-md-4">
+                <h2>CSS</h2>
+                <p>Cascading Style Sheets, most of the time abbreviated as CSS, is a stylesheet language used to decsribe the presentation of a document written in HTML.</p>
+                <a href="#" class="btn btn-primary btn-default">Learn</a>
+            </div>
+            <div class="col-md-4">
+                <h2>Bootstrap</h2>
+                <p>Bootstrap makes front-end web development faster and easier. It's made for folks of all skill levels, devices of all shapes, and projects of all sizes.</p>
+                <a href="#" class="btn btn-danger btn-sm">Learn</a>
+            </div>
+        </div>
+        <hr>
+        <h3>Four Columns and Tab Bar Example</h3>
+        <!-- Tab Bar-->
+        <nav>
+            <ul class="nav nav-tabs nav-justified">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li class="active"><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- Four Col-->
+        <div class="row">
+            <div class="col-md-3">
+                <h2>Javascript</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="col-md-3">
+                <h2>Python</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="col-md-3">
+                <h2>Django</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="col-md-3">
+                <h2>GitHub</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </div>
+        <hr>
+        <h3>Two Columns</h3>
+        <!-- Two Col-->
+        <div class="row">
+            <div class="col-md-6">
+                <h2>SQL</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="col-md-6">
+                <h2>FTP</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </div>
+        <hr>
+        <h3>One Column and Pill Tabs Example</h3>
+        <!-- Pill Tabs-->
+        <nav>
+            <ul class="nav nav-pills">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li class="active"><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- One Col-->
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Full Stack Development</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </div>
+        <hr>
+        <h3>Bootstrap Lists</h3>
+        <!-- Bootstrap Lists-->
+        <ul>
+            <li>Chrome</li>
+            <li>Firefox</li>
+            <li>Safari</li>
+            <li>Opera</li>
+            <li>Internet Explorer
+                <ul>
+                    <li>IE</li>
+                    <li>Edge</li>
+                </ul>
+            </li>
+            <li>Torch</li>
+        </ul>
+        <hr>
+        <h3>Bootstrap Lists Groups</h3>
+        <!-- Bootstrap List Groups-->
+        <ul class="list-group">
+            <li class="list-group-item">Games</li>
+            <li class="list-group-item">XBox</li>
+            <li class="list-group-item">PS3</li>
+            <li class="list-group-item">PC</li>
+        </ul>
+        <hr>
+        <h3>Using Glyphs in Bootstrap Lists</h3>
+        <!-- Using Glyphs in..-->
+        <!-- Bootstrap List Groups-->
+        <ul class="list-group">
+            <li class="list-group-item">
+                <span class="glyphicon glyphicon-hdd"></span> Games
+            </li>
+            <li class="list-group-item active">
+                <span class="glyphicon glyphicon-hdd"></span> XBox
+            </li>
+            <li class="list-group-item">
+                <span class="glyphicon glyphicon-hdd"></span> PS3
+            </li>
+            <li class="list-group-item">
+                <span class="glyphicon glyphicon-hdd"></span> PC
+            </li>
+        </ul>
+        <hr>
+        <h3>Using Glyphs in Bootstrap Lists and adding Badges</h3>
+        <!-- Using Glyphs in..-->
+        <!-- Bootstrap List Groups-->
+        <!-- adding Badges 
+				Badges allow numerical information to be associated with a link. However, you first need to make the links. To do this, substitute links <a> for list-items <li> as shown below:
+				And for one final addition, the badge. Add a <span> tag with the badge class.
+				e.g.  - <span class="badge">145</span>
+		-->
+        <ul class="list-group">
+            <a href="#" class="list-group-item">
+                <span class="glyphicon glyphicon-hdd"></span> Games
+                <span class="badge">145</span>
+            </a>
+            <a href="#" class="list-group-item">
+                <span class="glyphicon glyphicon-hdd"></span> XBox
+                <span class="badge">3256</span>
+            </a>
+            <a href="#" class="list-group-item">
+                <span class="glyphicon glyphicon-hdd"></span> PS3
+                <span class="badge">2145</span>
+            </a>
+            <a href="#" class="list-group-item active">
+                <span class="glyphicon glyphicon-hdd"></span> PC
+                <span class="badge">11,145</span>
+            </a>
+        </ul>
+        <hr>
+        <h3>Tab Bars (without justified nav) - see the 4 columns above for usage example.. (with justified nav)</h3>
+        <!-- Tab Bars
+            Tabs are used to display large amounts of content within a small area, and without the user having to leave the page. The user can switch between the tab panes to access the content, where each tab is viewable one at a time.
+
+            In the below example, the tab display shows the navigation with the active tab displayed above the rest. Tab types are displayed horizontally by default.
+        -->
+        <nav>
+            <ul class="nav nav-tabs">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li class="active"><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <hr>
+        <h3>Pills - see the 1 column above for example usage..</h3>
+        <!--
+            Tabs can be turned into pills, but they do not have the same 3D effect as tabs. They are represented with rounded corners. Pill types are displayed horizontally by default.
+        -->
+        <nav>
+            <ul class="nav nav-pills">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li class="active"><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <hr>
+    </div>
+    <footer class="col-12">
+        <h2>Footer Example</h2>
+        <p>&copy; 2016 &#45; David Gunner &#40;Jnr&#41;</p>
+    </footer>
+</body>
+<script src="http://code.jquery.com/jquery.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+</html>

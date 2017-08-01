@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+<meta charset="utf-8">
+
+<head>
+    <style>
+        body {
+            font: 16px sans-serif;
+        }
+        
+        svg {
+            background-color: #DDD;
+        }
+        
+        rect {
+            fill: red;
+            stroke: black;
+            stroke-width: 10;
+        }
+        
+        circle {
+            fill: blue;
+            stroke: black;
+            stroke-width: 10;
+        }
+        
+        line {
+            stroke: green;
+            stroke-width: 10;
+        }
+        
+        ellipse {
+            fill: orange;
+            stroke: black;
+            stroke-width: 10;
+        }
+        
+        .svgText {
+            font-family: courier;
+            font-size: 2em;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <svg width="500" height="500">
+            <!-- x = x pos, y = y pos -->
+            <rect x="20" y="20" width="100" height="200"></rect>
+
+            <!-- cx = x pos, yx = y pos, r = radius -->
+            <circle cx="120" cy="120" r="40"></circle>
+
+            <!-- cx = xpos, cy = y pos, rx = , ry =  -->
+            <ellipse cx="240" cy="220" rx="80" ry="40"></ellipse>
+
+            <!-- A line() takes two coordinates as the start position and two for the end position (x1,y1)(x2,y2) -->
+            <line x1="120" y1="20" x2="400" y2="220"></line>
+
+            <!-- x = xpos, y = y pos, SVG has a text element, which will be very useful when creating infographics, We can also add in a little CSS for good measure -->
+            <text x="200" y="40" class="svgText">SVG Text!</text>
+        </svg>
+        <!--Beside <rect> there are a number of other elements we can use. These include circle, line, ellipse, path, and text. All elements will remain invisible until styled, we can verify this using the chrome developer tools and inspecting the elements. As you have probably noticed, when elements overlap, the order of the elements dictate which element ends up on top. Each element is stacked above its predecessor.-->
+    </div>
+</body>
+
+</html>

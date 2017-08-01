@@ -1,0 +1,14 @@
+body {
+    padding-top: 70px
+    /*.navbar-toggle { float: left;}
+            .navbar-brand { float: right;} */
+}
+footer {
+    padding-top: 5px;
+    background-color: #eee;
+    text-align: center;
+    height: 100px;
+}
+.navbar {
+    border-radius: 0;
+}

@@ -1,0 +1,167 @@
+{%  extends "layout.html" %}
+
+<!-- CSS linking begin -->
+{% block css_linking %}
+    <link rel="stylesheet" href="{{ url_for ('static', filename='lib/css/keen-dashboards.css')}}">
+    <link rel="stylesheet" href="{{ url_for ('static', filename='lib/css/dc.css')}}">
+    <link rel="stylesheet" href="{{ url_for ('static', filename='lib/css/introjs.css')}}">
+    <link rel="stylesheet" href="{{ url_for ('static', filename='css/custom.css')}}">
+{%  endblock %}
+<!-- CSS linking end -->
+
+<!-- content begin -->
+{% block content %}
+    <!-- Page Title Begins -->
+    <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+        <h1 class="page-header">Avengers</h1>
+        <!-- Page Title Ends -->
+
+        <div class="col-sm-12">
+            <div class="row">
+                <!-- Time Chart -->
+                <div class="col-sm-8">
+                    <div class="chart-wrapper">
+                        <div class="chart-title">
+                            Number of Years
+                        </div>
+                        <div class="chart-stage">
+                            <div id="year-chart"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Time Chart -->
+
+                <!-- menu select -->
+                <div class="col-sm-3">
+                    <div class="chart-wrapper">
+                        <div class="chart-title">
+                            Year Menu Select
+                        </div>
+                        <div class="chart-stage">
+                            <div id="year-menu-select"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- menu select -->
+
+                <!-- menu select -->
+                <div class="col-sm-3">
+                    <div class="chart-wrapper">
+                        <div class="chart-title">
+                            Name Menu Select
+                        </div>
+                        <div class="chart-stage">
+                            <div id="name-menu-select"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- menu select -->
+
+                <!-- menu select -->
+                <div class="col-sm-3">
+                    <div class="chart-wrapper">
+                        <div class="chart-title">
+                            URL Menu Select
+                        </div>
+                        <div class="chart-stage">
+                            <div id="url-menu-select"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- menu select -->
+
+            </div>
+        </div>
+
+        <!-- Resources -->
+        <div class="col-sm-3">
+            <div class="chart-wrapper">
+                <div class="chart-title">
+                    Current Status
+                </div>
+                <div class="chart-stage">
+                    <div id="current-chart"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Resources -->
+
+        <!-- funding Pie -->
+        <div class="col-sm-3">
+            <div class="chart-wrapper">
+                <div class="chart-title">
+                    Honorary Chart
+                </div>
+                <div class="chart-stage">
+                    <div id="honorary-chart"></div>
+                </div>
+                <div class="chart-text">
+                    Honorary Status Pie Chart
+                </div>
+            </div>
+        </div>
+        <!-- funding Pie -->
+
+        <!-- Poverty -->
+        <div class="col-sm-3">
+            <div class="chart-wrapper">
+                <div class="chart-title">
+                    Gender
+                </div>
+                <div class="chart-stage">
+                    <div id="gender-chart"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Poverty -->
+
+        <!-- Metric 1 -->
+        <div class="col-sm-2">
+            <div class="chart-wrapper">
+                <div class="chart-title">
+                    Total Number of Years
+                </div>
+                <div class="chart-stage" style=" background: #33CC99;
+                     position: relative;
+                     font-size: 29px;
+                     color: white;
+                     vertical-align: middle;
+                     text-align: center;
+                     padding-top: 12px;
+                     padding-bottom: 0;">
+
+                    <div id="years-nd"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Metric 1 -->
+
+        <!-- Metric 2 -->
+        <div class="col-sm-2">
+            <div class="chart-wrapper">
+                <div class="chart-title">
+                    Total Number of Appearances
+                </div>
+                <div class="chart-stage">
+                    <div id="appearances-nd"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Metric 2 -->
+
+    </div>
+{% endblock %}
+<!-- content end -->
+
+<!-- JS linking -->
+{% block js_linking %}
+    <script src="{{ url_for ('static', filename='lib/js/crossfilter.js')}}"></script>
+    <script src="{{ url_for ('static', filename='lib/js/d3.js')}}"></script>
+    <script src="{{ url_for ('static', filename='lib/js/dc.js')}}"></script>
+    <script src="{{ url_for ('static', filename='lib/js/queue.js')}}"></script>
+    <script src="{{ url_for ('static', filename='lib/js/keen.min.js')}}"></script>
+    <script src="{{ url_for ('static', filename='lib/js/intro.js')}}"></script>
+    <script src="{{ url_for ('static', filename='js/graph.js')}}"></script>
+    <script src="{{ url_for ('static', filename='js/random_image_loader.js')}}" type="text/javascript"></script>
+{% endblock %}
+<!-- JS linking end -->

@@ -1,0 +1,83 @@
+body {
+    background-image: url("../img/background.jpg");
+    /*background-size: contain;*/
+    background-size: cover;
+}
+
+#container {
+    margin-right: auto;
+    /*Auto margins used for centering elements*/
+    margin-left: auto;
+    /*See previous comment*/
+    width: 960px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 0;
+    /* remove spacing for the inline-block*/
+}
+
+.box {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+    background-color: #81BBC9;
+    width: 100%;
+    padding: 20px 0;
+    margin-bottom: 10px;
+    display: block;
+    font-size: 20px;
+    /* important to declare font-size here, otherwise will be 0*/
+    text-align: center;
+    border-radius: 10px;
+    border: dashed 3px #333;
+}
+
+#header {}
+
+.sidebar {
+    display: inline-block;
+    width: 470px;
+    margin-right: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.content {
+    display: inline-block;
+    width: 470px;
+    margin-left: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+p {
+    margin-bottom: 50px;
+}
+
+p::first-line {
+    font-size: 1.5em;
+}
+
+p::first-letter {
+    font-size: 2.5em;
+}
+
+
+/* @media screen and (max-width: 400px){
+    h1 {
+        font-size: 20px;
+    }
+    
+    p {
+        font-size: 16px;
+    }
+    
+    .box {
+        text-align: center;
+        border-radius: 5px;
+        border: dashed 3px #FF4400;
+    }*/
+
+
+}

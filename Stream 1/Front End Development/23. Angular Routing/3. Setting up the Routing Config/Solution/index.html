@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+
+<head>
+	<meta charset="utf-8">
+	<title>Angular Routing</title>
+	<!-- include the bootstrap css -->
+	<link rel="stylesheet" type="text/css" href="css/vendor/bootstrap.min.css">
+
+	<!-- include our vendor js -->
+	<script src="js/vendor/angular.min.js"></script>
+	<script src="js/vendor/angular-route.min.js"></script>
+	<script src="js/vendor/bootstrap.min.js"></script>
+</head>
+
+<!-- set our ng-app in the body -->
+
+<body ng-app="routingApp">
+	<!-- Create a nav bar -->
+	<nav class="navbar navbar-inverse">
+		<div class="navbar navbar-header">
+			<a href="#/home" class="navbar navbar-brand">CYBER DIVISION</a>
+		</div>
+		<ul class="nav navbar-nav">
+			<li><a href="#/home">Home</a></li>
+			<li><a href="#/about">About</a></li>
+			<li><a href="#/contact">Contact</a></li>
+		</ul>
+	</nav>
+
+	<!-- this is where our templates will be injected -->
+	<div ng-view>
+		<!-- injected content here -->
+	</div>
+
+	<!-- these are our app specific javascript files -->
+	<script src="js/app.js"></script>
+	<script src="js/controller.js"></script>
+</body>
+
+</html>
+
+<!-- NOTE: 
+	Make you you still have http-server running and open up the browser and type localhost:8000/#/about into the URL bar. We’ll see that the <h1> that we set in our about.html template now says About. Now try this for each the routes that we created.
+
+	We need to use #/ in order for angular-route to know that this is part of our single page application. If we tried to go to localhost:8000/about we wouldn’t see anything on our page and in our Developer Tools console we’d see a 404 error.
+-->

@@ -1,0 +1,25 @@
+{
+    "firstName": "David",
+    "lastName": "Gunner Jnr",
+    "fees": 5000,
+    "subjects": [{
+            "name": "HTML",
+            "marks": 90
+        },
+        {
+            "name": "CSS",
+            "marks": 85
+        },
+        {
+            "name": "Javascript",
+            "marks": 70
+        },
+        {
+            "name": "JQuery",
+            "marks": 82
+        },
+        {
+            "name": "Angular JS",
+            "marks": 99
+        }]
+}

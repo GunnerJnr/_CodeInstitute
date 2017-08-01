@@ -1,0 +1,37 @@
+body {
+    font: 16px sans-serif;
+    text-align: center;
+}
+
+rect:hover {
+    fill: #FFA623;
+    /* fill with a yellow */
+}
+
+#tooltip {
+    position: absolute;
+    padding: 5px 10px;
+    background: white;
+    border-radius: 3px;
+    font-family: dosis;
+    /* we need to import this font*/
+    font-weight: bold;
+}
+
+.hidden {
+    /* hides tooltip */
+    display: none;
+}
+
+.axis text {
+    /* y axis text syle */
+    font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+    /* y axis bar style */
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}

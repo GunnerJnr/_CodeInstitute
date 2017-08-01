@@ -1,0 +1,14 @@
+body {}
+
+h2 {
+    font-family: monospace, serif, sans-serif;
+    text-align: center;
+}
+
+#chart-line-hitsperday {
+    margin: 20px;
+}
+
+#chart-ring-year {
+    margin-top: 25px;
+}

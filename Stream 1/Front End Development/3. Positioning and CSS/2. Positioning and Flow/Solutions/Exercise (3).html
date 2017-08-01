@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Revisiting Box Model Exercise 1</title>
+	<style type="text/css">
+		#container {
+			margin-right: auto; /*Auto margins used for centering elements*/
+			margin-left: auto; /*See previous comment*/
+			width: 600px;
+			height: 400px;
+			background-color: #AA4639;
+			padding: 5px;
+			border-radius: 10px;
+			font-size: 0;
+
+			top: 100px;
+		}
+
+		.box {
+			width: 220px;
+			height: 100px;
+			background-color: #81BBC9;
+			margin: 10px;
+			padding-top: 50px;
+			border-radius: 10px;
+			display: inline-block;
+			text-align: center;
+			font-size: 40px;
+
+			position: relative;
+			/*we choose relative as we can offset it from the original position*/
+		}
+
+		/*Reference: http://www.w3schools.com/cssref/pr_pos_top.asp */
+
+		#box1 {
+			top: 0px;
+		}
+
+		#box2 {
+			left: 120px;
+		}
+
+		#box3 {
+			top: 60px;
+		}
+
+		#box4 {
+			left: 120px;
+			top: 60px;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div class="box" id="box1">1</div>
+		<div class="box" id="box2">2</div>
+		<div class="box" id="box3">3</div>
+		<div class="box" id="box4">4</div>
+	</div>
+</body>
+</html>

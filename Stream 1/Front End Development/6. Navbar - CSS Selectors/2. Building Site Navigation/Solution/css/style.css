@@ -1,0 +1,70 @@
+body {
+    background-color: #292E37;
+}
+
+
+/* nav style */
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    font-family: roboto;
+    color: #fff;
+}
+
+
+/* center elements */
+
+nav ul {
+    list-style: none;
+    /* remove bullets from list */
+    text-align: center;
+    /* center nav elements */
+}
+
+nav li:active {
+    background-color: #919191;
+}
+
+nav li:last-child {
+    border-bottom: none;
+}
+
+
+/* style and hover */
+
+nav ul li {
+    font-size: 30px;
+    border-bottom: 1px solid #444;
+    padding: 10px 5px;
+    background-color: #1D2026;
+}
+
+nav ul li:hover {
+    background-color: #555;
+    transition: all .3s ease;
+}
+
+nav ul li a {
+    display: block;
+}
+
+
+/* Media Query (Responsive) */
+
+@media screen and (min-width: 665px) {
+    nav {
+        font-size: 0;
+        /* removes the spacing between elements */
+    }
+    nav ul {
+        background-color: #1D2026;
+    }
+    nav ul li {
+        display: inline-block;
+        width: 120px;
+        font-size: 20px;
+        /* ensure font size isn't 0 */
+        border-bottom: none;
+    }
+}

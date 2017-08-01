@@ -1,0 +1,503 @@
+/************************* Import Glyphicons *************************/
+
+@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css");
+
+/************************* Index HTML & Body Style (Global) *************************/
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    max-width: 960px;
+    padding-top: 60px;
+    padding-bottom: 42px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("../img/home/13.jpg");
+    background-size: auto;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: #fff;
+}
+
+
+/************************* Page Style *************************/
+
+#body-content {
+    font-family: sans-serif;
+}
+
+#last-nav-item {
+    margin-right: 16px;
+}
+
+.container-fluid,
+.row-fluid {
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+}
+
+.jumbotron {
+    background-color: #333;
+    opacity: 0.9;
+    filter: alpha(opacity=0.9);
+}
+
+
+/*** override jumbotron ***/
+
+.jumbotron P {
+    font-size: 1.2em;
+    font-family: sans-serif;
+}
+
+
+/************************* Carousel Styling - Carousel Base Class *************************/
+
+.carousel {
+    height: 500px;
+    margin-bottom: 25px;
+}
+
+
+/*** Since positioning the image, we need to help out the caption ***/
+
+.carousel-caption {
+    z-index: 10;
+}
+
+
+/*** Declare heights because of positioning of img element ***/
+
+.carousel .item {
+    height: 500px;
+    background-color: #777;
+}
+
+.carousel-inner > .item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    margin: auto;
+    height: 500px;
+    border-radius: 5px;
+}
+
+#slides_control > div {
+    height: 200px;
+}
+
+#slides_control {
+    position: absolute;
+    width: 400px;
+    left: 50%;
+    top: 20px;
+    margin-left: -200px;
+}
+
+
+/************************* Meet the Band Nav Tabs Style *************************/
+
+.nav-pills {
+    margin-top: 3.5px;
+}
+
+.tab-content p,
+.tab-content h2 {
+    margin: 20px 0;
+}
+
+
+/************************* Itunes Search & Song table style *************************/
+
+.form-control {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 225px;
+    max-width: 450px;
+    margin-bottom: 5px;
+}
+
+
+/*** Override Bootstrap CSS ***/
+
+.btn-lg {
+    color: black;
+    margin-bottom: 10px;
+}
+
+#search-table,
+#song-table {
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    border: solid 2px #f0ad4e;
+}
+
+#search-table img {
+    margin: 5px;
+}
+
+#song-table img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+table thead tr th h3 {
+    text-align: center;
+    text-decoration: underline;
+    margin: 16px;
+    color: #f0ad4e;
+}
+
+table tbody tr td a {
+    font-size: 14px;
+    text-decoration: none;
+    color: #f0ad4e;
+}
+
+#html5-vid-container {
+    position: relative;
+    padding-top: 0px;
+    padding-bottom: 56.25%;
+    /* 16:9 */
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#html5-vid video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 3px 0px;
+    border: solid 10px #888;
+    border-radius: 20px;
+}
+
+
+/************************* Audio Player Style *************************/
+
+#audio-player,
+#audio-player-buttons {
+    width: 100%;
+    text-align: center;
+    margin: 5px;
+}
+
+
+/************************* Modal Style *************************/
+
+
+/* Add a dark gray background color to the modal header and center text */
+
+.modal-header,
+.modal-body {
+    padding: 20px 40px;
+}
+
+.modal-header,
+h4,
+.close {
+    background-color: #333;
+    color: #fff !important;
+    text-align: center;
+    font-size: 20px;
+}
+
+.modal-footer {
+    background-color: #333;
+    color: #fff !important;
+    text-align: right;
+    font-size: 14px;
+}
+
+.modal-footer p {
+    margin-top: 20px;
+}
+
+.modal label {
+    color: #888;
+}
+
+
+/************************* Contact Form Styling *************************/
+
+fieldset legend {
+    background: #f0ad4e;
+    color: #000;
+    padding: 5px 10px;
+    font-size: 60px;
+    border-radius: 5px;
+}
+
+fieldset {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    border: solid 2px #f0ad4e;
+    background: #333;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.validation-span {
+    font-weight: 400;
+    color: #ff0000;
+}
+
+.label {
+    margin: 10px;
+}
+
+.list-group-item-text,
+.booking-info {
+    margin-top: 10px;
+}
+
+.list-group .btn-lg {
+    margin: 10px;
+}
+
+
+/************************* Google Map Style *************************/
+
+#googleMap {
+    width: 100%;
+    height: 500px;
+    -webkit-filter: grayscale(40%);
+    filter: grayscale(40%);
+    border: solid 10px #888;
+    border-radius: 20px;
+}
+
+.map-pin-text {
+    color: #000;
+}
+
+
+/************************* Footer Style *************************/
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #f5f5f5;
+}
+
+footer p {
+    float: left;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+/*** Social Icons Style ***/
+
+footer ul {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    float: right;
+    list-style: none;
+    color: #f0ad4e;
+    font-size: 40px;
+    margin: 5px;
+}
+
+.fa {
+    -webkit-transform: scale(0.8);
+    /* Browser Variations: */
+    -moz-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    color: #888;
+}
+
+.fa:hover {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+
+
+/*** Multicoloured Hover Variations ***/
+
+.fa-google-plus-square:hover {
+    color: #d34836;
+}
+
+.fa-facebook-square:hover {
+    color: #3B5998;
+}
+
+.fa-twitter-square:hover {
+    color: #4099FF;
+}
+
+.fa-youtube-square:hover {
+    color: #f00;
+}
+
+.fa-envelope:hover {
+    color: #f1df23;
+}
+
+
+/************************* Responsive Design Handling *************************/
+
+
+/*** Landscape Phone to Portrait Tablet ***/
+
+@media (min-width: 481px) and (max-width: 767px) {
+    /*** Body Style ***/
+    body {
+        padding-top: 5px;
+        padding-bottom: 42px;
+    }
+    /*** NavBar Style - Prevents it from sitting on top of the content ***/
+    .navbar-fixed-top {
+        position: relative;
+        top: auto;
+    }
+    .navbar-collapse {
+        max-height: none;
+    }
+    /*** Style the Main Content & Containers for Mobile ***/
+    .container-fluid,
+    .row-fluid {
+        text-align: center;
+        padding-left: 1px;
+        padding-right: 1px;
+    }
+}
+
+
+/*** Landscape Phones and Down ***/
+
+@media (min-width: 190px) and (max-width: 480px) {
+    /*** Body Style ***/
+    body {
+        padding-top: 5px;
+        padding-bottom: 42px;
+    }
+    /*** NavBar Style - Prevents it from sitting on top of the content ***/
+    .navbar-fixed-top {
+        position: relative;
+        top: auto;
+    }
+    .navbar-collapse {
+        max-height: none;
+    }
+    /*** Style the Main Content & Containers for Mobile ***/
+    .container-fluid,
+    .row-fluid {
+        text-align: center;
+        padding-left: 1px;
+        padding-right: 1px;
+    }
+    /************************* Itunes Search & Song table style *************************/
+    /*** Override Bootstrap CSS ***/
+    #search-input-container input {
+        resize: horizontal;
+        width: 200px;
+    }
+    #search-input-container input:active {
+        width: auto;
+    }
+    #search-input-container input:focus {
+        min-width: 180px;
+    }
+    .btn-lg {
+        font-size: 10px;
+        color: black;
+        margin-bottom: 5px;
+    }
+    #search-table,
+    #song-table {
+        margin-left: auto;
+        margin-right: auto;
+        width: 250px;
+        border: solid 1px #fff;
+    }
+    #search-table td,
+    #song-table td {
+        text-align: center;
+        color: #fff;
+        font-size: 10px;
+    }
+    #search-table a,
+    #song-table a {
+        font-size: 12px;
+    }
+    #search-table td img,
+    #song-table td img {
+        width: 32px;
+        height: 32px;
+        margin: 2px 0;
+    }
+    #search-table h3,
+    #song-table h3 {
+        font-size: 12px;
+    }
+    /************************* Audio Player Style *************************/
+    #audio-player audio {
+        max-width: 200px;
+    }
+    /************************* Modal Style *************************/
+    .modal-body {
+        margin: 3px;
+        padding: 2px;
+    }
+    .modal input {
+        resize: horizontal;
+        width: 200px;
+    }
+    .modal input:active {
+        width: auto;
+    }
+    .modal input:focus {
+        min-width: 180px;
+    }
+    /************************* Contact Form Style *************************/
+    .contact-form {
+        margin: 3px;
+        padding: 2px;
+    }
+    .contact-form input,
+    .contact-form textarea {
+        resize: horizontal;
+        width: 200px;
+    }
+    .contact-form input:active,
+    .contact-form textarea:active {
+        width: auto;
+    }
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+        min-width: 180px;
+    }
+    /************************* Footer Style *************************/
+    footer p {
+        font-size: 10px;
+        margin-top: 24px;
+    }
+    footer ul {
+        color: #f0ad4e;
+        font-size: 14px;
+        margin-top: 20px;
+    }
+}

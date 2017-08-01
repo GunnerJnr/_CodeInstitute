@@ -1,0 +1,43 @@
+body {
+	
+}
+
+#container {
+	background-image: url("../img/background.jpg");
+	background-size: contain;
+
+	width: 960px;
+}
+
+div {
+	display: inline-block; /* to be side by side*/
+	vertical-align: top; /*align the div elements*/
+
+	width: 430px;
+
+	margin: 0;
+	padding: 20px;
+}
+
+img {
+	width: 250px;
+	height: 250px;
+
+	margin: 0 25px 25px 25px;
+}
+
+#image-1 {
+	float: left;
+}
+
+#image-2 {
+	float: right;
+}
+
+#div-1 h2, p {
+	text-align: right;
+}
+
+#div-2 p {
+	text-align: left;
+}

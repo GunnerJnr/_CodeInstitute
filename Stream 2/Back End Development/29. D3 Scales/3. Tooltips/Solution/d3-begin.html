@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet" type="text/css" />
+
+<head>
+    <style>
+        body {
+            font: 16px dosis, sans-serif;
+        }
+        
+        rect:hover {
+            fill: #FFA623;
+            /* fill with a yellow */
+        }
+        
+        #tooltip {
+            position: absolute;
+            padding: 5px 10px;
+            background: white;
+            border-radius: 3px;
+            font-family: dosis;
+            /* we need to import this font*/
+            font-weight: bold;
+        }
+        
+        .hidden {
+            /* hides tooltip */
+            display: none;
+        }
+    </style>
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+</head>
+
+<body>
+
+</body>
+<script>
+    // variables for the svg height, width and spacing between graph items
+    var svgWidth = 600;
+    var svgHeight = 600;
+    var spacing = 5;
+
+    //place you D3 code here
+    var myData = [10, 15, 20, 30, 45, 50, 40, 50, 40, 70, 100, 80, 150, 10, 58]; // create an array
+    myData.sort(d3.ascending); // sort the data
+    // myData.sort(d3.descending);
+
+    // set up the scales for the height of the graph items in the chart
+    var heightScale = d3.scale.linear()
+        .domain([0, d3.max(myData)])
+        .range([0, svgHeight]);
+
+    // set up colour for the scale
+    var colorScale = d3.scale.linear()
+        .domain([0, d3.max(myData)])
+        .range(["blue", "red"]);
+
+    // append the div to add an id of tooltip
+    var tooltip = d3.select("body")
+        .append("div")
+        .attr("id", "tooltip");
+
+    // set our svg properties
+    var svg = d3.select("body") // append svg to the body and set properties
+        .append("svg")
+        .attr("width", svgWidth)
+        .attr("height", svgHeight)
+        .attr("style", "background-color:#ddd")
+        .attr("style", "box-shadow: 10px 10px 5px #888888;");// add some style
+
+    var g = svg.append('g')
+        .attr("transform", "translate(0, 0)");
+
+    //add code here
+    g.selectAll("rect")
+        .data(myData)
+        .enter()
+        .append("rect")
+        .attr("x", function (d, i) {
+            return i * (svgWidth / myData.length);
+        }) // multiply the index by the width
+        .attr("y", function (d) {
+            return svgHeight - (heightScale(d));
+        }) // height is 300 (also we want to flip the graph as origin is top left, we also multiply by 5 to make the graph height bigger)
+        .attr("width", (svgWidth / myData.length) - spacing) // keeps the scale
+        .attr("height", function (d) {
+            return (heightScale(d));
+        }) // call an anonymous function
+        .attr("fill", function (d) {
+            return (colorScale(d));
+        })
+        .on("mouseover", function (d) {
+            d3.select("#tooltip")
+                .classed("hidden", false)
+                .style("left", d3.event.pageX - 10 + "px") // in this case we need 
+                .style("top", d3.event.pageY - 70 + "px") //to append px as units
+            tooltip.html(d); // add an event which will trigger the Tooltip;
+        })
+        .on("mouseout", function () {
+            d3.select("#tooltip")
+                .classed("hidden", true);
+        });
+
+    // To see just the bar height ‘grow’ you can use the following:
+    /*.attr("fill", "#30C5C7")
+        //.attr("x", 0)  
+        //.attr("y", 0)
+        //.attr("width", 0)  
+        .attr("height", 0)
+        .transition().duration(5000)
+        .attr("height", function (d) {
+            return d
+        }); */
+
+    // manipulate old data and overwrite
+    /* var myNewData = [40, 25, 10, 35, 45, 6, 40, 75, 50, 80];
+
+     g.selectAll("rect") // existing rect elements
+         .data(myNewData)
+         .attr("y", function (d) {
+             return (svgHeight - d);
+         }) // d is from new array
+         .attr("height", function (d) {
+             return d
+         });*/
+</script>
+<script src="js/script.js"></script>
+
+</html>

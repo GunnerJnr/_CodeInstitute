@@ -1,0 +1,71 @@
+body {}
+
+a {
+    color: black;
+    font-family: courier;
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+    height: 30px;
+    flex: 1;
+    /* equal widths for each list item */
+    padding: 20px;
+    border: 1px solid black;
+}
+
+nav {
+    font-family: roboto;
+    background-color: #eee;
+    display: flex;
+    /* set up the container to be a flex item */
+    flex-direction: column;
+    /* we want to stack the items for mobile */
+    align-items: stretch;
+    width: 80%;
+    height: 400px;
+    margin: 30px auto;
+    padding: 0;
+    border: dashed 3px #ffff00;
+    border-radius: 10px;
+    list-style-type: none;
+    /* remove the bullet points from the list items */
+}
+
+#logoNav {
+    font-size: 18px;
+}
+
+@media screen and (min-width: 700px) {
+    /* if the screen is over 700px */
+    nav {
+        /*Code goes here*/
+        width: 80%;
+        /*display: flex;
+        flex-direction: row;
+        padding: 10px 10px 10px 10px; my answer */
+        flex-flow: row;
+        /* set direction of nav */
+        align-items: baseline;
+        /* better solution */
+    }
+    a {
+        /*Code goes here*/
+        text-decoration: none;
+        color: black;
+        flex: 1;
+        font-family: courier;
+        text-align: center;
+        font-size: 1em;
+        border: none;
+    }
+    #logoNav {
+        /*Code goes here*/
+        font-size: 1em;
+        font-weight: bold;
+        border: none;
+        /* margin-right: 200px; my answer */
+        flex: 6;
+        /* better solution */
+        text-align: left;
+    }
+}

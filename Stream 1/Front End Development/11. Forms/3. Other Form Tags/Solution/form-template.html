@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+
+    <!--
+         Form with HTML5 tags and basic CSS
+      -->
+    <style type="text/css">
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        #container {
+            width: 550px;
+            margin: auto;
+        }
+        
+        legend {
+            font-size: 30px;
+            background-color: #fff;
+            border-radius: 5px;
+            border: 1px solid #999;
+            padding: 4px 15px;
+        }
+        
+        label.field {
+            display: block;
+            text-align: right;
+            width: 100px;
+            float: left;
+        }
+        
+        input {
+            width: 200px;
+            border-radius: 5px;
+            padding: 6px 8px;
+            margin: 10px;
+        }
+        
+        .field {
+            padding: 6px 8px;
+        }
+        
+        #currency {
+            width: 220px;
+            border-radius: 5px;
+            padding: 6px 8px;
+        }
+        
+        fieldset {
+            width: 450px;
+            border: 1px solid #999;
+            border-radius: 20px;
+            clear: both;
+            padding: 20px;
+            margin-bottom: 100px;
+            background-color: rgba(129, 187, 201, .2);
+        }
+        
+        :focus {
+            background-color: #FFECE9;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="input_types">
+            <fieldset>
+                <legend> Personal Details </legend>
+                <form>
+                    <label for="firstName" class="field">First Name*:</label>
+                    <input type="text" id="firstName" name="firstName" />
+                    <br />
+                    <label for="lastName" class="field">Last Name*:</label>
+                    <input type="text" id="lastName" name="lastName" />
+                    <br />
+                    <label for="e-mail" class="field">E-Mail*:</label>
+                    <input type="email" id="e-mail" name="e-mail" />
+                    <br />
+                    <label for="website" class="field">Website:</label>
+                    <input type="url" id="website" name="website" />
+                    <br />
+                    <label for="telephone" class="field">Telephone:</label>
+                    <input type="tel" id="telephone" name="telephone" />
+                    <br />
+                    <label for="submit" class="field">Submit</label>
+                    <input type="submit" class="submit" value="submit" />
+                </form>
+            </fieldset>
+        </div>
+    </div>
+</body>
+
+</html>

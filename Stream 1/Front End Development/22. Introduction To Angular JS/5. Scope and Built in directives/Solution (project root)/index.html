@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--
+	To initialise our application (or bootstrap it),  we then need to reference this application module in our index.html file. The usual way is to append a built in angular directive attribute ng-app to the <html> element of our index file.
+-->
+<html ng-app="mainApp" lang="en-gb">
+
+<head>
+	<meta charset="utf-8">
+	<title>Creating an Angular JS Application</title>
+	<!-- Include (Download) the angular js framework -->
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+</head>
+
+<body>
+	<h2>Call our first controller</h2>
+	<!-- attach the controller here to access the scope data from the controller -->
+	<div ng-controller="MyController">
+		<!-- we can now access the controller $scope data here -->
+
+		<!-- acess the data -->
+		<h2>Print a greeting</h2>
+		<!-- NOTE: The data between the curly brackets{{ }}, is called an angular expression -->
+		<p>Hi {{ firstName }} {{ lastName }}</p>
+
+		<!-- call greeting function -->
+		<h2>Call the greetings function</h2>
+		<p>{{ greeting() }}</p>
+	</div>
+	<br />
+	<h2>Call our second controller</h2>
+	<!-- attach the controller here to access the scope data from the controller -->
+	<div ng-controller="MyOtherController">
+		<!-- we can now access the controller $scope data here -->
+
+		<!-- acess the data -->
+		<p>First Name:
+			<input type="text" ng-model="student.firstName">
+		</p>
+		<p>Last Name:
+			<input type="text" ng-model="student.lastName">
+		</p>
+		<p>First Name: {{ student.firstName }}</p>
+		<p>Last Name: {{ student.lastName }}</p>
+	</div>
+	<br />
+	<!-- NOTE: 
+        When returning a $scope value or expression the result of which is a string, we use the curly brackets notation {{ }}. If we are referring to a $scope object or function property, we use the ‘ ‘ notation, e.g. ng-click=’myFunction()’, where myFunction() is a function attached to the $scope of the controller.
+    -->
+
+	<!-- include our main app module (app.js) file -->
+	<script src="javascript/app.js"></script>
+	<!-- include our new controllers -->
+	<script src="javascript/controller.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+body {
+	font-family: Courier;
+
+	background-image: url("../img/background.jpg");
+	background-size: cover;
+}
+
+#container {
+	margin-right: auto; /*Auto margins used for centering elements*/
+	margin-left: auto; /*See previous comment*/
+
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    display: block;
+
+	width: 1080px;
+
+	background-color: rgba(255, 255, 255, 0.25);
+
+	border:1px solid black;
+	border-radius: 10px;
+
+	padding: 10px;
+
+	font-size: 0; /* remove spacing for the inline-block*/
+
+}
+
+div {
+	display: inline-block;		/* Make inline-Block*/
+	vertical-align: top;		/*so images will sit side by side*/
+
+	position: relative;
+
+	width:275px;
+
+	background-color: rgba(255, 255, 255, 0.75);
+
+	border:0.5px dashed #999;
+	border-radius: 50px;
+
+	margin: 10px;
+	padding: 10px;	
+
+	text-align: center;
+	font-size: 16px; /* important to declare font-size here, otherwise will be 0*/
+}
+
+img{
+	float: right;/*move image to right*/
+
+	width: 200px;
+	height: 200px;
+
+	margin: 0 20px 20px 20px;
+
+	padding: 5px;
+
+	border:2px dashed #999;
+	border-top-left-radius: 30px;
+	border-bottom-right-radius: 30px;
+}
+
+.blur {
+	-webkit-filter: blur(3px);
+}
+
+.grayscale {
+	-webkit-filter: grayscale(0.2);
+}
+
+.sepia {
+	-webkit-filter: sepia(0.5);
+}
+
+.saturate {
+	-webkit-filter: saturate(0.3);
+}
+
+.opacity {
+	-webkit-filter: opacity(0.2);
+}
+
+.hue-rotate {
+	-webkit-filter: hue-rotate(90deg);
+}
+
+.brightness {
+	-webkit-filter: brightness(.4);
+}
+
+.contrast {
+	-webkit-filter: contrast(.7);
+}
+
+.box-shadow {
+	/*-webkit-box-shadow: 3px, 3px, 6px, #000;
+	-moz-box-shadow: 3px 3px 5px 6px #ccc;
+	box-shadow: 3px 3px 5px 6px #000;*/
+	box-shadow: 3px 3px 10px #000;
+}

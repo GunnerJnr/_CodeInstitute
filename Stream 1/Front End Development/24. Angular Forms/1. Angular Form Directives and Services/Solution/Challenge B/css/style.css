@@ -1,0 +1,25 @@
+input.ng-valid {
+    border: 2px solid green;
+}
+
+input.ng-invalid {
+    border: 2px solid red;
+}
+
+input.ng-subinvalid {
+    border: 2px solid red;
+}
+
+label {
+    font-weight: normal;
+    padding-top: 10px
+}
+
+button:active {
+    outline: none
+}
+
+p.error {
+    padding-top: 8px;
+    margin: 0px
+}

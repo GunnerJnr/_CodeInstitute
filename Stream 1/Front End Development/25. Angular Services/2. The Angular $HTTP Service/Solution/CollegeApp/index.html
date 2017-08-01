@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!-- attach our main app -->
+<html ng-app="collegeApp" lang="en-gb">
+
+<head>
+    <meta charset="utf-8">
+    <title>Creating an Angular JS Application</title>
+    <!-- Include (Download) the angular js framework -->
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+</head>
+
+<body ng-app="myApp">
+    <!--pass in promiseController-->
+    <div ng-controller="PromiseController">
+        <p ng-hide="PromiseComplete"> Shows while Promise Executing</p>
+        <!--displays message after the interval-->
+        Well, {{ message }}
+    </div>
+
+    <!-- include our app.js file -->
+    <script src="javascript/app.js"></script>
+    <!-- include our controllers -->
+    <script src="javascript/controller.js"></script>
+    <!-- include our services -->
+    <script src="javascript/service.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+{
+  "name": "band-app",
+  "private": false,
+  "version": "1.0.0",
+  "description": "Stream 1 Final Project",
+  "repository": "https://github.com/GunnerJnr/full-stack-completed-challenges/tree/master/Stream%201/Final%20Project",
+  "license": "??",
+  "devDependencies": { 
+    "http-server": "^0.6.1",
+    "shelljs": "^0.2.6"
+  },
+  "scripts": {
+    "prestart": "npm install",
+    "start": "http-server -a localhost -p 8000 -c-1"
+  }
+}

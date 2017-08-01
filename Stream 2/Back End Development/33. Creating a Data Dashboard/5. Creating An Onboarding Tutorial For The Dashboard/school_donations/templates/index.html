@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+   <title>School Donations Dashboard</title>
+   
+   <link rel="stylesheet" href="{{ url_for ('static', filename='lib/css/bootstrap.min.css')}}">
+   <link rel="stylesheet" href="{{ url_for ('static', filename='lib/css/keen-dashboards.css')}}">
+   <link rel="stylesheet" href="{{ url_for ('static', filename='lib/css/dc.css')}}">
+   <link rel="stylesheet" href="{{ url_for ('static', filename='css/custom.css')}}">
+   <link rel="stylesheet" href="../static/lib/css/introJs.css">
+ </head>
+<body class="application">
+ 
+	<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+	   <div class="container-fluid">
+		   <div class="navbar-header">
+			   <a class="navbar-brand" href="./">School Donations Dashboard</a>
+		   </div>
+		   <button class="intro_button" type="button" autofocus onclick="javascript:introJs().start();">Start Tour!</button>
+	   </div>
+	</div>	 
+	 
+	<div  id="outer" class="container-fluid">	 
+	   <div class="row">	 
+		   <div class="col-sm-8">
+			   <div class="row">	 
+				   <!-- Time Chart -->
+				   <div class="col-sm-12">
+					   <div class="chart-wrapper">
+						   <div class="chart-title" data-step="1" data-intro="Below you can view and filter the number of donations given" style="font-weight: normal" data-position="right">
+							   Number of Donations
+						   </div>
+						   <div class="chart-stage">
+							   <div id="time-chart"></div>
+						   </div>
+					   </div>
+				   </div>
+				   <!-- Time Chart -->
+	 
+				   <!-- Resources -->
+				   <div class="col-sm-6">
+					   <div class="chart-wrapper">
+						   <div class="chart-title" data-step="2" data-intro="Below you can view and filter the resource type" style="font-weight: normal" data-position="right">
+							   Resources Type
+						   </div>
+						   <div class="chart-stage">
+							   <div id="resource-type-row-chart"></div>
+						   </div>
+					   </div>
+				   </div>
+				   <!-- Resources --> 
+	 
+				   <!-- funding Pie -->
+				   <div class="col-sm-6">
+					   <div class="chart-wrapper">
+						   <div class="chart-title" data-step="3" data-intro="Below you can view and filter the funding status" style="font-weight: normal" data-position="right">
+							   Funding Status
+						   </div>
+						   <div class="chart-stage">
+							   <div id="funding-chart"></div>
+						   </div>
+					   </div>
+				   </div>
+				   <!-- funding Pie -->	 
+			   </div>
+		   </div>
+	 
+		   <!-- Poverty -->
+		   <div class="col-sm-3">
+			   <div class="chart-wrapper">
+				   <div class="chart-title" data-step="4" data-intro="Below you can view and filter the poverty level" style="font-weight: normal" data-position="left">
+					   Poverty Level
+				   </div>
+				   <div class="chart-stage">
+					   <div id="poverty-level-row-chart"></div>
+				   </div>
+			   </div>
+		   </div>
+		   <!-- Poverty -->
+		   	 
+		   <!-- menu select -->
+		   <div class="col-sm-6">
+			   <div class="chart-wrapper">
+				   <div class="chart-title" data-step="5" data-intro="Below you can view and filter the donation state" style="font-weight: normal" data-position="right">
+					   Donation State
+				   </div>
+				   <div class="chart-stage">
+					   <div id="menu-select"></div>
+				   </div>
+			   </div>
+		   </div>
+		   <!-- menu select -->
+	 
+		   <!-- Metric 1 -->
+		   <div class="col-sm-2">
+			   <div class="chart-wrapper">
+				   <div class="chart-title" data-step="6" data-intro="Below you can view and filter the total number of donations given" style="font-weight: normal" data-position="right">
+					   Total Number of Donations
+				   </div>
+				   <div class="chart-stage" style=" background: #33CC99;
+					   position: relative;
+					   font-size: 29px;
+					   color: white;
+					   vertical-align: middle;
+					   text-align: center;
+					   padding-top: 12px;
+					   padding-bottom: 0px;">
+					   <div id="number-projects-nd"></div>
+				   </div>
+			   </div>
+		   </div>
+		   <!-- Metric 1 -->
+	 
+		   <!-- Metric 2 -->
+		   <div class="col-sm-2">
+			   <div class="chart-wrapper">
+				   <div class="chart-title" data-step="7" data-intro="Below you can view and filter the total number of donations given in USD" style="font-weight: normal" data-position="left">
+					   Total Donations in USD
+				   </div>
+				   <div class="chart-stage">
+					   <div id="total-donations-nd"></div>
+				   </div>
+			   </div>
+		   </div>
+		   <!-- Metric 2 -->
+	 
+	   </div>
+	</div>
+	 
+	<hr>
+	<p class="small text-muted"> Data viz &#9829; from Code Institute</a></p>
+	 
+	</div>
+	<script src="{{ url_for ('static', filename='lib/js/jquery.min.js')}}"></script>
+	<script src="{{ url_for ('static', filename='lib/js/bootstrap.min.js')}}"></script>
+	<script src="{{ url_for ('static', filename='lib/js/crossfilter.js')}}"></script>
+	<script src="{{ url_for ('static', filename='lib/js/d3.js')}}"></script>
+	<script src="{{ url_for ('static', filename='lib/js/dc.js')}}"></script>
+	<script src="{{ url_for ('static', filename='lib/js/queue.js')}}"></script>	 
+	<script src="{{ url_for ('static', filename='lib/js/keen.min.js')}}"></script>
+	
+	<script src="{{ url_for ('static', filename='js/graph.js')}}"></script>
+	<script src="../static/lib/js/intro.js" type="text/javascript"></script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+Same as previous as a continuation of the challenge. The previous would be slightly different in that it didn't use percentage to define the wdith for the sidebar and content panels, that would be the only difference.

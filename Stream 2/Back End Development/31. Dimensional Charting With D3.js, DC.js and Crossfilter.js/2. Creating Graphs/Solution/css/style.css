@@ -1,0 +1,11 @@
+body {}
+
+h2 {
+    font-family: monospace, serif, sans-serif;
+    text-align: left;
+    margin-left: 80px;
+}
+
+#chart-line-hitsperday {
+    background-color: #00ffdd;
+}

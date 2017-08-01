@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- page title -->
+    <title>Stream 2 Final Project</title>
+
+    <!-- Fav icon -->
+    <link rel="icon" href="{{ url_for ('static', filename='favicon/favicon.ico')}}" type="image/x-icon">
+
+    <!-- bootstrap stylesheet -->
+    <link rel="stylesheet" href="{{ url_for ('static', filename='lib/css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css">
+
+    <!-- link the css for the dashboard class (and in future other classes in different html files -->
+    {% block css_linking %}
+    {% endblock %}
+    <!-- CSS Linking end -->
+
+    <!-- custom stylesheet/override -->
+    <link rel="stylesheet" href="{{ url_for ('static', filename='css/style.css')}}">
+
+<!------------------------------- Compatibility linking ------------------------------------->
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link rel="stylesheet" href="{{ url_for ('static', filename='lib/css/ie10-viewport-bug-workaround.css')}}">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="{{ url_for ('static', filename='js/ie8-responsive-file-warning.js')}}"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body id="container" class="application">
+    <!-- navigation begin -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <!-- Navbar Header/Brand -->
+            <div class="navbar-header">
+                <a class="navbar-brand" href="./">
+                    <img alt="Graph" src="{{ url_for ('static', filename='favicon/favicon.ico')}}"> Stream 2 Final Project
+                </a>
+            </div>
+            <!-- Navbar Header/Brand End -->
+
+            <!-- Navbar Links -->
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="./"><span class="glyphicon glyphicon-dashboard"></span> Dashboard</a></li>
+                </ul>
+            </div>
+            <!-- Navbar Links End -->
+        </div>
+    </nav>
+    <!-- navigation end -->
+
+    <!-- content begin -->
+    <div id="outer" class="container-fluid">
+        <div class="row">
+            <! -- Inject Content -->
+            {% block content %}
+            {% endblock %}
+            <!-- Inject Content End -->
+        </div>
+    </div>
+    <!-- content end -->
+
+    <hr>
+
+    <!-- footer begin -->
+    <footer class="navbar-inverse navbar-fixed-bottom">
+        <div class="container">
+            <p class="small text-muted">&copy; 2017 - David Gunner Jnr</p>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+    <script src="{{ url_for ('static', filename='lib/js/jquery.min.js')}}"></script>
+    <script src="{{ url_for ('static', filename='lib/js/bootstrap.min.js')}}"></script>
+
+    <!-- inject JS files -->
+    {% block js_linking %}
+    {% endblock %}
+    <!-- inject JS files end -->
+
+</body>
+</html>

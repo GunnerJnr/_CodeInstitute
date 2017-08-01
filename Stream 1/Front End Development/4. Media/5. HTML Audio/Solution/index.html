@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>HTML5 Audeo Challenge</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="html5-vid">
+            <video controls="controls" auto="false" preload="auto" poster="img/bunny.png">
+                <source src="video/MP4_Bunny.mp4#t=10,25" type="video/mp4" />
+                <source src="video/OGV_Bunny.ogv#t=10,25" type="video/ogg" />
+                <source src="video/WEBM_Bunny.webm#t=10,25" type="video/webm" />
+            </video>
+        </div>
+        <div id="html5-audio">
+            <audio controls="controls" preload="auto">
+                <source src="audio/tail.mp3" type="audio/mpeg; codecs=mp3" />
+                <source src="audio/beats.oga" type="audio/ogg; codecs=vorbis" />
+                <!-- Error Message -->
+                <p>Your browser does not support the <code>audio</code> element.</p>
+            </audio>
+        </div>
+    </div>
+</body>
+
+</html>

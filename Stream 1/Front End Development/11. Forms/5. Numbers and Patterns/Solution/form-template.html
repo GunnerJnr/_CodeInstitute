@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+
+    <!--
+         Form with HTML5 tags and basic CSS
+      -->
+    <style type="text/css">
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        #container {
+            width: 550px;
+            margin: auto;
+        }
+        
+        legend {
+            font-size: 30px;
+            background-color: #fff;
+            border-radius: 5px;
+            border: 1px solid #999;
+            padding: 4px 15px;
+        }
+        
+        label.field {
+            display: block;
+            text-align: right;
+            width: 100px;
+            float: left;
+        }
+        
+        input {
+            width: 200px;
+            border-radius: 5px;
+            padding: 6px 8px;
+            margin: 10px;
+        }
+        
+        .field {
+            padding: 6px 8px;
+        }
+        
+        #currency {
+            width: 220px;
+            border-radius: 5px;
+            padding: 6px 8px;
+        }
+        
+        fieldset {
+            width: 450px;
+            border: 1px solid #999;
+            border-radius: 20px;
+            clear: both;
+            padding: 20px;
+            margin-bottom: 100px;
+            background-color: rgba(129, 187, 201, .2);
+        }
+        
+        :focus {
+            background-color: #FFECE9;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="input_types">
+            <fieldset>
+                <legend> Personal Details </legend>
+                <form>
+                    <label for="firstName" class="field">First Name*:</label>
+                    <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" autocomplete="on" required="" autofocus />
+                    <br />
+                    <label for="lastName" class="field">Last Name*:</label>
+                    <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" autocomplete="on" required="" />
+                    <br />
+                    <label for="e-mail" class="field">E-Mail*:</label>
+                    <input type="email" id="e-mail" name="e-mail" placeholder="you@awesome.com" autocomplete="on" required="" />
+                    <br />
+                    <label for="website" class="field">Website:</label>
+                    <input type="url" id="website" name="website" placeholder="Enter your website url" autocomplete="on" />
+                    <br />
+                    <label for="username" class="field"> Username:*</label>
+                    <input type="text" id="username" placeholder="username" name="username" />
+                    <br />
+                    <label for="password" class="field">Password:*</label>
+                    <input id="password" name="password" placeholder="password" type="password" required="" />
+                    <br />
+                    <label for="age" class="field">Age:</label>
+                    <input id="age" name="age" placeholder="enter your age" type="number" min="0" max="100" />
+                    <br />
+                    <label for="telephone" class="field">Telephone:</label>
+                    <input id="telephone" name="telephone" placeholder="mobile number" pattern="[0-9]{10}" title="Mobile phone number expected beginning 08********" type="tel" />
+                    <br />
+                    <label for="eircode" class="field"> Eircode:</label>
+                    <input id="eircode" name="eircode" type="text" placeholder="eircode " pattern="[0-9A-Za-z]{7}" title="Seven character alpha-numeric code." />
+                    <br />
+                    <label for="passport" class="field"> Passport:</label>
+                    <input id="passport" name="passport" type="text" placeholder="passport number" pattern="[0-9]{7}[A-Za-z]{1}" title="Seven numbers followed by a single upper or lower case letter." />
+                    <br />
+                    <label for="credit_card" class="field">Credit Card:</label>
+                    <input id="credit_card" name="credit_card" placeholder="Credit Card  number" pattern="[0-9]{16}" title="Credit car number 16 numbers long" type="text" />
+                    <br />
+                    <label for="submit" class="field">Submit</label>
+                    <input type="submit" class="submit" value="submit" />
+                </form>
+            </fieldset>
+        </div>
+    </div>
+</body>
+
+</html>

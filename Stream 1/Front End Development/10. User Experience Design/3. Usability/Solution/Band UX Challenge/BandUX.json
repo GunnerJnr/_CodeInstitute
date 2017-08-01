@@ -1,0 +1,260 @@
+{
+    "mockup": {
+        "controls": {
+            "control": [{
+                "ID": "0",
+                "h": "1234",
+                "measuredH": "400",
+                "measuredW": "450",
+                "properties": {
+                    "borderStyle": "square",
+                    "color": "10066329",
+                    "text": "Swing & Jive Hive\nhttp://swingjivehive.com",
+                    "verticalScrollbar": "true"
+                },
+                "typeID": "BrowserWindow",
+                "w": "1453",
+                "x": "7",
+                "y": "7",
+                "zOrder": "0"
+            }, {
+                "ID": "1",
+                "measuredH": "32",
+                "measuredW": "790",
+                "properties": {
+                    "bold": "true",
+                    "hrefs": {
+                        "href": [{
+                            "ID": "0BF19EFC-004D-B54E-837F-3084B96F7E05"
+                        }, {
+                            "ID": "A89DC068-88C3-DB6E-09D3-309B962FC079"
+                        }, {
+                            "ID": "721EAC9A-BB1B-5090-91C4-309BB58FBB94"
+                        }, {
+                            "ID": "20CC77EB-081F-DF8D-EB76-309BBF40FFD7"
+                        }, {
+                            "ID": "1A583131-80AB-4BB0-C0F6-309BC928B56D"
+                        }, {
+                            "ID": "E70B8028-83EB-0E82-AE7F-309BD5B936C7"
+                        }]
+                    },
+                    "selectedIndex": "0",
+                    "size": "24",
+                    "text": "Home, About The Band, Our Music, Blog, Our Services, Contact Us"
+                },
+                "typeID": "LinkBar",
+                "x": "333",
+                "y": "94",
+                "zOrder": "1"
+            }, {
+                "ID": "2",
+                "measuredH": "30",
+                "measuredW": "120",
+                "properties": {
+                    "size": "18",
+                    "state": "up",
+                    "text": "search"
+                },
+                "typeID": "SearchBox",
+                "w": "288",
+                "x": "1139",
+                "y": "94",
+                "zOrder": "2"
+            }, {
+                "ID": "3",
+                "h": "56",
+                "measuredH": "79",
+                "measuredW": "77",
+                "properties": {
+                    "text": "LOGO"
+                },
+                "typeID": "Image",
+                "w": "294",
+                "x": "23",
+                "y": "82",
+                "zOrder": "3"
+            }, {
+                "ID": "4",
+                "measuredH": "10",
+                "measuredW": "100",
+                "properties": {
+                    "backgroundAlpha": "0.5",
+                    "color": "3355443",
+                    "stroke": "solid"
+                },
+                "typeID": "HRule",
+                "w": "1404",
+                "x": "23",
+                "y": "154",
+                "zOrder": "4"
+            }, {
+                "ID": "5",
+                "measuredH": "10",
+                "measuredW": "100",
+                "properties": {
+                    "backgroundAlpha": "0.5",
+                    "color": "3355443",
+                    "stroke": "solid"
+                },
+                "typeID": "HRule",
+                "w": "1436",
+                "x": "7",
+                "y": "1119",
+                "zOrder": "5"
+            }, {
+                "ID": "6",
+                "h": "350",
+                "measuredH": "198",
+                "measuredW": "493",
+                "properties": {
+                    "filter": "true",
+                    "src": {
+                        "Anchor": -1,
+                        "ID": "B069AB79-7EB9-8B3B-F330-3090954AC1A0"
+                    }
+                },
+                "typeID": "CoverFlow",
+                "w": "1400",
+                "x": "23",
+                "y": "164",
+                "zOrder": "6"
+            }, {
+                "ID": "7",
+                "h": "512",
+                "measuredH": "80",
+                "measuredW": "275",
+                "typeID": "BlockOfText",
+                "w": "1404",
+                "x": "23",
+                "y": "563",
+                "zOrder": "7"
+            }, {
+                "ID": "8",
+                "measuredH": "10",
+                "measuredW": "100",
+                "properties": {
+                    "backgroundAlpha": "0.5",
+                    "color": "3355443",
+                    "stroke": "solid"
+                },
+                "typeID": "HRule",
+                "w": "1404",
+                "x": "23",
+                "y": "514",
+                "zOrder": "8"
+            }, {
+                "ID": "9",
+                "measuredH": "64",
+                "measuredW": "64",
+                "properties": {
+                    "icon": {
+                        "ID": "facebook-square",
+                        "size": "xlarge"
+                    }
+                },
+                "typeID": "Icon",
+                "x": "23",
+                "y": "1129",
+                "zOrder": "9"
+            }, {
+                "ID": "10",
+                "measuredH": "64",
+                "measuredW": "64",
+                "properties": {
+                    "icon": {
+                        "ID": "twitter-square",
+                        "size": "xlarge"
+                    }
+                },
+                "typeID": "Icon",
+                "x": "103",
+                "y": "1129",
+                "zOrder": "10"
+            }, {
+                "ID": "11",
+                "measuredH": "64",
+                "measuredW": "64",
+                "properties": {
+                    "icon": {
+                        "ID": "instagram",
+                        "size": "xlarge"
+                    }
+                },
+                "typeID": "Icon",
+                "x": "183",
+                "y": "1129",
+                "zOrder": "11"
+            }, {
+                "ID": "12",
+                "measuredH": "64",
+                "measuredW": "64",
+                "properties": {
+                    "icon": {
+                        "ID": "youtube-square",
+                        "size": "xlarge"
+                    }
+                },
+                "typeID": "Icon",
+                "x": "263",
+                "y": "1129",
+                "zOrder": "12"
+            }, {
+                "ID": "13",
+                "measuredH": "64",
+                "measuredW": "64",
+                "properties": {
+                    "icon": {
+                        "ID": "spotify",
+                        "size": "xlarge"
+                    }
+                },
+                "typeID": "Icon",
+                "x": "343",
+                "y": "1129",
+                "zOrder": "13"
+            }, {
+                "ID": "14",
+                "measuredH": "32",
+                "measuredW": "286",
+                "properties": {
+                    "size": "24",
+                    "text": "© 2016 Jive & Swing Hive"
+                },
+                "typeID": "Link",
+                "x": "582",
+                "y": "1145",
+                "zOrder": "14"
+            }, {
+                "ID": "15",
+                "measuredH": "64",
+                "measuredW": "64",
+                "properties": {
+                    "icon": {
+                        "ID": "arrow-circle-o-up",
+                        "size": "xlarge"
+                    }
+                },
+                "typeID": "Icon",
+                "x": "1363",
+                "y": "1129",
+                "zOrder": "15"
+            }, {
+                "ID": "16",
+                "measuredH": "21",
+                "measuredW": "67",
+                "properties": {
+                    "text": "back to top"
+                },
+                "typeID": "Link",
+                "x": "1363",
+                "y": "1193",
+                "zOrder": "16"
+            }]
+        },
+        "measuredH": "1241",
+        "measuredW": "1460",
+        "mockupH": "1234",
+        "mockupW": "1453",
+        "version": "1.0"
+    }
+}

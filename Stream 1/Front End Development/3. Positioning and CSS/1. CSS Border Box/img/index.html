@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Revisiting Box Model Exercise 1</title>
+	<style type="text/css">
+		#container {
+			margin-right: auto; /*Auto margins used for centering elements*/
+			margin-left: auto; /*See previous comment*/
+			width: 960px; /*to center an element it must have a width*/
+			padding: 10px;
+			border-radius: 10px;
+			font-size: 0; /* remove spacing for the inline-block*/
+		}
+
+		.box {
+			background-color: #81BBC9;
+			width: 100%;
+			padding: 20px 20px;			
+			/*margin:10px;*/ /*remove margin*/
+			margin: 0 0 15px 0;		
+			display: block;
+			font-size: 16px; /* important to declare font-size here, otherwise will be 0*/
+			text-align: center;
+			border-radius: 10px;
+			padding: 20px 0;
+			border: dashed 1px #000;
+		}
+
+		#sidebar{
+			/* make sure works on all browsers*/
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+			display: inline-block;
+			width: 470px; /* 350.0 / 960.0 */
+			margin-right: 5px;
+			padding: 40px 0;
+		}
+
+		#content{
+			/* make sure works on all browsers*/
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+			display: inline-block;
+			width:  470px; /* 600.0 / 960.0 */
+			margin-left: 5px;
+			padding: 40px 0;
+		}
+
+		p {
+			padding: 10px;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div class="box"><h1>Header</h1></div>
+
+		<div class="box" id="sidebar">
+			<h1>Sidebar</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+
+		<div class="box" id="content">
+			<h1>Content</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+
+		<div class="box"><h1>Footer</h1></div>
+	</div>
+</body>
+</html>
