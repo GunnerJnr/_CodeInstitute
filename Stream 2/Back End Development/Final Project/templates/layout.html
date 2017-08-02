@@ -14,6 +14,8 @@
     <!-- Fav icon -->
     <link rel="icon" href="{{ url_for ('static', filename='favicon/favicon.ico')}}" type="image/x-icon">
 
+    <link rel="stylesheet" href="{{ url_for ('static', filename='css/reset.css')}}">
+
     <!-- bootstrap stylesheet -->
     <link rel="stylesheet" href="{{ url_for ('static', filename='lib/css/bootstrap.min.css')}}">
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css">
@@ -67,6 +69,12 @@
     <!-- content begin -->
     <div id="outer" class="container-fluid">
         <div class="row">
+
+            <div id="loading-screen">
+                <h1>Loading...</h1>
+                <div id="loading"></div>
+            </div>
+
             <! -- Inject Content -->
             {% block content %}
             {% endblock %}

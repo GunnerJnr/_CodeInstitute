@@ -1,18 +1,80 @@
 .body {
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-repeat: no-repeat;
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
 }
 
 .html {
     height: 100%
 }
 
+#container {
+    /* Set a specified height, or the minimum height for the background image */
+    min-height: 100%;
+    /* Set background image to fixed (don't scroll along with the page) */
+    /* Center the background image */
+    /* Set the background image to no repeat */
+    background: no-repeat fixed center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#loading-screen {
+    z-index: 1000;
+    background-color: #f2f2f2;
+    color: #3d4a57;
+    position: fixed;
+    width: 100%;
+    min-height: 100%;
+    left: 0;
+    text-align: center;
+    padding-top: 15%;
+}
+
+#loading {
+    z-index: 1500;
+    border: 20px solid #f3f3f3;
+    border-radius: 70%;
+    border-top: 20px solid #3498db;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    height: 150px;
+    -webkit-animation: spin 4s linear infinite;
+    animation: spin 4s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
 .page-header {
     color: #ffa500;
+    font-size: 24px;
 }
+
+#current-bar-chart,
+#gender-chart,
+#year-chart,
+#years-nd,
+#honorary-chart,
+#appearances-nd,
+#year-menu-select,
+#name-menu-select,
+#url-menu-select {
+    width: 100%;
+    min-height: 100%;
+    margin: 0 auto;
+}
+
 
 #appearances-nd {
    font-size: 60px;
@@ -27,32 +89,6 @@
    font-size: 12px;
 }
 
-#total-projects {
-   background: #33CC99;
-   width: 200px;
-   position: relative;
-   height: 60px;
-   font-size: 29px;
-   color: white;
-   vertical-align: middle;
-   text-align: center;
-   padding-top: 12px;
-   padding-bottom: 0;
-}
-
-#net-donations {
-   background: #33CC99;
-   width: 200px;
-   position: relative;
-   height: 60px;
-   font-size: 29px;
-   color: white;
-   vertical-align: middle;
-   text-align: center;
-   padding-top: 12px;
-   padding-bottom: 0;
-}
-
 .dc-select-menu {
    background: #33CC99;
    width: 100%;
@@ -65,4 +101,26 @@
    text-align: center;
    padding-top: 4px;
    padding-bottom: 0;
+}
+
+/* Extra small devices (phones, etc. less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+@media screen and (min-width: 400px ) {
+
+}
+
+/* Small devices (tablets, etc.) */
+@media screen and (min-width: 768px) {
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+
 }

@@ -1,5 +1,18 @@
-$(document).ready(function(){
-    // declare out array of images
+// Author: David Gunner (Jnr)
+// Created: 01/08/2017
+// Purpose: To load a random background image each time the page is loaded or refreshed.
+/**
+ * Created by David Gunner (Jnr) on 01/08/2017.
+ * Purpose: To load a random background image each time the page is loaded or refreshed.
+ **/
+
+// when the doc is ready we want to call our function
+$(document).ready(function()
+{
+    // point to the image directory
+    var imgPath = 'static/img/';
+
+    // declare our array of images
     var imgArray = [
         'avengers_0.jpg',
         'avengers_1.jpg',
@@ -12,12 +25,9 @@ $(document).ready(function(){
         'avengers_8.jpg'
     ];
 
-    // calculate a random image from our array
+    // here we calculate a random image from our array to display each time the page is loaded/refreshed
     var randomBackgroundImg = imgArray[Math.floor(Math.random() * imgArray.length)];
 
-    // point to the image directory
-    var imgPath = 'static/img/';
-
-    // call on the dom to change the background element using the array
+    // call on the dom to change the background element randomly using the array we created
     document.body.style.backgroundImage = "url('"+imgPath+randomBackgroundImg+"')";
 }); 
