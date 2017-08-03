@@ -54,12 +54,10 @@ function makeGraphs(error, avengersJson) {
     });
 
     // Calculate metrics
-    var nameOfCharacter = nameDim.group();
     var current = currentDim.group();
     var gender = genderDim.group();
     var year = yearDim.group();
     var honorary = honoraryDim.group();
-    var webLinks = webLinkDim.group();
 
     // Here we group all the relevant data together then reduce the data to return the appearance data we want
     var yearGroup = yearDim.group();
