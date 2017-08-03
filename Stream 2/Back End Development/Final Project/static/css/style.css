@@ -1,7 +1,26 @@
-body {
-    padding-top: 50px;
-    /* Margin bottom by footer height */
-    margin-bottom: 60px;
+.body {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.html {
+    height: 100%
+}
+
+#container {
+    /* Set a specified height, or the minimum height for the background image */
+    min-height: 100%;
+    /* Set background image to fixed (don't scroll along with the page) */
+    /* Center the background image */
+    /* Set the background image to no repeat */
+    background: no-repeat fixed center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-top: 60px;
+    padding-bottom: 35px;
 }
 
 /* content heading */

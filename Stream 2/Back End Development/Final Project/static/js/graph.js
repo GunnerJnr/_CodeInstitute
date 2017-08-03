@@ -85,17 +85,16 @@ function makeGraphs(error, avengersJson) {
         .height(300)
         .dimension(yearDim)
         .group(yearGroup);
-
     selectField = dc.selectMenu('#name-menu-select')
         .height(300)
         .dimension(nameDim)
         .group(nameGroup);
-
     selectField = dc.selectMenu('#url-menu-select')
         .height(300)
         .dimension(webLinkDim)
         .group(webLinkGroup);
 
+    // Row Chart Gender
     genderChart
         .width(600)
         .height(300)
@@ -117,6 +116,7 @@ function makeGraphs(error, avengersJson) {
         .renderLabel(true)
         .transitionDuration(500);
 
+    // Total Num of Years displayed
     yearND
         .height(300)
         .formatNumber(d3.format("d"))
@@ -125,6 +125,7 @@ function makeGraphs(error, avengersJson) {
         })
         .group(all);
 
+    // Total num of Appearances displayed
     appearancesND
         .height(300)
         .formatNumber(d3.format("d"))
@@ -133,6 +134,7 @@ function makeGraphs(error, avengersJson) {
         })
         .group(all);
 
+    // Year bar chart
     yearChart
         .width(800)
         .height(200)
@@ -145,6 +147,7 @@ function makeGraphs(error, avengersJson) {
         .xAxisLabel("Years")
         .yAxis().ticks(8);
 
+    // Is the avenger still current - bar chart
     currentChart
         .width(800)
         .height(200)
@@ -158,9 +161,10 @@ function makeGraphs(error, avengersJson) {
         .xAxisLabel("Current")
         .yAxis().ticks(8);
 
+    // Finally we want to render all the charts and date to the dashboard
     dc.renderAll();
 
-    // hide the loading screen and display the data dashboard
+    // Hide the loading screen and display the data dashboard
     $('#loading').hide();
     $('#loading-screen').hide();
 }

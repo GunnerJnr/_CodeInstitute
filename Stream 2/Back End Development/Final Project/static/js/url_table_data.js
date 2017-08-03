@@ -4,7 +4,7 @@
 
 var createTableData = function (data, columns) {
 
-    var table = d3.selectAll('#url-table-data')
+    var table = d3.selectAll('#table-data')
         .append('table')
         .classed('table','table table-responsive');
     var thead = table.append('thead');

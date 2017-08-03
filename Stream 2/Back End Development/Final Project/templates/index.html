@@ -1,15 +1,16 @@
 {% extends "layout.html" %}
 
-<!-- CSS linking begin -->
+<!-- CSS Linking Begin -->
 {% block css_linking %}
     <link rel="stylesheet" href="{{ url_for ('static', filename='lib/css/keen-dashboards.css') }}">
     <link rel="stylesheet" href="{{ url_for ('static', filename='lib/css/dc.css') }}">
     <link rel="stylesheet" href="{{ url_for ('static', filename='lib/css/introjs.css') }}">
+    <link rel="stylesheet" href="{{ url_for ('static', filename='css/tour-button.css') }}">
     <link rel="stylesheet" href="{{ url_for ('static', filename='css/custom.css') }}">
 {% endblock %}
-<!-- CSS linking end -->
+<!-- CSS Linking End -->
 
-<!-- content begin -->
+<!-- Content Begin -->
 {% block content %}
     <div class="col-sm-12">
         <div class="row">
@@ -52,6 +53,7 @@
             </div>
             <!-- URL Menu Select End -->
         </div>
+
         <div class="row">
             <!-- Gender Chart Begin -->
             <div class="col-sm-4">
@@ -79,7 +81,7 @@
             </div>
             <!-- Honorary Chart End -->
 
-            <!-- Metric 1 -->
+            <!-- Years Number Display Begin -->
             <div class="col-sm-4">
                 <div class="chart-wrapper text-center">
                     <div class="chart-title">
@@ -98,9 +100,9 @@
                     </div>
                 </div>
             </div>
-            <!-- Metric 1 -->
+            <!-- Years Number Display End -->
 
-            <!-- Metric 2 -->
+            <!-- Appearances Number Display Begin -->
             <div class="col-sm-4">
                 <div class="chart-wrapper text-center">
                     <div class="chart-title">
@@ -111,8 +113,9 @@
                     </div>
                 </div>
             </div>
-            <!-- Metric 2 -->
+            <!-- Appearances Number Display End -->
         </div>
+
         <div class="row">
             <!-- Year Chart Begin -->
             <div class="col-sm-6">
@@ -141,7 +144,7 @@
             <!-- Current Bar Chart End -->
         </div>
         <div class="row">
-            <!-- menu select -->
+            <!-- Table Data Begin -->
             <div class="col-sm-12">
                 <div class="chart-wrapper text-center">
                     <div class="chart-title">
@@ -149,13 +152,13 @@
                     </div>
                     <div class="chart-stage">
                         <div class="table-wrapper">
-                            <div id="url-table-data"></div>
+                            <div id="table-data"></div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- menu select -->
+        <!-- Table Data End -->
     </div>
 {% endblock %}
 <!-- content end -->
@@ -171,5 +174,6 @@
     <script src="{{ url_for ('static', filename='js/graph.js') }}"></script>
     <script src="{{ url_for ('static', filename='js/url_table_data.js') }}"></script>
     <script src="{{ url_for ('static', filename='js/random_image_loader.js') }}"></script>
+    <script src="{{ url_for ('static', filename='js/site_introduction.js') }}"></script>
 {% endblock %}
 <!-- JS linking end -->
