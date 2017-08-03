@@ -6,8 +6,10 @@ Data Dashboard
 
  
 
-Live version available for viewing at Heroku: [Stream 2 Final
-Project](tps://boiling-everglades-31193.herokuapp.com/)
+Live version available for viewing at Heroku:
+[tps://boiling-everglades-31193.herokuapp.com/](tps://boiling-everglades-31193.herokuapp.com/)
+
+ 
 
 CSV Data from: https://github.com/fivethirtyeight/data/tree/master/avengers
 
