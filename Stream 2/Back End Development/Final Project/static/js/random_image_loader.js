@@ -7,8 +7,7 @@
  **/
 
 // when the doc is ready we want to call our function
-$(document).ready(function()
-{
+$(document).ready(function () {
     // point to the image directory
     var imgPath = 'static/img/';
 
@@ -29,5 +28,5 @@ $(document).ready(function()
     var randomBackgroundImg = imgArray[Math.floor(Math.random() * imgArray.length)];
 
     // call on the dom to change the background element randomly using the array we created
-    document.body.style.backgroundImage = "url('"+imgPath+randomBackgroundImg+"')";
+    document.body.style.backgroundImage = "url('" + imgPath + randomBackgroundImg + "')";
 }); 

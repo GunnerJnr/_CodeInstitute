@@ -1,6 +1,5 @@
 .body {
-    width: 90%;
-    height: 100%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -33,13 +32,12 @@
     padding-top: 15%;
 }
 
-#loading {
+#loading-circle {
     z-index: 1500;
     border: 20px solid #f3f3f3;
     border-radius: 70%;
     border-top: 20px solid #3498db;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     width: 150px;
     height: 150px;
     -webkit-animation: spin 4s linear infinite;
@@ -47,25 +45,28 @@
 }
 
 @-webkit-keyframes spin {
-    0% { -webkit-transform: rotate(0deg); }
-    100% { -webkit-transform: rotate(360deg); }
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
 }
 
 @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}
-
-.page-header {
-    color: #ffa500;
-    font-size: 24px;
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 #current-bar-chart,
-#gender-chart,
-#year-chart,
+#gender-row-chart,
+#year-bar-chart,
 #years-nd,
-#honorary-chart,
+#honorary-pie-chart,
 #appearances-nd,
 #year-menu-select,
 #name-menu-select,
@@ -75,52 +76,168 @@
     margin: 0 auto;
 }
 
-
-#appearances-nd {
-   font-size: 60px;
+.chart-stage {
+    background: #f3f3f3;
 }
 
-#years-nd {
-   font-size: 60px;
+.table-wrapper,
+.table wrapper > th {
+    width: 100%;
+    max-height: 300px;
+    overflow: auto;
+    border: 1px solid #000;
 }
 
-.dc-chart g.row text {
-   fill: black;
-   font-size: 12px;
+table {
+    width: 100%;
+    background: #f3f3f3;
+    color: #7a7a7a;
 }
 
-.dc-select-menu {
-   background: #33CC99;
-   width: 100%;
-   border: none;
-   position: relative;
-   height: 31px;
-   font-size: 15px;
-   color: white;
-   vertical-align: middle;
-   text-align: center;
-   padding-top: 4px;
-   padding-bottom: 0;
-}
+/* Responsive Breakpoint Design Elements */
 
 /* Extra small devices (phones, etc. less than 768px) */
 /* No media query since this is the default in Bootstrap */
+/* So we will make our own custom to handle these devices */
+@media screen and (min-width: 400px) and (max-width: 768px) {
+    #container {
+        max-width: 100%;
+        margin: 0 auto;
+    }
 
-@media screen and (min-width: 400px ) {
+    #years-nd,
+    #appearances-nd {
+        font-size: 30px;
+        color: #7a7a7a;
+    }
 
+    .dc-chart g.row text {
+        color: #7a7a7a;
+        font-size: 10px;
+    }
+
+    .dc-select-menu {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        vertical-align: middle;
+        padding: 1px 0;
+        background: #33CC99;
+        border-radius: 3px;
+        font-size: 12px;
+        color: #7a7a7a;
+    }
+
+    td, th {
+        border: 1px solid #000;
+        font-size: 12px;
+    }
 }
 
 /* Small devices (tablets, etc.) */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    #container {
+        max-width: 100%;
+        margin: 0 auto;
+    }
 
+    #years-nd,
+    #appearances-nd {
+        font-size: 40px;
+        color: #7a7a7a;
+    }
+
+    .dc-chart g.row text {
+        color: #7a7a7a;
+        font-size: 12px;
+    }
+
+    .dc-select-menu {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        vertical-align: middle;
+        padding: 2px 0;
+        background: #33CC99;
+        border-radius: 3px;
+        font-size: 14px;
+        color: #7a7a7a;
+    }
+
+    td, th {
+        border: 1px solid #000;
+        font-size: 14px;
+    }
 }
 
 /* Medium devices (desktops, 992px and up) */
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    #container {
+        max-width: 100%;
+        margin: 0 auto;
+    }
 
+    #years-nd,
+    #appearances-nd {
+        font-size: 50px;
+        color: #7a7a7a;
+    }
+
+    .dc-chart g.row text {
+        color: #7a7a7a;
+        font-size: 14px;
+    }
+
+    .dc-select-menu {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        vertical-align: middle;
+        padding: 4px 0;
+        background: #33CC99;
+        border-radius: 3px;
+        font-size: 16px;
+        color: #7a7a7a;
+    }
+
+    td, th {
+        border: 1px solid #000;
+        font-size: 16px;
+    }
 }
 
 /* Large devices (large desktops, 1200px and up) */
 @media screen and (min-width: 1200px) {
+    #container {
+        max-width: 100%;
+        margin: 0 auto;
+    }
 
+    #years-nd,
+    #appearances-nd {
+        font-size: 60px;
+        color: #7a7a7a;
+    }
+
+    .dc-chart g.row text {
+        color: #7a7a7a;
+        font-size: 16px;
+    }
+
+    .dc-select-menu {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        vertical-align: middle;
+        padding: 6px 0;
+        background: #33CC99;
+        border-radius: 3px;
+        font-size: 18px;
+        color: #7a7a7a;
+    }
+
+    td, th {
+        border: 1px solid #000;
+        font-size: 18px;
+    }
 }

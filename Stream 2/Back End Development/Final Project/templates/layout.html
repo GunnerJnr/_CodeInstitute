@@ -1,23 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-gb">
 <head>
+    <!-- Meta Tags Begin -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="A dashboard showing Avenger characters statis in the form of charts and tables">
+    <meta name="author" content="David Gunner (Jnr)">
+    <!-- Meta Tags End -->
 
     <!-- page title -->
-    <title>Stream 2 Final Project</title>
+    <title>Stream 2 Final Project - Avengers</title>
 
-    <!-- Fav icon -->
-    <link rel="icon" href="{{ url_for ('static', filename='favicon/favicon.ico')}}" type="image/x-icon">
+    <!-- Custom Fav icon -->
+    <link rel="icon" href="{{ url_for ('static', filename='favicon/favicon.ico') }}" type="image/x-icon">
 
-    <link rel="stylesheet" href="{{ url_for ('static', filename='css/reset.css')}}">
+    <!-- Reset.css -->
+    <link rel="stylesheet" href="{{ url_for ('static', filename='css/reset.css') }}">
 
     <!-- bootstrap stylesheet -->
-    <link rel="stylesheet" href="{{ url_for ('static', filename='lib/css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{ url_for ('static', filename='lib/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css">
 
     <!-- link the css for the dashboard class (and in future other classes in different html files -->
@@ -26,15 +28,16 @@
     <!-- CSS Linking end -->
 
     <!-- custom stylesheet/override -->
-    <link rel="stylesheet" href="{{ url_for ('static', filename='css/style.css')}}">
+    <link rel="stylesheet" href="{{ url_for ('static', filename='css/style.css') }}">
 
-<!------------------------------- Compatibility linking ------------------------------------->
+    <!------------------------------- Compatibility linking ------------------------------------->
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link rel="stylesheet" href="{{ url_for ('static', filename='lib/css/ie10-viewport-bug-workaround.css')}}">
+    <link rel="stylesheet" href="{{ url_for ('static', filename='lib/css/ie10-viewport-bug-workaround.css') }}">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="{{ url_for ('static', filename='js/ie8-responsive-file-warning.js')}}"></script><![endif]-->
+    <!--[if lt IE 9]><script src="{{ url_for ('static', filename='js/ie8-responsive-file-warning.js')}}"></script>
+    <![endif]-->
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -44,62 +47,62 @@
 </head>
 
 <body id="container" class="application">
-    <!-- navigation begin -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container-fluid">
-            <!-- Navbar Header/Brand -->
-            <div class="navbar-header">
-                <a class="navbar-brand" href="./">
-                    <img alt="Graph" src="{{ url_for ('static', filename='favicon/favicon.ico')}}"> Stream 2 Final Project
-                </a>
-            </div>
-            <!-- Navbar Header/Brand End -->
-
-            <!-- Navbar Links -->
-            <div id="navbar" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li><a href="./"><span class="glyphicon glyphicon-dashboard"></span> Dashboard</a></li>
-                </ul>
-            </div>
-            <!-- Navbar Links End -->
+<!-- navigation begin -->
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+        <!-- Navbar Header/Brand -->
+        <div class="navbar-header">
+            <a class="navbar-brand" href="./">
+                <img alt="Graph" src="{{ url_for ('static', filename='favicon/favicon.ico') }}"> Avengers Data Dashboard
+            </a>
         </div>
-    </nav>
-    <!-- navigation end -->
+        <!-- Navbar Header/Brand End -->
 
-    <!-- content begin -->
-    <div id="outer" class="container-fluid">
-        <div class="row">
-
-            <div id="loading-screen">
-                <h1>Loading...</h1>
-                <div id="loading"></div>
-            </div>
-
-            <! -- Inject Content -->
-            {% block content %}
-            {% endblock %}
-            <!-- Inject Content End -->
+        <!-- Navbar Links -->
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="./"><span class="glyphicon glyphicon-dashboard"></span> Dashboard</a></li>
+            </ul>
         </div>
+        <!-- Navbar Links End -->
     </div>
-    <!-- content end -->
+</nav>
+<!-- navigation end -->
 
-    <hr>
+<!-- content begin -->
+<div id="outer" class="container-fluid">
+    <div class="row">
 
-    <!-- footer begin -->
-    <footer class="navbar-inverse navbar-fixed-bottom">
-        <div class="container">
-            <p class="small text-muted">&copy; 2017 - David Gunner Jnr</p>
+        <div id="loading-screen">
+            <h1>Loading...</h1>
+            <div id="loading-circle"></div>
         </div>
-    </footer>
-    <!-- footer end -->
 
-    <script src="{{ url_for ('static', filename='lib/js/jquery.min.js')}}"></script>
-    <script src="{{ url_for ('static', filename='lib/js/bootstrap.min.js')}}"></script>
+        <! -- Inject Content -->
+        {% block content %}
+        {% endblock %}
+        <!-- Inject Content End -->
+    </div>
+</div>
+<!-- content end -->
 
-    <!-- inject JS files -->
-    {% block js_linking %}
-    {% endblock %}
-    <!-- inject JS files end -->
+<hr>
+
+<!-- footer begin -->
+<footer class="navbar-inverse navbar-fixed-bottom">
+    <div class="container">
+        <p class="small text-muted">&copy; 2017 - David Gunner Jnr</p>
+    </div>
+</footer>
+<!-- footer end -->
+
+<script src="{{ url_for ('static', filename='lib/js/jquery.min.js') }}"></script>
+<script src="{{ url_for ('static', filename='lib/js/bootstrap.min.js') }}"></script>
+
+<!-- inject JS files -->
+{% block js_linking %}
+{% endblock %}
+<!-- inject JS files end -->
 
 </body>
 </html>
