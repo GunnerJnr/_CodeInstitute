@@ -7,7 +7,7 @@ Data Dashboard
  
 
 Live version available for viewing at Heroku:
-[tps://boiling-everglades-31193.herokuapp.com/](tps://boiling-everglades-31193.herokuapp.com/)
+<https://boiling-everglades-31193.herokuapp.com/>
 
  
 
