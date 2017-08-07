@@ -43,7 +43,7 @@
             /* Hide next button in the last step? Otherwise, it will be disabled button. */
             hideNext: false,
             /* Default tooltip box position */
-            tooltipPosition: 'bottom',
+            position: 'bottom',
             /* Next CSS class for tooltip boxes */
             tooltipClass: '',
             /* CSS class that is added to the helperLayer */
@@ -171,7 +171,7 @@
                         step: parseInt(currentElement.getAttribute('data-step'), 10),
                         tooltipClass: currentElement.getAttribute('data-tooltipClass'),
                         highlightClass: currentElement.getAttribute('data-highlightClass'),
-                        position: currentElement.getAttribute('data-position') || this._options.tooltipPosition,
+                        position: currentElement.getAttribute('data-position') || this._options.position,
                         scrollTo: currentElement.getAttribute('data-scrollTo') || this._options.scrollTo,
                         disableInteraction: disableInteraction
                     };
@@ -206,7 +206,7 @@
                         step: nextStep + 1,
                         tooltipClass: currentElement.getAttribute('data-tooltipClass'),
                         highlightClass: currentElement.getAttribute('data-highlightClass'),
-                        position: currentElement.getAttribute('data-position') || this._options.tooltipPosition,
+                        position: currentElement.getAttribute('data-position') || this._options.position,
                         scrollTo: currentElement.getAttribute('data-scrollTo') || this._options.scrollTo,
                         disableInteraction: disableInteraction
                     };
@@ -1508,7 +1508,7 @@
                     hintPosition: currentElement.getAttribute('data-hintPosition') || this._options.hintPosition,
                     hintAnimation: hintAnimation,
                     tooltipClass: currentElement.getAttribute('data-tooltipClass'),
-                    position: currentElement.getAttribute('data-position') || this._options.tooltipPosition
+                    position: currentElement.getAttribute('data-position') || this._options.position
                 });
             }
         }

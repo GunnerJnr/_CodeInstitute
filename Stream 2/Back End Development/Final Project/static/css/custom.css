@@ -77,7 +77,7 @@ table {
 /* Extra small devices (phones, etc. less than 768px) */
 /* No media query since this is the default in Bootstrap */
 /* So we will make our own custom to handle these devices */
-@media screen and (min-width: 400px) and (max-width: 768px) {
+@media screen and (min-width: 278px) and (max-width: 768px) {
     #container {
         max-width: 100%;
         margin: 0 auto;
@@ -110,6 +110,7 @@ table {
         border-radius: 3px;
         font-size: 12px;
         color: #fff;
+        border: 1px solid transparent;
     }
 
     td, th {
@@ -152,6 +153,7 @@ table {
         border-radius: 3px;
         font-size: 14px;
         color: #fff;
+        border: 1px solid transparent;
     }
 
     td, th {
@@ -194,6 +196,7 @@ table {
         border-radius: 3px;
         font-size: 16px;
         color: #fff;
+        border: 1px solid transparent;
     }
 
     td, th {
@@ -236,6 +239,7 @@ table {
         border-radius: 3px;
         font-size: 18px;
         color: #fff;
+        border: 1px solid transparent;
     }
 
     td, th {

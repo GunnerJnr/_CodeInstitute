@@ -81,15 +81,15 @@ function makeGraphs(error, avengersJson) {
     var appearancesND = dc.numberDisplay("#appearances-nd");
 
     // here we create some drop down select fields to filter the data
-    selectField = dc.selectMenu('#year-menu-select')
+    dc.selectMenu('#year-menu-select')
         .height(300)
         .dimension(yearDim)
         .group(yearGroup);
-    selectField = dc.selectMenu('#name-menu-select')
+    dc.selectMenu('#name-menu-select')
         .height(300)
         .dimension(nameDim)
         .group(nameGroup);
-    selectField = dc.selectMenu('#url-menu-select')
+    dc.selectMenu('#url-menu-select')
         .height(300)
         .dimension(webLinkDim)
         .group(webLinkGroup);
