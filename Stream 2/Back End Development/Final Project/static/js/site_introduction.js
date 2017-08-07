@@ -67,9 +67,9 @@ intro.setOptions({
             position: 'middle'
         },
         {
-            element: '#table-wrapper',
+            element: '.table-wrapper',
             intro: 'Below you can also view a table displaying different types of information about the named Avengers.',
-            position: 'bottom-middle'
+            position: 'top-middle'
         }
     ]
 });
