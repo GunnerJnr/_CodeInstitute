@@ -100,10 +100,10 @@ table {
         position: relative;
         vertical-align: middle;
         padding: 1px 0;
-        background: #33CC99;
+        background: #C9302C;
         border-radius: 3px;
         font-size: 12px;
-        color: #7a7a7a;
+        color: #fff;
     }
 
     td, th {
@@ -136,10 +136,10 @@ table {
         position: relative;
         vertical-align: middle;
         padding: 2px 0;
-        background: #33CC99;
+        background: #C9302C;
         border-radius: 3px;
         font-size: 14px;
-        color: #7a7a7a;
+        color: #fff;
     }
 
     td, th {
@@ -172,10 +172,10 @@ table {
         position: relative;
         vertical-align: middle;
         padding: 4px 0;
-        background: #33CC99;
+        background: #C9302C;
         border-radius: 3px;
         font-size: 16px;
-        color: #7a7a7a;
+        color: #fff;
     }
 
     td, th {
@@ -195,6 +195,11 @@ table {
     #appearances-nd {
         font-size: 60px;
         color: #7a7a7a;
+        position: relative;
+        vertical-align: middle;
+        text-align: center;
+        padding-top: 12px;
+        padding-bottom: 0;
     }
 
     .dc-chart g.row text {
@@ -208,10 +213,10 @@ table {
         position: relative;
         vertical-align: middle;
         padding: 6px 0;
-        background: #33CC99;
+        background: #C9302C;
         border-radius: 3px;
         font-size: 18px;
-        color: #7a7a7a;
+        color: #fff;
     }
 
     td, th {

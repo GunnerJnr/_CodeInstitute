@@ -4,6 +4,8 @@
     -moz-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
     -ms-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
     animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+    color: #fff;
+    font-weight: bold;
 }
 
 #tour-button:hover {
