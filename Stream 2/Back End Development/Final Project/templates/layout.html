@@ -20,7 +20,6 @@
 
     <!-- Bootstrap stylesheet -->
     <link rel="stylesheet" href="{{ url_for ('static', filename='lib/css/bootstrap.min.css') }}">
-    <!--<link rel="stylesheet" href="assets/css/bootstrap-responsive.css">-->
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css">
 
     <!-- Custom stylesheet/override -->
@@ -88,20 +87,17 @@
 
 <!-- Content begin -->
 <div id="main-content" class="container-fluid">
-    <div class="row-fluid">
-
-        <!-- Custom Loading Screen & Loading Circle Begin-->
-        <div id="loading-screen">
-            <h1>Loading...</h1>
-            <div id="loading-circle"></div>
-        </div>
-        <!-- Custom Loading Screen & Loading Circle End-->
-
-        <! -- Inject Content -->
-        {% block content %}
-        {% endblock %}
-        <!-- Inject Content End -->
+    <!-- Custom Loading Screen & Loading Circle Begin-->
+    <div id="loading-screen">
+        <h1>Loading...</h1>
+        <div id="loading-circle"></div>
     </div>
+    <!-- Custom Loading Screen & Loading Circle End-->
+
+    <! -- Inject Content -->
+    {% block content %}
+    {% endblock %}
+    <!-- Inject Content End -->
 </div>
 <!-- Content end -->
 

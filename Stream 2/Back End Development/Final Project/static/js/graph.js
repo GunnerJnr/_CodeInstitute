@@ -82,14 +82,17 @@ function makeGraphs(error, avengersJson) {
 
     // here we create some drop down select fields to filter the data
     dc.selectMenu('#year-menu-select')
+        .width(600)
         .height(300)
         .dimension(yearDim)
         .group(yearGroup);
     dc.selectMenu('#name-menu-select')
+        .width(600)
         .height(300)
         .dimension(nameDim)
         .group(nameGroup);
     dc.selectMenu('#url-menu-select')
+        .width(600)
         .height(300)
         .dimension(webLinkDim)
         .group(webLinkGroup);
@@ -136,9 +139,9 @@ function makeGraphs(error, avengersJson) {
 
     // Year bar chart
     yearChart
-        .width(800)
+        .width(600)
         .height(200)
-        .margins({top: 25, right: 10, bottom: 50, left: 30})
+        .margins({top: 25, right: 5, bottom: 50, left: 5})
         .dimension(yearDim)
         .group(yearGroup)
         .transitionDuration(650)
@@ -149,9 +152,9 @@ function makeGraphs(error, avengersJson) {
 
     // Is the avenger still current - bar chart
     currentChart
-        .width(800)
+        .width(600)
         .height(200)
-        .margins({top: 25, right: 10, bottom: 50, left: 30})
+        .margins({top: 25, right: 5, bottom: 50, left: 5})
         .dimension(yearDim)
         .group(yearGroup)
         .transitionDuration(650)
