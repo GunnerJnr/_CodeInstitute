@@ -9,8 +9,6 @@ Avengers Data Dashboard
 Live version of the Avengers data dashboard is available for viewing on Heroku:
 <https://boiling-everglades-31193.herokuapp.com/>
 
- 
-
 Here is a link for the data I used in my project - CSV Data source:
 https://github.com/fivethirtyeight/data/tree/master/avengers
 
@@ -38,8 +36,6 @@ https://github.com/fivethirtyeight/data/tree/master/avengers
 
 Code Institute - Stream 2 Final Project. “Avengers Data Dashboard”
 
- 
-
 [Back to Table Of Contents](\#table-of-contents)
 
  
@@ -53,8 +49,6 @@ and more. If you would like to see the project brief for a full breakdown of
 what I was instructed to do then please refer to the [Project
 Brief](ProjectBrief.md) file.
 
- 
-
 [Back to Table Of Contents](\#table-of-contents)
 
  
@@ -65,8 +59,6 @@ Installation is the next section in an effective README. Tell other users how to
 install your project locally. Optionally, include a gif to make the process even
 more clear for other people.
 
- 
-
 [Back to Table Of Contents](\#table-of-contents)
 
  
@@ -76,8 +68,6 @@ more clear for other people.
 The next section is usage, in which you instruct other people on how to use your
 project after they’ve installed it. This would also be a good place to include
 screenshots of your project in action.
-
- 
 
 [Back to Table Of Contents](\#table-of-contents)
 
@@ -93,8 +83,6 @@ help others contribute, check out the guide for (setting guidelines for
 repository
 contributors)[https://help.github.com/articles/setting-guidelines-for-repository-contributors/].
 
- 
-
 [Back to Table Of Contents](\#table-of-contents)
 
  
@@ -104,8 +92,6 @@ contributors)[https://help.github.com/articles/setting-guidelines-for-repository
 Include a section for credits in order to highlight and link to the authors of
 your project.
 
- 
-
 [Back to Table Of Contents](\#table-of-contents)
 
  
@@ -114,8 +100,6 @@ your project.
 
 If you would like more information on choosing a license, check out
 GitHub’s [licensing guide](http://choosealicense.com/)!
-
- 
 
 [Back to Table Of Contents](\#table-of-contents)
 
