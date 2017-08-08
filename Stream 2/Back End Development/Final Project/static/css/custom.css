@@ -93,6 +93,11 @@
         margin: 5px 0;
     }
 
+    #main-content {
+        padding-top: 20px;
+        padding-bottom: 15px;
+    }
+
     #years-nd,
     #appearances-nd {
         font-size: 30px;
@@ -139,6 +144,11 @@
 
     .container-fluid .text-muted {
         margin: 10px 0;
+    }
+
+    #main-content {
+        padding-top: 25px;
+        padding-bottom: 30px;
     }
 
     #years-nd,
@@ -189,6 +199,11 @@
         margin: 15px 0;
     }
 
+    #main-content {
+        padding-top: 30px;
+        padding-bottom: 45px;
+    }
+
     #years-nd,
     #appearances-nd {
         font-size: 50px;
@@ -235,6 +250,11 @@
 
     .container-fluid .text-muted {
         margin: 20px 0;
+    }
+
+    #main-content {
+        padding-top: 35px;
+        padding-bottom: 60px;
     }
 
     #years-nd,
