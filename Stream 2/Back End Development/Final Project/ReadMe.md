@@ -35,9 +35,9 @@ Brief](ProjectBrief.md) file.
 
 ### **Table of Contents**: 
 
-[Installation](\#Installation)
+[Installation]
 
-[Usage](\#Usage)
+[Usage]
 
  
 
