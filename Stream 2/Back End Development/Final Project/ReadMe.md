@@ -16,27 +16,31 @@ https://github.com/fivethirtyeight/data/tree/master/avengers
 
  
 
-### **Table of Contents**: 
+### **Table of Contents**
 
-[Project Name](\#project-name)
+-   [Project Name](\#project-name)
 
-[Description](\#description)
+-   [Description](\#description)
 
-[Installation](\#installation)
+-   [Installation](\#installation)
 
-[Usage](\#usage)
+-   [Usage](\#usage)
 
-[Contributing](\#contributing)
+-   [Contributing](\#contributing)
 
-[Credits](\#credits)
+-   [Credits](\#credits)
 
-[Licence](\#license)
+-   [Licence](\#license)
 
  
 
 ### **Project name**: 
 
 Code Institute - Stream 2 Final Project. “Avengers Data Dashboard”
+
+ 
+
+[Back to Table Of Contents](\#table-of-contents)
 
  
 
@@ -51,6 +55,10 @@ Brief](ProjectBrief.md) file.
 
  
 
+[Back to Table Of Contents](\#table-of-contents)
+
+ 
+
 ### **Installation**: 
 
 Installation is the next section in an effective README. Tell other users how to
@@ -59,11 +67,19 @@ more clear for other people.
 
  
 
+[Back to Table Of Contents](\#table-of-contents)
+
+ 
+
 ### **Usage**: 
 
 The next section is usage, in which you instruct other people on how to use your
 project after they’ve installed it. This would also be a good place to include
 screenshots of your project in action.
+
+ 
+
+[Back to Table Of Contents](\#table-of-contents)
 
  
 
@@ -79,6 +95,10 @@ contributors)[https://help.github.com/articles/setting-guidelines-for-repository
 
  
 
+[Back to Table Of Contents](\#table-of-contents)
+
+ 
+
 ### **Credits**: 
 
 Include a section for credits in order to highlight and link to the authors of
@@ -86,10 +106,17 @@ your project.
 
  
 
+[Back to Table Of Contents](\#table-of-contents)
+
+ 
+
 ### **License**: 
 
-Finally, include a section for the license of your project. For more information
-on choosing a license, check out GitHub’s [licensing
-guide](http://choosealicense.com/)!
+If you would like more information on choosing a license, check out
+GitHub’s [licensing guide](http://choosealicense.com/)!
+
+ 
+
+[Back to Table Of Contents](\#table-of-contents)
 
  
