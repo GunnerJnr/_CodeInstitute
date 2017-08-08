@@ -1,0 +1,207 @@
+# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and Webstorm
+# Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
+
+# User-specific stuff:
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/dictionaries
+
+.xml
+
+# Sensitive or high-churn files:
+.idea/**/dataSources/
+.idea/**/dataSources.ids
+.idea/**/dataSources.xml
+.idea/**/dataSources.local.xml
+.idea/**/sqlDataSources.xml
+.idea/**/dynamic.xml
+.idea/**/uiDesigner.xml
+
+# Gradle:
+.idea/**/gradle.xml
+.idea/**/libraries
+
+# CMake
+cmake-build-debug/
+
+# Mongo Explorer plugin:
+.idea/**/mongoSettings.xml
+
+## File-based project format:
+*.iws
+
+## Plugin-specific files:
+
+# IntelliJ
+out/
+
+# mpeltonen/sbt-idea plugin
+.idea_modules/
+
+# JIRA plugin
+atlassian-ide-plugin.xml
+
+# Cursive Clojure plugin
+.idea/replstate.xml
+
+# Crashlytics plugin (for Android Studio and IntelliJ)
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+fabric.properties
+
+/build
+/src/mongo/db/modules
+/.jsdbshell
+/.dbshell
+/*.ninja
+/*.ninja.deps
+/.ninja_deps
+/.ninja_log
+/perf.data
+/perf.data.old
+/massif.out.*
+/smoke-last.json
+
+*~
+*.swp
+*.o
+*.os
+*.obj
+*.aps
+*.ilk
+*.tar.gz
+*.suo
+*.ncb
+*.idb 
+*.obj 
+*.opt 
+*.pch 
+*.jsh
+*.jsall
+*.pyc
+*.log
+*.exe
+*.exp
+*.lib
+*.idb
+*.pdb
+*.manifest
+*.user
+*.gch
+*.*sdf
+*.psess
+*.tmp
+*#
+.#*
+
+/src/mongo/*/*Debug*/
+/src/mongo/*/*/*Debug*/
+/src/mongo/*/*Release*/
+/src/mongo/*/*/*Release*/
+/src/ipch
+/src/mongo/*/ipch
+/src/mongo/*/*/ipch
+/src/mongo/db/.gdb*
+/src/mongo/db/makefile.local
+/src/mongo/db/_ReSharper.db
+/src/third_party/*/*.cache
+/src/third_party/*/*.tlog
+/src/third_party/*/*.lastbuildstate
+config.log
+settings.py
+log_config.py
+/tags
+TAGS
+failfile.smoke
+
+# temp dirs
+dump
+/log
+logs
+docs/html
+docs/latex
+docs/doxygen
+32bit
+scratch
+
+# binaries
+/docgen
+/loadgen
+/mongo
+/mongobridge
+/mongod
+/mongogrid
+/mongoperf
+/mongos
+/mongoshim
+/mongosniff
+
+*.tgz
+*.zip
+*.tar.gz
+
+#libs
+/libmongoclient.*
+/libmongotestfiles.*
+/libmongoshellfiles.*
+/sharedclient
+
+/emr.jar
+*.class
+
+# examples
+/firstExample
+/secondExample
+/whereExample
+/bsondemo
+/rsExample
+/tutorial
+
+#tests
+/dbtest
+/authTest
+/perftest
+/clientTest
+/httpClientTest
+
+#debian
+build-stamp
+configure-stamp
+debian/mongodb
+
+# OSX files
+.DS_Store
+._.DS_Store
+*.fuse_*
+
+# QtCreator
+*.config
+*.creator
+*.creator.user
+*.files
+*.includes
+*.orig
+
+# Eclipse build artifacts
+.cproject
+.project
+.pydevproject
+
+# Idea CLion project artifacts
+.idea
+CMakeLists.txt
+
+# XCode projects
+.xcworkspace
+
+# VSCode projects
+.vscode/
+
+# Windows MSI builder artifacts
+*.msi
+*.wixobj
+*.wixpdb
+DriverInclude.wxs
+
+compile_commands.json
