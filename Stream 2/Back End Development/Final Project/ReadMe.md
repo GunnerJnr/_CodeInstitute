@@ -18,19 +18,19 @@ https://github.com/fivethirtyeight/data/tree/master/avengers
 
 ### **Table of Contents**: 
 
-[Project Name](project-name)
+[Project Name](\#project-name)
 
-[Description](description)
+[Description](\#description)
 
-[Installation](installation)
+[Installation](\#installation)
 
-[Usage](usage)
+[Usage](\#usage)
 
-[Contributing](contributing)
+[Contributing](\#contributing)
 
-[Credits](credits)
+[Credits](\#credits)
 
-[Licence](license)
+[Licence](\#license)
 
  
 
