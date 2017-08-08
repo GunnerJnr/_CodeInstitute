@@ -6,6 +6,12 @@ Avengers Data Dashboard
 
  
 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+![Dashboard Image](readme_img/dashboard.png)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+ 
+
 Live version of the Avengers data dashboard is available for viewing on Heroku:
 <https://boiling-everglades-31193.herokuapp.com/>
 
