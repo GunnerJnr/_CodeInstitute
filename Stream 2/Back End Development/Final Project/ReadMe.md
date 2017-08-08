@@ -16,6 +16,24 @@ https://github.com/fivethirtyeight/data/tree/master/avengers
 
  
 
+### **Table of Contents**: 
+
+[Project Name](project-name)
+
+[Description](description)
+
+[Installation](installation)
+
+[Usage](usage)
+
+[Contributing](contributing)
+
+[Credits](credits)
+
+[Licence](license)
+
+ 
+
 ### **Project name**: 
 
 Code Institute - Stream 2 Final Project. “Avengers Data Dashboard”
@@ -30,14 +48,6 @@ table and more, using technologies such as Flask, DC.js, D3.js, Python, MongoDB
 and more. If you would like to see the project brief for a full breakdown of
 what I was instructed to do then please refer to the [Project
 Brief](ProjectBrief.md) file.
-
- 
-
-### **Table of Contents**: 
-
-[Installation]
-
-[Usage]
 
  
 
