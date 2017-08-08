@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="en-gb">
+<html lang="en">
 <head>
     <!-- Meta Tags Begin -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A dashboard showing Avenger characters statis in the form of charts and tables">
     <meta name="author" content="David Gunner (Jnr)">
     <!-- Meta Tags End -->
 
-    <!-- page title -->
+    <!-- Page title -->
     <title>Stream 2 Final Project - Avengers</title>
 
     <!-- Custom Fav icon -->
@@ -18,14 +18,15 @@
     <!-- Reset.css -->
     <link rel="stylesheet" href="{{ url_for ('static', filename='css/reset.css') }}">
 
-    <!-- bootstrap stylesheet -->
+    <!-- Bootstrap stylesheet -->
     <link rel="stylesheet" href="{{ url_for ('static', filename='lib/css/bootstrap.min.css') }}">
+    <!--<link rel="stylesheet" href="assets/css/bootstrap-responsive.css">-->
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css">
 
-    <!-- custom stylesheet/override -->
+    <!-- Custom stylesheet/override -->
     <link rel="stylesheet" href="{{ url_for ('static', filename='css/style.css') }}">
 
-    <!-- link the css for the dashboard class (and in future other classes in different html files -->
+    <!-- Link the css for the dashboard class (and in future other classes in different html files -->
     {% block css_linking %}
     {% endblock %}
     <!-- CSS Linking end -->
@@ -47,8 +48,8 @@
     <!--[endif]-->
 </head>
 
-<body id="container" class="application">
-<!-- navigation begin -->
+<body class="application">
+<!-- Navigation begin -->
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
         <!-- Navbar Header/Brand -->
@@ -83,11 +84,11 @@
         <!-- Navbar Links End -->
     </div>
 </nav>
-<!-- navigation end -->
+<!-- Navigation end -->
 
-<!-- content begin -->
-<div id="outer" class="container-fluid">
-    <div class="row">
+<!-- Content begin -->
+<div class="container-fluid">
+    <div class="row-fluid">
 
         <!-- Custom Loading Screen & Loading Circle Begin-->
         <div id="loading-screen">
@@ -102,25 +103,25 @@
         <!-- Inject Content End -->
     </div>
 </div>
-<!-- content end -->
+<!-- Content end -->
 
 <hr>
 
-<!-- footer begin -->
+<!-- Footer Begin -->
 <footer class="navbar-inverse navbar-fixed-bottom">
-    <div class="container">
+    <div class="container-fluid">
         <p class="small text-muted">&copy; 2017 - David Gunner Jnr</p>
     </div>
 </footer>
-<!-- footer end -->
+<!-- Footer End -->
 
 <script src="{{ url_for ('static', filename='lib/js/jquery.min.js') }}"></script>
 <script src="{{ url_for ('static', filename='lib/js/bootstrap.min.js') }}"></script>
 
-<!-- inject JS files -->
+<!-- Inject JS files -->
 {% block js_linking %}
 {% endblock %}
-<!-- inject JS files end -->
+<!-- Inject JS files end -->
 
 </body>
 </html>

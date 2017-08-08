@@ -1,3 +1,4 @@
+/* Handle the design for the loading screen */
 #loading-screen {
     z-index: 1000;
     background-color: #f2f2f2;
@@ -10,6 +11,7 @@
     padding-top: 15%;
 }
 
+/* Handle the design for the loading circle */
 #loading-circle {
     z-index: 1500;
     border: 20px solid #f3f3f3;
@@ -22,6 +24,7 @@
     animation: spin 4s linear infinite;
 }
 
+/* Handle the animation for the loading circle */
 @-webkit-keyframes spin {
     0% {
         -webkit-transform: rotate(0deg);
@@ -40,6 +43,7 @@
     }
 }
 
+/* Set the width, height and position and other various properties for each dashboard element globally */
 #current-bar-chart,
 #gender-row-chart,
 #year-bar-chart,
@@ -58,6 +62,7 @@
     background: #f3f3f3;
 }
 
+/* Properties for our table element */
 .table-wrapper,
 .table-wrapper > th {
     width: 100%;
@@ -66,7 +71,7 @@
     border: 1px solid #000;
 }
 
-table {
+.table {
     width: 100%;
     background: #f3f3f3;
     color: #7a7a7a;
@@ -78,9 +83,14 @@ table {
 /* No media query since this is the default in Bootstrap */
 /* So we will make our own custom to handle these devices */
 @media screen and (min-width: 278px) and (max-width: 768px) {
-    #container {
+    .container-fluid {
+        width: auto;
         max-width: 100%;
         margin: 0 auto;
+    }
+
+    .container-fluid .text-muted {
+        margin: 5px 0;
     }
 
     #years-nd,
@@ -121,9 +131,14 @@ table {
 
 /* Small devices (tablets, etc.) */
 @media screen and (min-width: 768px) and (max-width: 992px) {
-    #container {
+    .container-fluid {
+        width: auto;
         max-width: 100%;
         margin: 0 auto;
+    }
+
+    .container-fluid .text-muted {
+        margin: 10px 0;
     }
 
     #years-nd,
@@ -164,9 +179,14 @@ table {
 
 /* Medium devices (desktops, 992px and up) */
 @media screen and (min-width: 992px) and (max-width: 1200px) {
-    #container {
+    .container-fluid {
+        width: auto;
         max-width: 100%;
         margin: 0 auto;
+    }
+
+    .container-fluid .text-muted {
+        margin: 15px 0;
     }
 
     #years-nd,
@@ -207,9 +227,14 @@ table {
 
 /* Large devices (large desktops, 1200px and up) */
 @media screen and (min-width: 1200px) {
-    #container {
+    .container-fluid {
+        width: auto;
         max-width: 100%;
         margin: 0 auto;
+    }
+
+    .container-fluid .text-muted {
+        margin: 20px 0;
     }
 
     #years-nd,

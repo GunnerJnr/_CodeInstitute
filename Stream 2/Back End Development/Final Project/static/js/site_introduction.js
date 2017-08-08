@@ -1,11 +1,14 @@
 /**
  * Created by David Gunner (Jnr) on 03/08/2017.
+ * Purpose: To load our site tour with intro.js.
  */
 
-// create an instance of intro.js
+// Create an instance of intro.js
 var intro = introJs();
 
-// next we want to set up our intro to the relevant elements
+// Next we want to set up our intro to the relevant elements
+// we set the relevant steps that we wish to display, we also set the position and position precedence for the tooltip
+// to be displayed as well as the description we want to be displayed in each tooltip.
 intro.setOptions({
     steps: [
         {
@@ -80,6 +83,7 @@ intro.setOptions({
     ]
 });
 
+// Finally we want to start the tour if the user clicks the button as a nice extra we also hide the pulsing button.
 $('#tour-button').click(function () {
     intro.start();
     $('#tour-button').hide();

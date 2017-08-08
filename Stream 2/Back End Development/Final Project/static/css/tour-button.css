@@ -8,6 +8,7 @@
     font-weight: bold;
 }
 
+/* Style the obutton for when it is being hovered */
 #tour-button:hover {
     -webkit-animation: none;
     -moz-animation: none;
@@ -15,6 +16,7 @@
     animation: none;
 }
 
+/* Handle the pulsing animation for the tour button element */
 @-webkit-keyframes pulse {
     to {
         box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);
