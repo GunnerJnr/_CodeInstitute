@@ -49,8 +49,8 @@ Brief](ProjectBrief.md) file.
 
 #### Running the MongoDB Server:
 
--   Firstly, you will need MongoDB installed [Download
-    MongoDB](https://www.mongodb.com/download-center?jmp=nav\#community)
+-   Firstly, you will need MongoDB installed - [Download MongoDB here if you
+    need it](https://www.mongodb.com/download-center?jmp=nav\#community)
 
 -   You should then simply be able to run this command in a terminal/cmd window
 
@@ -58,6 +58,8 @@ Brief](ProjectBrief.md) file.
 
 **NOTE:** You will need to ammend the path as neccessary to suit where you
 extracted the file too.
+
+ 
 
 #### Uploading the data for the database to work:
 
@@ -87,6 +89,8 @@ terminal window.
 **NOTE:** It will take a few minutes to upload the data. You will see a progress
 indicator in the terminal letting you know how much data has approximately been
 uploaded.
+
+ 
 
 #### Running the requirements.txt to install needed packages:
 
