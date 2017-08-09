@@ -1,40 +1,26 @@
-Stream 2 - Final Project
-========================
-
-Avengers Data Dashboard
------------------------
-
-![](readme_img/dashboard.png)
-
-Live version of the Avengers data dashboard is available for viewing on Heroku:
-<https://boiling-everglades-31193.herokuapp.com/>
-
-Here is a link for the data I used in my project - CSV Data source:
-https://github.com/fivethirtyeight/data/tree/master/avengers
-
 ### **Table of Contents**
 
--   [Project Name](\#project-name)
+-   [Project Name](#project-name)
 
--   [Description](\#description)
+-   [Description](#description)
 
--   [Installation](\#installation)
+-   [Installation](#installation)
 
--   [Usage](\#usage)
+-   [Usage](#usage)
 
--   [Contributing](\#contributing)
+-   [Contributing](#contributing)
 
--   [Credits](\#credits)
+-   [Credits](#credits)
 
--   [Licence](\#license)
+-   [Licence](#license)
 
-### **Project name**: 
+### **Project name**:
 
 Code Institute - Stream 2 Final Project. “Avengers Data Dashboard”
 
-[Back to Table Of Contents](\#table-of-contents)
+[Back to Table Of Contents](#table-of-contents)
 
-### **Description**: 
+### **Description**:
 
 The Avengers data dashboard is just that. It is a dashboard to display different
 types of Avengers information in the form of graphs, bar charts, pie charts,
@@ -43,14 +29,26 @@ and more. If you would like to see the project brief for a full breakdown of
 what I was instructed to do then please refer to the [Project
 Brief](ProjectBrief.md) file.
 
-[Back to Table Of Contents](\#table-of-contents)
+Live version of the Avengers data dashboard is available for viewing on Heroku:
+<https://boiling-everglades-31193.herokuapp.com/>
 
-### **Installation**: 
+Here is a link for the data I used in my project - CSV Data source:
+https://github.com/fivethirtyeight/data/tree/master/avengers
+
+[Back to Table Of Contents](#table-of-contents)
+
+### **Testing:**
+
+TODO
+
+[Back to Table Of Contents]
+
+### **Installation**:
 
 #### Running the MongoDB Server:
 
 -   Firstly, you will need MongoDB installed - [Download MongoDB here if you
-    need it](https://www.mongodb.com/download-center?jmp=nav\#community)
+    need it](https://www.mongodb.com/download-center?jmp=nav#community)
 
 -   You should then simply be able to run this command in a terminal/cmd window
 
@@ -104,31 +102,35 @@ For virtualenv to install all files in the requirements.txt file.
 
  
 
-[Back to Table Of Contents](\#table-of-contents)
+![](readme_img/dashboard.png)
 
-### **Usage**: 
+ 
+
+[Back to Table Of Contents](#table-of-contents)
+
+### **Usage**:
 
 Click the start tour button in the sites navigation for a full tour on each
 element and what you can do with it.
 
-[Back to Table Of Contents](\#table-of-contents)
+[Back to Table Of Contents](#table-of-contents)
 
-### **Contributing**: 
+### **Contributing**:
 
 Here is a link for the data I used in my project - [CSV Data
 source:](https://github.com/fivethirtyeight/data/tree/master/avengers)
 
-[Back to Table Of Contents](\#table-of-contents)
+[Back to Table Of Contents](#table-of-contents)
 
-### **Credits**: 
+### **Credits**:
 
 Code Institute
 
 Andrew Flowers (CSV data)
 
-[Back to Table Of Contents](\#table-of-contents)
+[Back to Table Of Contents](#table-of-contents)
 
-### **License**: 
+### **License**:
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 MIT License
@@ -157,6 +159,6 @@ SOFTWARE.
 If you would like more information on choosing a license, check out
 GitHub’s [licensing guide](http://choosealicense.com/)!
 
-[Back to Table Of Contents](\#table-of-contents)
+[Back to Table Of Contents](#table-of-contents)
 
  

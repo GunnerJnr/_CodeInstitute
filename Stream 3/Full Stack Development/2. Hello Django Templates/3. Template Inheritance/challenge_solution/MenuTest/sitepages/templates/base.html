@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Django Menu Test</title>
+</head>
+<body>
+<!-- Header Begin -->
+<header>
+    <!-- Navigation Begin -->
+    <nav>
+        <ul>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'about' %}">About Us</a></li>
+            <li><a href="{% url 'contact' %}">Contact Us</a></li>
+        </ul>
+    </nav>
+    <!-- Navigation End -->
+</header>
+<!-- Header End -->
+
+<!-- Content Begin -->
+{% block content %}
+
+{% endblock %}
+<!-- Content End -->
+
+<!-- Footer -->
+</body>
+</html>
