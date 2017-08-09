@@ -4,7 +4,7 @@
 
 -   [Description](#description)
 
--   [Testing](\#testing)
+-   [Testing](#testing)
 
 -   [Installation](#installation)
 
@@ -43,8 +43,8 @@ https://github.com/fivethirtyeight/data/tree/master/avengers
 
 TODO
 
-[[Back To Table Of Contents](\#table-of-contents)]([Back To Table Of
-Contents](#table-of-contents))
+[Back to Table Of
+Contents(\#table-of-contents)](%5BBack%20To%20Table%20Of%20Contents%5D(#table-of-contents))
 
 ### **Installation**:
 
