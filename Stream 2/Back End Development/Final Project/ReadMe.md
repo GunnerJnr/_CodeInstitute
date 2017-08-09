@@ -1,20 +1,20 @@
 ### **Table of Contents**
 
--   [Project Name](#project-name)
+[Project Name](#project-name)
 
--   [Description](#description)
+[Description](#description)
 
--   [Testing](#testing)
+[Testing](#testing)
 
--   [Installation](#installation)
+[Installation](#installation)
 
--   [Usage](#usage)
+[Usage](#usage)
 
--   [Contributing](#contributing)
+[Contributing](#contributing)
 
--   [Credits](#credits)
+[Credits](#credits)
 
--   [Licence](#license)
+[Licence](#license)
 
 ### **Project name**:
 
