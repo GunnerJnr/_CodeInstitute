@@ -41,7 +41,29 @@ https://github.com/fivethirtyeight/data/tree/master/avengers
 
 ### **Testing:**
 
-TODO
+I was trying to think of how unit tests fit into this project so that I could
+try to use them to test the dashboard data, I am afraid I came up short on this
+occasion, the only way I thought I could of perhaps tested the functionality
+would of been to use and test some manual dummy data before using the actual
+JSON data, but by the time I realised this, it was too late, and due to lack of
+time I did not have time to retract on progress and make some.
+
+I did however spend a lot of time testing the responsiveness of the dashboard in
+multiple browsers, and different mobile phones and tablets. This actually led me
+too a bug on IOS mobile devices, I realised that I had my media breakpoints set
+to a min-width of 400px, the device was actually smaller than this and so the
+dashboard was ugly and didn’t render as expected. A few adjustments to the css
+solved this issue.
+
+One thing I can also say due to lack of time, I did not have chance to make all
+of the actual SVG elements of the charts and graphs responsive, although I think
+if I had of had time I would of probably used a javascript approach to redraw
+the elements on the browser resize using a function of some sort.
+
+I initial had trouble with the intro.js tooltips also as on mobile devices the
+first tooltip no matter where positioned seem to always render off screen, I
+managed to solve this by changing the div element the step was set up in and now
+it seems to work fine.
 
 [Back to Table Of Contents](#table-of-contents)
 
