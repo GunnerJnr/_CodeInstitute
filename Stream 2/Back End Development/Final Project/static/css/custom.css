@@ -92,6 +92,14 @@
         margin: 5px 0;
     }
 
+    .row-fluid {
+        margin: 5px;
+    }
+
+    .chart-wrapper {
+        margin: 5px;
+    }
+
     #main-content {
         padding-top: 20px;
         padding-bottom: 15px;
@@ -142,6 +150,14 @@
 
     .container-fluid .text-muted {
         margin: 10px 0;
+    }
+
+    .row-fluid {
+        margin: 25px;
+    }
+
+    .chart-wrapper {
+        margin: 8px;
     }
 
     #main-content {
@@ -196,6 +212,14 @@
         margin: 15px 0;
     }
 
+    .row-fluid {
+        margin: 40px;
+    }
+
+    .chart-wrapper {
+        margin: 10px;
+    }
+
     #main-content {
         padding-top: 30px;
         padding-bottom: 45px;
@@ -248,6 +272,14 @@
         margin: 20px 0;
     }
 
+    .row-fluid {
+        margin: 50px;
+    }
+
+    .chart-wrapper {
+        margin: 12px;
+    }
+
     #main-content {
         padding-top: 35px;
         padding-bottom: 60px;
@@ -298,6 +330,14 @@
 
     .container-fluid .text-muted {
         margin: 24px 0;
+    }
+
+    .row-fluid {
+        margin: 60px;
+    }
+
+    .chart-wrapper {
+        margin: 15px;
     }
 
     #main-content {
