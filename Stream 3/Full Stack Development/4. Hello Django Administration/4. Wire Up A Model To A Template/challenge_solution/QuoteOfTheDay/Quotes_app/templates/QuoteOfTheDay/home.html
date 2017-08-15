@@ -1,0 +1,20 @@
+<html>
+<head>
+    <!-- Custom stylesheet/override -->
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <h1>Inspirational Quotes</h1>
+    <hr>
+    {% block content %}
+        {% for quoter in quote_list %}
+            <section>
+                <h2><strong>{{ quoter.quoter_first_name }} {{ quoter.quoter_last_name }}</strong></h2>
+                <img class="small" src="static/img/{{ quoter.quoter_first_name }}.jpg"/>
+                <p><strong>Quote: </strong>{{ quoter.quote_text }}</p>
+            </section>
+            <hr>
+        {% endfor %}
+    {% endblock %}
+</body>
+</html>
