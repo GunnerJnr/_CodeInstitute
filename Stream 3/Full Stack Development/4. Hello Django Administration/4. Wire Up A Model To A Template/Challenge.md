@@ -12,3 +12,9 @@ Continue working on the Quotes challenge that you worked on in the last lesson.
 3.  Edit some existing quotes
 
 4.  Create a template to display your quotes
+
+ 
+
+Here is an image of my challenges completed solution:
+
+![](img/challenge-solution.png)
