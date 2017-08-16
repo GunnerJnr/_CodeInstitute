@@ -1,0 +1,382 @@
+/* Handle the design for the loading screen */
+#loading-screen {
+    z-index: 1000;
+    background-color: #f2f2f2;
+    color: #3d4a57;
+    position: fixed;
+    width: 100%;
+    min-height: 100%;
+    left: 0;
+    text-align: center;
+    padding-top: 15%;
+}
+
+/* Handle the design for the loading circle */
+#loading-circle {
+    z-index: 1500;
+    border: 20px solid #f3f3f3;
+    border-radius: 70%;
+    border-top: 20px solid #3498db;
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    -webkit-animation: spin 4s linear infinite;
+    animation: spin 4s linear infinite;
+}
+
+/* Handle the animation for the loading circle */
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Set the width, height and position and other various properties for each dashboard element globally */
+#current-bar-chart,
+#gender-row-chart,
+#year-bar-chart,
+#years-nd,
+#honorary-pie-chart,
+#appearances-nd,
+#year-menu-select,
+#name-menu-select,
+#url-menu-select {
+    width: 100%;
+    min-height: 100%;
+    margin: 0 auto;
+}
+
+.chart-stage {
+    background: #f3f3f3;
+}
+
+/* Properties for our table element */
+.table-wrapper,
+.table-wrapper > th {
+    width: 100%;
+    max-height: 300px;
+    overflow: auto;
+    border: 1px solid #000;
+}
+
+.table {
+    width: 100%;
+    background: #f3f3f3;
+    color: #7a7a7a;
+}
+
+/* Responsive Breakpoint Design Elements */
+
+/* Extra small devices (phones, etc. less than 768px) */
+/* No media query since this is the default in Bootstrap */
+/* So we will make our own custom to handle these devices */
+@media screen and (min-width: 278px) and (max-width: 400px) {
+    .container-fluid {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .container-fluid .text-muted {
+        margin: 5px 0;
+    }
+
+    .row-fluid {
+        margin: 5px;
+    }
+
+    .chart-wrapper {
+        margin: 5px;
+    }
+
+    #main-content {
+        padding-top: 20px;
+        padding-bottom: 15px;
+    }
+
+    #years-nd,
+    #appearances-nd {
+        font-size: 30px;
+        color: #C9302C;
+        font-weight: bold;
+        position: relative;
+        vertical-align: middle;
+        text-align: center;
+        padding-top: 6px;
+        padding-bottom: 0;
+    }
+
+    .dc-chart g.row text {
+        color: #7a7a7a;
+        font-size: 10px;
+    }
+
+    .dc-select-menu {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        vertical-align: middle;
+        padding: 1px 0;
+        background: #C9302C;
+        border-radius: 3px;
+        font-size: 12px;
+        color: #fff;
+        border: 1px solid transparent;
+    }
+
+    td, th {
+        border: 1px solid #000;
+        font-size: 12px;
+    }
+}
+
+/* Small devices (tablets, etc.) */
+@media screen and (min-width: 401px) and (max-width: 768px) {
+    .container-fluid {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .container-fluid .text-muted {
+        margin: 10px 0;
+    }
+
+    .row-fluid {
+        margin: 25px;
+    }
+
+    .chart-wrapper {
+        margin: 8px;
+    }
+
+    #main-content {
+        padding-top: 25px;
+        padding-bottom: 30px;
+    }
+
+    #years-nd,
+    #appearances-nd {
+        font-size: 40px;
+        color: #C9302C;
+        font-weight: bold;
+        position: relative;
+        vertical-align: middle;
+        text-align: center;
+        padding-top: 8px;
+        padding-bottom: 0;
+    }
+
+    .dc-chart g.row text {
+        color: #7a7a7a;
+        font-size: 12px;
+    }
+
+    .dc-select-menu {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        vertical-align: middle;
+        padding: 2px 0;
+        background: #C9302C;
+        border-radius: 3px;
+        font-size: 14px;
+        color: #fff;
+        border: 1px solid transparent;
+    }
+
+    td, th {
+        border: 1px solid #000;
+        font-size: 14px;
+    }
+}
+
+/* Medium devices (desktops, 769px and up) */
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    .container-fluid {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .container-fluid .text-muted {
+        margin: 15px 0;
+    }
+
+    .row-fluid {
+        margin: 40px;
+    }
+
+    .chart-wrapper {
+        margin: 10px;
+    }
+
+    #main-content {
+        padding-top: 30px;
+        padding-bottom: 45px;
+    }
+
+    #years-nd,
+    #appearances-nd {
+        font-size: 50px;
+        color: #C9302C;
+        font-weight: bold;
+        position: relative;
+        vertical-align: middle;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 0;
+    }
+
+    .dc-chart g.row text {
+        color: #7a7a7a;
+        font-size: 14px;
+    }
+
+    .dc-select-menu {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        vertical-align: middle;
+        padding: 4px 0;
+        background: #C9302C;
+        border-radius: 3px;
+        font-size: 16px;
+        color: #fff;
+        border: 1px solid transparent;
+    }
+
+    td, th {
+        border: 1px solid #000;
+        font-size: 16px;
+    }
+}
+
+/* Large devices (large desktops, 993px and up) */
+@media screen and (min-width: 993px) and (max-width: 1199px) {
+    .container-fluid {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .container-fluid .text-muted {
+        margin: 20px 0;
+    }
+
+    .row-fluid {
+        margin: 50px;
+    }
+
+    .chart-wrapper {
+        margin: 12px;
+    }
+
+    #main-content {
+        padding-top: 35px;
+        padding-bottom: 60px;
+    }
+
+    #years-nd,
+    #appearances-nd {
+        font-size: 60px;
+        color: #C9302C;
+        font-weight: bold;
+        position: relative;
+        vertical-align: middle;
+        text-align: center;
+        padding-top: 12px;
+        padding-bottom: 0;
+    }
+
+    .dc-chart g.row text {
+        color: #7a7a7a;
+        font-size: 16px;
+    }
+
+    .dc-select-menu {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        vertical-align: middle;
+        padding: 6px 0;
+        background: #C9302C;
+        border-radius: 3px;
+        font-size: 18px;
+        color: #fff;
+        border: 1px solid transparent;
+    }
+
+    td, th {
+        border: 1px solid #000;
+        font-size: 18px;
+    }
+}
+
+/* Even larger devices (ott desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+    .container-fluid {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .container-fluid .text-muted {
+        margin: 24px 0;
+    }
+
+    .row-fluid {
+        margin: 60px;
+    }
+
+    .chart-wrapper {
+        margin: 15px;
+    }
+
+    #main-content {
+        padding-top: 40px;
+        padding-bottom: 60px;
+    }
+
+    #years-nd,
+    #appearances-nd {
+        font-size: 60px;
+        color: #C9302C;
+        font-weight: bold;
+        position: relative;
+        vertical-align: middle;
+        text-align: center;
+        padding-top: 14px;
+        padding-bottom: 0;
+    }
+
+    .dc-chart g.row text {
+        color: #7a7a7a;
+        font-size: 18px;
+    }
+
+    .dc-select-menu {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        vertical-align: middle;
+        padding: 8px 0;
+        background: #C9302C;
+        border-radius: 4px;
+        font-size: 18px;
+        color: #fff;
+        border: 1px solid transparent;
+    }
+
+    td, th {
+        border: 1px solid #000;
+        font-size: 18px;
+    }
+}
