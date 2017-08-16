@@ -1,8 +1,0 @@
-To whoever may use this project, these are a few steps that will aid you in getting the project up and running.
-
-• Firstly, you will need MongoDB installed
-• You should then simply be able to run this command in a terminal/cmd window
-
-'mongod --config [PATH]\_mongoDB_data\_config\_mongodb_config.conf'
-
-NOTE: You will need to ammend the path as neccessary to suit where you extracted the file too.
