@@ -1,0 +1,171 @@
+{% extends "layout.html" %}
+
+<!-- CSS Linking Begin -->
+{% block css_linking %}
+    <link rel="stylesheet" href="{{ url_for ('static', filename='lib/css/keen-dashboards.css') }}">
+    <link rel="stylesheet" href="{{ url_for ('static', filename='lib/css/dc.css') }}">
+    <link rel="stylesheet" href="{{ url_for ('static', filename='lib/css/introjs.css') }}">
+    <link rel="stylesheet" href="{{ url_for ('static', filename='css/tour-button.css') }}">
+    <link rel="stylesheet" href="{{ url_for ('static', filename='css/custom.css') }}">
+{% endblock %}
+<!-- CSS Linking End -->
+
+<!-- Content Begin -->
+{% block content %}
+    <div class="row-fluid">
+        <!-- Year Menu Select Begin -->
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+            <div class="chart-wrapper text-center">
+                <div class="chart-title">
+                    Years Menu Select
+                </div>
+                <div class="chart-stage text-center">
+                    <div id="year-menu-select" class="dc-select-menu"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Year Menu Select End -->
+
+        <!-- Avenger Name Select Begin -->
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+            <div class="chart-wrapper text-center">
+                <div class="chart-title">
+                    Name Menu Select
+                </div>
+                <div class="chart-stage text-center">
+                    <div id="name-menu-select" class="dc-select-menu"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Avenger Name Select End -->
+
+        <!-- URL Menu Select Begin -->
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+            <div class="chart-wrapper text-center">
+                <div class="chart-title">
+                    URL Menu Select
+                </div>
+                <div class="chart-stage text-center">
+                    <div id="url-menu-select" class="dc-select-menu"></div>
+                </div>
+            </div>
+        </div>
+        <!-- URL Menu Select End -->
+    </div>
+
+    <div class="row-fluid">
+        <!-- Gender Chart Begin -->
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+            <div class="chart-wrapper text-center">
+                <div class="chart-title">
+                    Gender
+                </div>
+                <div class="chart-stage">
+                    <div id="gender-row-chart"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Gender Chart End -->
+
+        <!-- Honorary Chart Begin -->
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+            <div class="chart-wrapper text-center">
+                <div class="chart-title">
+                    Honorary Chart
+                </div>
+                <div class="chart-stage">
+                    <div id="honorary-pie-chart"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Honorary Chart End -->
+
+        <!-- Years Number Display Begin -->
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <div class="chart-wrapper text-center">
+                <div class="chart-title">
+                    Total Number of Years
+                </div>
+                <div class="chart-stage">
+
+                    <div id="years-nd"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Years Number Display End -->
+
+        <!-- Appearances Number Display Begin -->
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <div class="chart-wrapper text-center">
+                <div class="chart-title">
+                    Total Number of Appearances
+                </div>
+                <div class="chart-stage">
+                    <div id="appearances-nd"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Appearances Number Display End -->
+    </div>
+
+    <div class="row-fluid">
+        <!-- Year Chart Begin -->
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <div class="chart-wrapper text-center">
+                <div class="chart-title">
+                    Number of Years.
+                </div>
+                <div class="chart-stage">
+                    <div id="year-bar-chart"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Year Chart End -->
+
+        <!-- Current Bar Chart Begin -->
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <div class="chart-wrapper text-center">
+                <div class="chart-title">
+                    Current Status of Avenger
+                </div>
+                <div class="chart-stage">
+                    <div id="current-bar-chart"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Current Bar Chart End -->
+    </div>
+
+    <div class="row-fluid">
+        <!-- Table Data Begin -->
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="chart-wrapper text-center">
+                <div class="chart-title">
+                    URL Table
+                </div>
+                <div class="chart-stage">
+                    <div class="table-wrapper">
+                        <div id="table-data"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Table Data End -->
+{% endblock %}
+<!-- content end -->
+
+<!-- JS linking -->
+{% block js_linking %}
+    <script src="{{ url_for ('static', filename='lib/js/crossfilter.js') }}"></script>
+    <script src="{{ url_for ('static', filename='lib/js/d3.js') }}"></script>
+    <script src="{{ url_for ('static', filename='lib/js/dc.js') }}"></script>
+    <script src="{{ url_for ('static', filename='lib/js/queue.js') }}"></script>
+    <script src="{{ url_for ('static', filename='lib/js/keen.min.js') }}"></script>
+    <script src="{{ url_for ('static', filename='lib/js/intro.js') }}"></script>
+    <script src="{{ url_for ('static', filename='js/graph.js') }}"></script>
+    <script src="{{ url_for ('static', filename='js/url_table_data.js') }}"></script>
+    <script src="{{ url_for ('static', filename='js/random_image_loader.js') }}"></script>
+    <script src="{{ url_for ('static', filename='js/site_introduction.js') }}"></script>
+{% endblock %}
+<!-- JS linking end -->
