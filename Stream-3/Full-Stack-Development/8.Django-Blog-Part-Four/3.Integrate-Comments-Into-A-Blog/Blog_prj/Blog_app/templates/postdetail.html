@@ -17,9 +17,13 @@
                     <p>
                         <button class="btn btn-default" onclick="location.href='/blog';">Back To Blog</button>
                     </p>
-                    <p>{{ post.published_date }} | Views {{ post.views }}</p>
+                    <p>{{ post.published_date }} | <strong>Views:</strong> {{ post.views }} |
+                        <strong>Tag:</strong> {{ post.tag }}</p>
                 </div>
             </div>
         </div>
     </div>
+{% load disqus_tags %}
+{% set_disqus_title post.title %}
+{% disqus_show_comments %}
 {% endblock %}
