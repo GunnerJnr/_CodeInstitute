@@ -20,7 +20,7 @@ def post_list(request):
     return render(request, "blogposts.html", {'posts': posts})
 
 
-def post_detail(request, id):
+def post_detail(request, slug):
     """
     Create a view that return a single
     Post object based on the post ID and
@@ -28,7 +28,7 @@ def post_detail(request, id):
     template. Or return a 404 error if the
     post is not found
     """
-    post = get_object_or_404(Post, pk=id)
+    post = get_object_or_404(Post, slug=slug)
     post.views += 1  # clock up the number of post views
     post.save()
     return render(request, "postdetail.html", {'post': post})

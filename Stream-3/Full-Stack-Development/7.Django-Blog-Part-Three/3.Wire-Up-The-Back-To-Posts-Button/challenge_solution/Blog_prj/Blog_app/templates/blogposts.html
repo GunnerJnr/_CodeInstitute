@@ -17,7 +17,9 @@
                     <div class="col-xs-9">
                         <p>{{ post.content|truncatewords:30 }}</p>
                         <p>
-                            <button class="btn btn-default" onclick="location.href={{ post.id }};">Read More</button>
+                            <button class="btn btn-default" onclick="location.href='{% url 'post_detail' post.slug %}'">
+                                Read More
+                            </button>
                         </p>
                         <p>{{ post.published_date }}</p>
                     </div>

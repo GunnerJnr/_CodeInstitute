@@ -28,5 +28,6 @@ def post_detail(request, id):
     template. Or return a 404 error if the
     post is not found
     """
+
     post = get_object_or_404(Post, pk=id)
     return render(request, "postdetail.html", {'post': post})
