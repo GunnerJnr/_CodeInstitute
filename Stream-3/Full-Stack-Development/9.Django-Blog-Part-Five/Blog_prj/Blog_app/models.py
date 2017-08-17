@@ -20,7 +20,7 @@ class Post(models.Model):
     published_date = models.DateTimeField(blank=True, null=True)
     slug = models.SlugField(unique=True)  # used for storing slugs (e.g this-is-a-slug)
     views = models.IntegerField(default=0)  # Record how often a post is seen
-    tag = models.CharField(max_length=30, blank=True, null=True)
+    tag = models.CharField(max_length=30, blank=True, null=True)  # add a tag to the post
 
     def __unicode__(self):
         return self.title

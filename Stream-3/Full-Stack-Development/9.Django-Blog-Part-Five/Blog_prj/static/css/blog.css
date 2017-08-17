@@ -105,7 +105,7 @@ a, a:hover {
     color: #fff;
 }
 
-ul.topnav {
+ul.top-nav {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -113,11 +113,11 @@ ul.topnav {
     background-color: #333;
 }
 
-ul.topnav li {
+ul.top-nav li {
     float: left;
 }
 
-ul.topnav li a {
+ul.top-nav li a {
     display: block;
     color: white;
     text-align: center;
@@ -125,21 +125,21 @@ ul.topnav li a {
     text-decoration: none;
 }
 
-ul.topnav li a:hover:not(.active) {
+ul.top-nav li a:hover:not(.active) {
     background-color: #12AB82;
 }
 
-ul.topnav li a.active {
+ul.top-nav li a.active {
     background-color: #12AB82;
 }
 
-ul.topnav li.right {
+ul.top-nav li.right {
     float: right;
 }
 
 @media screen and (max-width: 600px) {
-    ul.topnav li.right,
-    ul.topnav li {
+    ul.top-nav li.right,
+    ul.top-nav li {
         float: none;
     }
 }
