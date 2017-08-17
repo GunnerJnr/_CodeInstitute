@@ -15,8 +15,10 @@
                     <div class="col-xs-9">
                         <p>{{ post.content|truncatewords:30 }}</p>
                         <p>
-                            <button class="btn btn-default" onclick="location.href='{% url 'post_detail' post.slug %}'">
+                            <button class="btn btn-default" onclick="location.href='{% url 'post-detail' post.slug %}'">
                                 Read More
+                            </button>
+                            <button class="btn btn-default" onclick="location.href='{% url 'new_post' %}'">New Post
                             </button>
                         </p>
                         <p>{{ post.published_date }} | <strong>Views:</strong> {{ post.views }} |

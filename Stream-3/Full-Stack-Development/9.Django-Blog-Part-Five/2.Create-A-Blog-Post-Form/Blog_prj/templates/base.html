@@ -1,0 +1,55 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blog App Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.6/cerulean/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/blog.css' %}">
+</head>
+<body>
+<div id="masthead">
+    <div class="container">
+        <div class="row">
+            <h1> GunnerJnr
+                <p id="logo" class="lead">The life of a Developer</p>
+            </h1>
+            <hr>
+        </div>
+    </div>
+</div>
+<!-- Header Begin -->
+<header>
+    <!-- Navigation Begin -->
+    <nav>
+        <ul class="top-nav">
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'top-five' %}">Top Five Posts</a></li>
+        </ul>
+    </nav>
+    <!-- Navigation End -->
+</header>
+<!-- Header End -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel">
+                <div class="panel-body">
+                    <!--blog entries-->
+                    {% block content %}
+                    {% endblock %}
+                    <!--blog entries-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="container">
+        <p class="text-muted">&copy; 2017 David Gunner Jnr</p>
+    </div>
+</footer>
+<!-- script references -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
