@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block content %}
+    <h2>Success!</h2>
+    <p>You are logged in as {{ user.email }}</p>
+    <!-- Challenge B Solution Begin-->
+    <p>You're last login was: {{ user.last_login }}</p>
+    <!-- Challenge B Solution End -->
+{% endblock %}
