@@ -25,7 +25,8 @@ def register(request):
             try:
                 customer = stripe.Customer.create(
                     email=form.cleaned_data['email'],
-                    card=form.cleaned_data['stripe_id'], # this is currently the card token/id
+                    # this is currently the card token/id
+                    card=form.cleaned_data['stripe_id'],
                     plan='REG_MONTHLY',
                 )
                 if customer:
@@ -33,15 +34,20 @@ def register(request):
                     user.stripe_id = customer.id
                     user.subscription_end = arrow.now().replace(weeks=+4).datetime
                     user.save()
+                    user = auth.authenticate(email=request.POST.get('email'),
+                                             password=request.POST.get('password1'))
 
                     if user:
                         auth.login(request, user)
-                        messages.success(request, "You have successfully registered")
+                        messages.success(
+                            request, "You have successfully registered")
                         return redirect(reverse('profile'))
                     else:
-                        messages.error(request, "unable to log you in at this time!")
+                        messages.error(
+                            request, "unable to log you in at this time!")
                 else:
-                    messages.error(request, "We were unable to take a payment with that card!")
+                    messages.error(
+                        request, "We were unable to take a payment with that card!")
             except stripe.error.CardError, e:
                 messages.error(request, "Your card was declined!")
     else:
@@ -66,7 +72,8 @@ def login(request):
                 messages.error(request, "You have successfully logged in")
                 return redirect(reverse('profile'))
             else:
-                form.add_error(None, "Your email or password was not recognised")
+                form.add_error(
+                    None, "Your email or password was not recognised")
 
     else:
         form = UserLoginForm()
