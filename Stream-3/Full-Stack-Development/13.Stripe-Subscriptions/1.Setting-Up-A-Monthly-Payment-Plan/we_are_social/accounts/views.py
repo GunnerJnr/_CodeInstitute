@@ -28,7 +28,7 @@ def register(request):
                     card=form.cleaned_data['stripe_id'],
                     plan='REG_MONTHLY',
                 )
-                if customer.paid:
+                if customer:
                     user = form.save()
                     user.stripe_id = customer.id
                     user.subscription_end = arrow.now().replace(weeks=+4).datetime
