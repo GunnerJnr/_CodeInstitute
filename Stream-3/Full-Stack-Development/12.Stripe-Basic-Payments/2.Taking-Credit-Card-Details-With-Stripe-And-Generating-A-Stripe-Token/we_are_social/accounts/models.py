@@ -39,4 +39,4 @@ class User(AbstractUser):
     stripe_id = models.CharField(max_length=40, default='')
 
     # in later units we'll be adding things like payment details!
-    object = AccountUserManager()
+    objects = AccountUserManager()

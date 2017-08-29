@@ -38,4 +38,4 @@ class User(AbstractUser):
     # number of custom attribute to our user class
 
     # in later units we'll be adding things like payment details!
-    object = AccountUserManager()
+    objects = AccountUserManager()
