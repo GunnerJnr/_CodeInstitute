@@ -2,79 +2,68 @@
 <div class="container-fluid jumbotron col-xs-12">
 	<!-- row fluid begin -->
 	<div class="row-fluid">
-
 		<!-- Heading 1 -->
 		<h1>Weddings</h1>
-
 		<!-- weddings begin -->
 		<div>
 			<img src="img/services/wedding-1.jpg" class="img-thumbnail img-responsive" alt="Wedding Events" />
 			<p class="booking-info">Meatball tongue porchetta cow hock tip venison ham tongue ham ham tail biltong bierschinken cow pig pig braunschweiger pig ham salami mignon ham drumstick, ribs ham meatball ham pork tip hamburger pig tri-tip, cow tail andouillette. Ham pig short shankle, ribs venison pastrami. Round braunschweiger leberkas corned prosciutto, landjaeger frankfurter cow hamburger. Tongue pig pig flank leberkas. Hock pig cow belly pastrami ham tongue andouille ham mignon shank. Pork chicken tip sopressata ham round pancetta cow tail pork. Ham swine chicken, tri-tip pig mignon, ham brisket bregenwurst, ham drumstick bierschinken tip chicken kevin pork pig ribs pig cow ribs swine loin venison tip andouille ham strip, hock bresaola ham tenderloin.</p>
 		</div>
 		<!-- weddings end -->
-
 	</div>
 	<!-- fluid row end -->
 </div>
 <!-- fluid container end -->
-
 <!-- fluid container begin -->
 <div class="container-fluid jumbotron col-xs-12">
 	<!-- row fluid begin -->
 	<div class="row-fluid">
-
 		<!-- Heading 2 -->
 		<h1>Corporate Events</h1>
-
 		<!-- Corporate begin -->
 		<div>
 			<img src="img/services/corporate-1.jpg" class="img-thumbnail img-responsive" alt="Corporate Events" />
 			<p class="booking-info">Meatball tongue porchetta cow hock tip venison ham tongue ham ham tail biltong bierschinken cow pig pig braunschweiger pig ham salami mignon ham drumstick, ribs ham meatball ham pork tip hamburger pig tri-tip, cow tail andouillette. Ham pig short shankle, ribs venison pastrami. Round braunschweiger leberkas corned prosciutto, landjaeger frankfurter cow hamburger. Tongue pig pig flank leberkas. Hock pig cow belly pastrami ham tongue andouille ham mignon shank. Pork chicken tip sopressata ham round pancetta cow tail pork. Ham swine chicken, tri-tip pig mignon, ham brisket bregenwurst, ham drumstick bierschinken tip chicken kevin pork pig ribs pig cow ribs swine loin venison tip andouille ham strip, hock bresaola ham tenderloin.</p>
 		</div>
 		<!-- coporate end -->
-
 	</div>
 	<!-- fluid row end -->
 </div>
 <!-- fluid container end -->
-
 <!-- fluid container begin -->
 <div class="container-fluid jumbotron col-xs-12 col-sm-12">
 	<!-- row fluid begin -->
 	<div class="row-fluid">
-
 		<!-- fieldset begin -->
 		<fieldset>
-
 			<!-- form heading -->
-			<legend>{{title}}</legend>
-
+			<legend>{{ title }}</legend>
 			<!-- form begin -->
 			<form ng-controller="ContactController" class="form-horizontal" role="form">
 				<!-- input groups begin -->
 				<div class="form-group contact-form">
-					<label for="firstName">{{firstNameLabel}}</label>
+					<label for="firstName">{{ firstNameLabel }}</label>
 					<div>
 						<input ng-model="collectFormData.FirstName" class="form-control" id="firstName" placeholder="First Name" required>
 					</div>
 					<span ng-show="firstNameRequired" class="validation-span">{{firstNameRequired}}</span>
 				</div>
 				<div class="form-group contact-form">
-					<label for="lastName">{{lastNameLabel}}</label>
+					<label for="lastName">{{ lastNameLabel }}</label>
 					<div>
 						<input ng-model="collectFormData.LastName" class="form-control" id="lastName" placeholder="Last Name" required>
 					</div>
 					<span ng-show="lastNameRequired" class="validation-span">{{lastNameRequired}}</span>
 				</div>
 				<div class="form-group contact-form">
-					<label for="email">{{emailLabel}}</label>
+					<label for="email">{{ emailLabel }}</label>
 					<div>
 						<input ng-model="collectFormData.Email" class="form-control" id="email" placeholder="you're@awesome.com" required>
 					</div>
-					<span ng-show="emailRequired" class="validation-span">{{emailRequired}}</span>
+					<span ng-show="emailRequired" class="validation-span">{{ emailRequired }}</span>
 				</div>
 				<div class="form-group contact-form">
-					<label for="message-box">{{messageLabel}}</label>
+					<label for="message-box">{{ messageLabel }}</label>
 					<div>
 						<textarea ng-model="collectFormData.Message" class="form-control" id="message-box" form="userForm" rows="5" cols="50" placeholder="your message here..."></textarea>
 					</div>
@@ -88,27 +77,21 @@
                 -->
 			</form>
 			<!-- form end -->
-
 		</fieldset>
 		<!-- fieldset end -->
-
 	</div>
 	<!-- fluid row end -->
 </div>
 <!-- fluid container end -->
-
 <!-- fluid container begin -->
 <div class="container-fluid jumbotron col-xs-12">
 	<!-- row fluid begin -->
 	<div class="row-fluid">
-
 		<!-- map heading -->
 		<h1>Where to find us</h1>
-
 		<!-- map begin -->
 		<div id="googleMap"></div>
 		<!-- map end -->
-
 	</div>
 	<!-- fluid row end -->
 </div>

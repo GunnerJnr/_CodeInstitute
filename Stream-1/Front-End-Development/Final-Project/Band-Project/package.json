@@ -3,7 +3,7 @@
   "private": false,
   "version": "1.0.0",
   "description": "Stream 1 Final Project",
-  "repository": "https://github.com/GunnerJnr/full-stack-completed-challenges/tree/master/Stream%201/Final%20Project",
+  "repository": "https://github.com/GunnerJnr/_CodeInstitute/tree/master/Stream-1/Front-End-Development/Final-Project",
   "license": "??",
   "devDependencies": { 
     "http-server": "^0.6.1",

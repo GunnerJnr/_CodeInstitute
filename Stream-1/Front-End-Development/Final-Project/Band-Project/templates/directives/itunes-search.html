@@ -2,15 +2,12 @@
     Itunes Search - 
 	ref: https://blogs.sequoiainc.com/build-your-first-angularjs-application-to-search-itunes/ 
 -->
-
 <!-- ng controller & container fluid begin -->
 <div ng-controller="ItunesController" class="container-fluid jumbotron col-xs-12 col-sm-12" id="search-results-container">
 	<!-- row fluid begin -->
 	<div class="row-fluid">
-
 		<!-- main heading -->
-		<h1>{{title}}</h1>
-
+		<h1>{{ title }}</h1>
 		<!-- search container begin -->
 		<div id="search-input-container">
 			<!-- add search form use ng-submit to call searchiTunes, pass the artist -->
@@ -23,7 +20,6 @@
 			<!-- form end -->
 		</div>
 		<!-- search input end -->
-
 		<!-- 
         	ng-show to decide when to show results will show the songs if there are songs to show 
     	-->
@@ -33,21 +29,20 @@
 			<thead>
 				<tr>
 					<th id="album-art ">
-						<h3>{{albumart}}</h3>
+						<h3>{{ albumart }}</h3>
 					</th>
 					<th id="track-info ">
-						<h3>{{track}}</h3>
+						<h3>{{ track }}</h3>
 					</th>
 					<th id="track-preview ">
-						<h3>{{preview}}</h3>
+						<h3>{{ preview }}</h3>
 					</th>
 					<th id="track-cost">
-						<h3>{{trackCost}}</h3>
+						<h3>{{ trackCost }}</h3>
 					</th>
 				</tr>
 			</thead>
 			<!-- table header end -->
-
 			<!-- table body begin -->
 			<tbody>
 				<!-- (ng-repeat) loop over each song in the list -->
@@ -55,7 +50,7 @@
 					<!-- (ng-src) load image when data is present -->
 					<td><img class="img-thumbnail img-responsive" ng-src="{{song.artworkUrl60}}" alt="{{song.collectionName}}" /></td>
 					<!-- track name info -->
-					<td>{{song.trackName}}</td>
+					<td>{{ song.trackName }}</td>
 					<!-- song preview -->
 					<td><a href="{{song.previewUrl}}" target="_blank">Play</a></td>
 					<!-- song cost and link to itunes for relevant song -->
@@ -67,9 +62,8 @@
 			<!-- table body end -->
 		</table>
 		<!-- table end -->
-
 		<!-- show error message if search error -->
-		{{error}}
+		{{ error }}
 	</div>
 	<!-- row fluid end -->
 </div>
