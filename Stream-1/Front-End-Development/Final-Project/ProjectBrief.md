@@ -4,7 +4,9 @@ PROJECT BRIEF FOR STREAM 1 FINAL PROJECT - THE BAND SITE
 ### Table of Contents
 
 [GUIDELINES](#guidelines)
+
 [Create a website for a band](#create-a-website-for-a-band)
+
 [Create your own project](#create-your-own-project)
 
 ### GUIDELINES

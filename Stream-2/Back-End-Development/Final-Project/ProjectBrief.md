@@ -4,7 +4,9 @@ PROJECT BRIEF FOR STREAM 2 FINAL PROJECT - THE AVENGERS DASHBOARD
 ### Table of Contents
 
 [PROJECT BRIEF](#project-brief)
+
 [PROJECT GUIDELINES](#project-guidelines)
+
 [ADDITIONAL ADVICE](#additional-advice)
 
 ### PROJECT BRIEF
