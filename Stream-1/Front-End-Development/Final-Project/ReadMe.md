@@ -5,8 +5,6 @@ DOCUMENTATION FOR STREAM 1 FINAL PROJECT - THE BAND SITE
 
 ### Table of Contents
 
-[Site Overview](#site-overview)
-
 [Description](#description)
 
 [Testing](#testing)
@@ -21,7 +19,7 @@ DOCUMENTATION FOR STREAM 1 FINAL PROJECT - THE BAND SITE
 
 [Licence](#license)
 
-### Site Overview
+### Description
 This web site was inspired by the project brief which can be seen either on the
 home page of this wiki or on the `ReadMe.md` in the project folder in the Stream
 1 git directory.
@@ -77,12 +75,6 @@ copyright text, but more importantly it contains a handful of `social
 icons/links.`These have some neat `CSS` trickery to make them transition up on
 hovering the mouse, and they also change colour to the appropriate colour that
 we are used to seeing in these logo’s on a day to day basis.
-
-[Back to Table Of Contents](#table-of-contents)
-
-### Description
-
-TODO
 
 [Back to Table Of Contents](#table-of-contents)
 
