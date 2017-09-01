@@ -1,8 +1,6 @@
 DOCUMENTATION FOR STREAM 1 FINAL PROJECT - THE BAND SITE
 ----------------------------
 
-![](img/band-site.png)
-
 ### Table of Contents
 
 [Description](#description)
@@ -95,6 +93,8 @@ TODO
 The final project can be viewed by following this link:
 <http://gunnerjnr.uk/band-site>
 
+![](img/band-site.png)
+
 [Back to Table Of Contents](#table-of-contents)
 
 ### Contributing
@@ -114,7 +114,7 @@ Code Institute
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 MIT License
 
-Copyright (c) [year] [fullname]
+Copyright (c) [2017] [David Andrew Gunner (Jnr)]
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

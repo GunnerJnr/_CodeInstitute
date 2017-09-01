@@ -1,23 +1,21 @@
-Final Project For Stream Two - Avengers Dashboard
-=================================================
+PROJECT BRIEF FOR STREAM 2 FINAL PROJECT - THE AVENGERS DASHBOARD
+----------------------------
 
- 
+### Table of Contents
+
+[PROJECT BRIEF](#project-brief)
+[PROJECT GUIDELINES](#project-guidelines)
+[ADDITIONAL ADVICE](#additional-advice)
 
 ### PROJECT BRIEF
 
-The project guidelines are as follows:
-
- 
+The project guidelines are as follows: 
 
 In this project you’ll be building a data-driven frontend and backend website
 using the technologies that you have learned throughout Streams 1 and 2.
 
- 
-
 You can either choose to use the example brief below or you can use your own
-idea for the website.
-
- 
+idea for the website. 
 
 1.  **Get Yourself Elected**
 
@@ -38,15 +36,13 @@ idea for the website.
     your plans regarding education. Feel free to include (or invent) any
     additional data or detail that would support your campaign.
 
-     
-
 2.  **Create Your Own Project (Recommended)**
 
     If you choose to create your own project, the scope should be similar to
     that of the example brief above. If you want some ideas, please ask your
     mentor for advice and direction.
 
-     
+[Back to Table Of Contents](#table-of-contents)
 
 ### PROJECT GUIDELINES
 
@@ -80,28 +76,20 @@ idea for the website.
     explain what was kept and/or how it was changed to fit your need. A project
     submitted without a README.md file will FAIL.
 
- 
+[Back to Table Of Contents](#table-of-contents)
 
 ### ADDITIONAL ADVICE
 
 We advise that you create wire frames before embarking on full blown development
 (you can use Balsamiq or any other tool, including just pen and paper)..
 
- 
-
 Incorporate as much as you have learned in our lessons.
-
- 
 
 The site can also make use of CSS, JavaScript and Python libraries/frameworks,
 just make sure you maintain a clear separation between the library code and your
 own code
 
- 
-
 Please refer back to your mentor to get constant feedback as you progress
-
- 
 
 Don’t forget to use your mentor’s help. Your mentor can act as:
 
@@ -109,6 +97,6 @@ Don’t forget to use your mentor’s help. Your mentor can act as:
 
 -   Your technical consultant
 
- 
-
 ### Good luck and enjoy!
+
+[Back to Table Of Contents](#table-of-contents)

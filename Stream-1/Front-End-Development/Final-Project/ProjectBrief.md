@@ -1,5 +1,5 @@
-Final Project For Stream One
-============================
+PROJECT BRIEF FOR STREAM 1 FINAL PROJECT - THE BAND SITE
+----------------------------
 
 ### Table of Contents
 
