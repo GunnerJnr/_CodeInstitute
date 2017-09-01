@@ -5,6 +5,7 @@ import datetime
 import json
 import stripe
 import arrow
+from django.utils import timezone
 from django.contrib import messages, auth
 from django.contrib.auth.decorators import login_required
 from django.core.urlresolvers import reverse
@@ -72,12 +73,16 @@ def login(request):
                                      password=request.POST.get('password'))
 
             if user is not None:
-                auth.login(request, user)
-                messages.error(request, "You have successfully logged in")
-                return redirect(reverse('profile'))
+                now = timezone.now()
+                if user.subscription_end > now:
+                    auth.login(request, user)
+                    messages.error(
+                        request, "You have successfully logged in")
+                    return redirect(reverse('profile'))
+                else:
+                    form.add_error(None, "SORRY!, You're subscription has expired!")
             else:
-                form.add_error(
-                    None, "Your email or password was not recognised")
+                form.add_error(None, "Your email or password was not recognised")
 
     else:
         form = UserLoginForm()
