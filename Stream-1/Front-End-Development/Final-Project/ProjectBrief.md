@@ -1,5 +1,5 @@
 PROJECT BRIEF FOR STREAM 1 FINAL PROJECT - THE BAND SITE
-----------------------------
+--------------------------------------------------------
 
 ### Table of Contents
 
@@ -112,13 +112,13 @@ Your project should follow the above guidelines, plus follow as far as possible:
 -   Keep the website to around 4-5 web pages.
 
 Note to view this example you will need to open a command window in the root
-folder and run ‘npm start’ this will install the node\_modules folder which will
+folder and run ‘npm start’ this will install the node_modules folder which will
 in turn run a local mini server allowing us to view and test our angular js app.
 
 ![](img/band-site.png)
 
 The final project can be viewed by following this link:
-<http://gunnerjnr.uk/band-site>
+http://band-site.gunnerjnr.uk/
 
 Also please refer to [ReadMe.md](readme.md) for more details.
 

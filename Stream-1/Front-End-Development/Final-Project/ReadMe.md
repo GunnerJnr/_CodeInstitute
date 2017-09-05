@@ -1,5 +1,5 @@
 DOCUMENTATION FOR STREAM 1 FINAL PROJECT - THE BAND SITE
-----------------------------
+--------------------------------------------------------
 
 ### Table of Contents
 
@@ -18,12 +18,13 @@ DOCUMENTATION FOR STREAM 1 FINAL PROJECT - THE BAND SITE
 [Licence](#license)
 
 ### Description
+
 This web site was inspired by the project brief which can be seen either on the
 home page of this wiki or on the `ReadMe.md` in the project folder in the Stream
 1 git directory.
 
 If you navigate to the website (’[Click here for the Band
-Site](http://gunnerjnr.uk/band-site/)’), you will arrive on the `home/landing`
+Site](http://band-site.gunnerjnr.uk/)’), you will arrive on the `home/landing`
 page where you will be presented with a familiar site layout consisting of the
 usual site `navigation`, `header`, `content` and `footer`.
 
@@ -91,7 +92,7 @@ TODO
 ### Usage
 
 The final project can be viewed by following this link:
-<http://gunnerjnr.uk/band-site>
+http://band-site.gunnerjnr.uk/
 
 ![](img/band-site.png)
 

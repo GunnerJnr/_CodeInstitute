@@ -4,7 +4,7 @@ angular.module("bandApp", ['ngRoute', 'bandAppControllers', 'bandAppDirectives']
         $locationProvider.html5Mode(true);  // enable href routing without hashes
 		// route our application
 		$routeProvider        
-			.when('/', {
+			.when('/home', {
 				templateUrl: "templates/home.html",
 				controller: "HomeController"
 			})
@@ -25,6 +25,6 @@ angular.module("bandApp", ['ngRoute', 'bandAppControllers', 'bandAppDirectives']
 				controller: "ItunesController"
 			})
 			.otherwise({
-				redirectTo: '/'
+				redirectTo: '/home'
 			});
 	});
