@@ -26,4 +26,5 @@ angular.module("bandApp", ['ngRoute', 'bandAppControllers', 'bandAppDirectives']
 			.otherwise({
 				redirectTo: '/'
 			});
+		$locationProvider.html5Mode(true);  //enable href routing without hashes
 	});
