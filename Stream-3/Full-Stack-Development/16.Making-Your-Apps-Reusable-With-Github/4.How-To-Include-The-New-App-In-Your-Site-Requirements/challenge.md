@@ -22,5 +22,8 @@
  
 
 Now once we fire up our we_are_social project, we have a whole new section for
-blogs just by simply reusing code we wrote ages ago!  
+blogs just by simply reusing code we wrote ages ago!
 
+ 
+
+See we_are_social project for the challenge solutions implemented.
