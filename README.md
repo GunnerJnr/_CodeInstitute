@@ -7,9 +7,9 @@ Code Institute Diploma in Software Development
 
 [Syllabus Overview](#syllabus-overview)
 
-[Module 0 Pre-Programme- Technology Primer](#module-0)
+[Module 0 Pre-Programme Technology Primer](#module-0)
 
-[Module 1  Front End Design and Development](#module-1)
+[Module 1 Front End Design and Development](#module-1)
 
 [Stream 1 Exercises - Topic List](#stream-1-exercises)
 
@@ -31,7 +31,9 @@ Code Institute Diploma in Software Development
 
  
 
-### Module 0 Pre-Programme- Technology Primer
+### Module 0 
+
+### Pre-Programme- Technology Primer
 
 The module covers all the necessary prerequisites for our main programme.  
 Students must have a base level understanding of the technologies, concepts and  
@@ -65,7 +67,9 @@ Specifically:
 
  
 
-### Module 1: Front End Design and Development
+### Module 1
+
+### Front End Design and Development
 
 This module will develop proficient skills in Front End coding technologies
 specifically:
@@ -94,7 +98,9 @@ specifically:
 
  
 
-### Stream 1 Exercises - Topic List:
+### Stream 1 Exercises
+
+### Topic List:
 
 1.  `The Box Model`
 
@@ -162,7 +168,9 @@ specifically:
 
  
 
-### Module 2 – Back End Development and Data Integration
+### Module 2
+
+### Back End Development and Data Integration
 
 ### This module will develop proficient skills in Back End coding technologies and the integration of a variety of data types specifically:
 
@@ -191,7 +199,9 @@ specifically:
 
  
 
-### Stream 2 Exercises - Topic List
+### Stream 2 Exercises
+
+### Topic List
 
 1.  `Installing Python`
 
@@ -253,7 +263,9 @@ specifically:
 
  
 
-### Module 3 – Full Stack Application Deployment
+### Module 3
+
+### Full Stack Application Deployment
 
 ### This module will develop skills in the integration of modules, students will build and deploy a full stack application framework using Django and advanced Python. Specifically:
 
