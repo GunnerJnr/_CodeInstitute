@@ -3,14 +3,35 @@ Code Institute Diploma in Software Development
 
  
 
-Syllabus Overview
------------------
+### **Table of Contents**
+
+[Syllabus Overview](#syllabus-overview)
+
+[Module 0 Pre-Programme- Technology Primer](#module-0)
+
+[Module 1  Front End Design and Development](#module-1)
+
+[Stream 1 Exercises - Topic List](#stream-1-exercises)
+
+[Module 2 – Back End Development and Data Integration](#module-2)
+
+[Stream 2 Exercises - Topic List](#stream-2-exercises)
+
+[Module 3 – Full Stack Application Deployment](#module-3)
+
+[Licence](#license)
+
+###  
+
+[[Back to Table Of Contents]](#table-of-contents)
 
  
 
-### Module 0 Pre-Programme
+### **Syllabus Overview**
 
-### Technology Primer
+ 
+
+### Module 0 Pre-Programme- Technology Primer
 
 The module covers all the necessary prerequisites for our main programme.  
 Students must have a base level understanding of the technologies, concepts and  
@@ -23,8 +44,6 @@ throughout.
 
 The material is collated in a central resource. The content is sourced from  
 verified pre-existing online video and text based material.
-
- 
 
 Specifically:
 
@@ -42,11 +61,11 @@ Specifically:
 
  
 
-### Module 1 Front
-
-### End Design and Development
+[[Back to Table Of Contents]](#table-of-contents)
 
  
+
+### Module 1: Front End Design and Development
 
 This module will develop proficient skills in Front End coding technologies
 specifically:
@@ -71,9 +90,11 @@ specifically:
 
  
 
-### exercises
+[[Back to Table Of Contents]](#table-of-contents)
 
-### Topic List:
+ 
+
+### Stream 1 Exercises - Topic List:
 
 1.  `The Box Model`
 
@@ -137,11 +158,13 @@ specifically:
 
  
 
+[[Back to Table Of Contents]](#table-of-contents)
+
+ 
+
 ### Module 2 – Back End Development and Data Integration
 
 ### This module will develop proficient skills in Back End coding technologies and the integration of a variety of data types specifically:
-
- 
 
 1.  `Python programming`
 
@@ -164,9 +187,11 @@ specifically:
 
  
 
-### exercises
+[[Back to Table Of Contents]](#table-of-contents)
 
-### Topic List
+ 
+
+### Stream 2 Exercises - Topic List
 
 1.  `Installing Python`
 
@@ -224,15 +249,13 @@ specifically:
 
  
 
-### Module 3 – Full Stack Application Deployment
-
-### Overview
+[[Back to Table Of Contents]](#table-of-contents)
 
  
 
-### This module will develop skills in the integration of modules, students will build and deploy a full stack application framework using Django and advanced Python.
+### Module 3 – Full Stack Application Deployment
 
-### Specifically:
+### This module will develop skills in the integration of modules, students will build and deploy a full stack application framework using Django and advanced Python. Specifically:
 
 -   `Creating Templates`
 
@@ -303,3 +326,42 @@ specifically:
 25. `Django’s testing framework`
 
 26. `Deploying your site`
+
+ 
+
+[[Back to Table Of Contents]](#table-of-contents)
+
+ 
+
+### **License**:
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MIT License
+
+Copyright (c) [year] [fullname]
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+If you would like more information on choosing a license, check out
+GitHub’s [licensing guide](http://choosealicense.com/)!
+
+ 
+
+[[Back to Table Of Contents]](#table-of-contents)
