@@ -33,18 +33,6 @@ def last_posted_user_name(thread):
     return last_post.user.username
 
 
-@register.filter
-def vote_percentage(subject):
-    count = subject.votes.count()
-
-    if count == 0:
-        return 0
-
-    total_votes = subject.poll.votes.count()
-
-    return (100 / total_votes) * count
-
-
 @register.simple_tag
 def user_vote_button(thread, subject, user):
     vote = thread.poll.votes.filter(user_id=user.id).first()
@@ -53,7 +41,7 @@ def user_vote_button(thread, subject, user):
         if user.is_authenticated():
             link = """
             <div class="col-md-3 btn-vote">
-            <a href="%s" class="btn btn-default btn-sm>
+            <a href="%s" class="btn btn-default btn-sm">
             Add my vote!
             </a>
             </div>
@@ -64,3 +52,15 @@ def user_vote_button(thread, subject, user):
 
             return link
     return ""
+
+
+@register.filter
+def vote_percentage(subject):
+    count = subject.votes.count()
+
+    if count == 0:
+        return 0
+
+    total_votes = subject.poll.votes.count()
+
+    return (100 / total_votes) * count
