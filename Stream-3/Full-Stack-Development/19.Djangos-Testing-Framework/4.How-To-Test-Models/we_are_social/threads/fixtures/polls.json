@@ -1,0 +1,462 @@
+[
+{
+    "model": "polls.poll",
+    "pk": 1,
+    "fields": {
+        "question": "How much do you like polls in forums?",
+        "thread": 6
+    }
+},
+{
+    "model": "polls.poll",
+    "pk": 2,
+    "fields": {
+        "question": "Testing Poll",
+        "thread": 7
+    }
+},
+{
+    "model": "polls.poll",
+    "pk": 3,
+    "fields": {
+        "question": "Testing Poll",
+        "thread": 8
+    }
+},
+{
+    "model": "polls.poll",
+    "pk": 4,
+    "fields": {
+        "question": "Testing Poll",
+        "thread": 9
+    }
+},
+{
+    "model": "polls.poll",
+    "pk": 5,
+    "fields": {
+        "question": "c",
+        "thread": 10
+    }
+},
+{
+    "model": "polls.poll",
+    "pk": 6,
+    "fields": {
+        "question": "CC",
+        "thread": 11
+    }
+},
+{
+    "model": "polls.poll",
+    "pk": 7,
+    "fields": {
+        "question": "CCC",
+        "thread": 12
+    }
+},
+{
+    "model": "polls.poll",
+    "pk": 8,
+    "fields": {
+        "question": "Messed up poll style",
+        "thread": 13
+    }
+},
+{
+    "model": "polls.poll",
+    "pk": 9,
+    "fields": {
+        "question": "fdbggfd",
+        "thread": 14
+    }
+},
+{
+    "model": "polls.poll",
+    "pk": 10,
+    "fields": {
+        "question": "c",
+        "thread": 15
+    }
+},
+{
+    "model": "polls.poll",
+    "pk": 11,
+    "fields": {
+        "question": "gfsgf",
+        "thread": 16
+    }
+},
+{
+    "model": "polls.pollsubject",
+    "pk": 1,
+    "fields": {
+        "name": "A lot",
+        "poll": 1
+    }
+},
+{
+    "model": "polls.pollsubject",
+    "pk": 2,
+    "fields": {
+        "name": "Medium",
+        "poll": 1
+    }
+},
+{
+    "model": "polls.pollsubject",
+    "pk": 3,
+    "fields": {
+        "name": "A little",
+        "poll": 1
+    }
+},
+{
+    "model": "polls.pollsubject",
+    "pk": 4,
+    "fields": {
+        "name": "Choose A",
+        "poll": 2
+    }
+},
+{
+    "model": "polls.pollsubject",
+    "pk": 5,
+    "fields": {
+        "name": "Choose B",
+        "poll": 2
+    }
+},
+{
+    "model": "polls.pollsubject",
+    "pk": 6,
+    "fields": {
+        "name": "Choose C",
+        "poll": 2
+    }
+},
+{
+    "model": "polls.pollsubject",
+    "pk": 7,
+    "fields": {
+        "name": "Choose A",
+        "poll": 3
+    }
+},
+{
+    "model": "polls.pollsubject",
+    "pk": 8,
+    "fields": {
+        "name": "Choose B",
+        "poll": 3
+    }
+},
+{
+    "model": "polls.pollsubject",
+    "pk": 9,
+    "fields": {
+        "name": "Choose C",
+        "poll": 3
+    }
+},
+{
+    "model": "polls.pollsubject",
+    "pk": 10,
+    "fields": {
+        "name": "Choose A",
+        "poll": 4
+    }
+},
+{
+    "model": "polls.pollsubject",
+    "pk": 11,
+    "fields": {
+        "name": "Choose B",
+        "poll": 4
+    }
+},
+{
+    "model": "polls.pollsubject",
+    "pk": 12,
+    "fields": {
+        "name": "Choose C",
+        "poll": 4
+    }
+},
+{
+    "model": "polls.pollsubject",
+    "pk": 13,
+    "fields": {
+        "name": "d",
+        "poll": 5
+    }
+},
+{
+    "model": "polls.pollsubject",
+    "pk": 14,
+    "fields": {
+        "name": "e",
+        "poll": 5
+    }
+},
+{
+    "model": "polls.pollsubject",
+    "pk": 15,
+    "fields": {
+        "name": "f",
+        "poll": 5
+    }
+},
+{
+    "model": "polls.pollsubject",
+    "pk": 16,
+    "fields": {
+        "name": "DD",
+        "poll": 6
+    }
+},
+{
+    "model": "polls.pollsubject",
+    "pk": 17,
+    "fields": {
+        "name": "EE",
+        "poll": 6
+    }
+},
+{
+    "model": "polls.pollsubject",
+    "pk": 18,
+    "fields": {
+        "name": "FF",
+        "poll": 6
+    }
+},
+{
+    "model": "polls.pollsubject",
+    "pk": 19,
+    "fields": {
+        "name": "DDD",
+        "poll": 7
+    }
+},
+{
+    "model": "polls.pollsubject",
+    "pk": 20,
+    "fields": {
+        "name": "EEE",
+        "poll": 7
+    }
+},
+{
+    "model": "polls.pollsubject",
+    "pk": 21,
+    "fields": {
+        "name": "FFF",
+        "poll": 7
+    }
+},
+{
+    "model": "polls.pollsubject",
+    "pk": 22,
+    "fields": {
+        "name": "Why",
+        "poll": 8
+    }
+},
+{
+    "model": "polls.pollsubject",
+    "pk": 23,
+    "fields": {
+        "name": "doe it not",
+        "poll": 8
+    }
+},
+{
+    "model": "polls.pollsubject",
+    "pk": 24,
+    "fields": {
+        "name": "work properly",
+        "poll": 8
+    }
+},
+{
+    "model": "polls.pollsubject",
+    "pk": 25,
+    "fields": {
+        "name": "dfgbdf",
+        "poll": 9
+    }
+},
+{
+    "model": "polls.pollsubject",
+    "pk": 26,
+    "fields": {
+        "name": "ghbfdhf",
+        "poll": 9
+    }
+},
+{
+    "model": "polls.pollsubject",
+    "pk": 27,
+    "fields": {
+        "name": "hgdhd",
+        "poll": 9
+    }
+},
+{
+    "model": "polls.pollsubject",
+    "pk": 28,
+    "fields": {
+        "name": "d",
+        "poll": 10
+    }
+},
+{
+    "model": "polls.pollsubject",
+    "pk": 29,
+    "fields": {
+        "name": "e",
+        "poll": 10
+    }
+},
+{
+    "model": "polls.pollsubject",
+    "pk": 30,
+    "fields": {
+        "name": "f",
+        "poll": 10
+    }
+},
+{
+    "model": "polls.pollsubject",
+    "pk": 31,
+    "fields": {
+        "name": "fdsgf",
+        "poll": 11
+    }
+},
+{
+    "model": "polls.pollsubject",
+    "pk": 32,
+    "fields": {
+        "name": "gfdgfd",
+        "poll": 11
+    }
+},
+{
+    "model": "polls.pollsubject",
+    "pk": 33,
+    "fields": {
+        "name": "gfdgf",
+        "poll": 11
+    }
+},
+{
+    "model": "polls.vote",
+    "pk": 1,
+    "fields": {
+        "poll": 1,
+        "subject": 3,
+        "user": 1
+    }
+},
+{
+    "model": "polls.vote",
+    "pk": 2,
+    "fields": {
+        "poll": 5,
+        "subject": 14,
+        "user": 1
+    }
+},
+{
+    "model": "polls.vote",
+    "pk": 3,
+    "fields": {
+        "poll": 4,
+        "subject": 12,
+        "user": 1
+    }
+},
+{
+    "model": "polls.vote",
+    "pk": 4,
+    "fields": {
+        "poll": 1,
+        "subject": 3,
+        "user": 2
+    }
+},
+{
+    "model": "polls.vote",
+    "pk": 5,
+    "fields": {
+        "poll": 6,
+        "subject": 16,
+        "user": 2
+    }
+},
+{
+    "model": "polls.vote",
+    "pk": 6,
+    "fields": {
+        "poll": 7,
+        "subject": 20,
+        "user": 1
+    }
+},
+{
+    "model": "polls.vote",
+    "pk": 7,
+    "fields": {
+        "poll": 8,
+        "subject": 24,
+        "user": 1
+    }
+},
+{
+    "model": "polls.vote",
+    "pk": 8,
+    "fields": {
+        "poll": 8,
+        "subject": 24,
+        "user": 2
+    }
+},
+{
+    "model": "polls.vote",
+    "pk": 9,
+    "fields": {
+        "poll": 9,
+        "subject": 25,
+        "user": 2
+    }
+},
+{
+    "model": "polls.vote",
+    "pk": 10,
+    "fields": {
+        "poll": 10,
+        "subject": 29,
+        "user": 1
+    }
+},
+{
+    "model": "polls.vote",
+    "pk": 11,
+    "fields": {
+        "poll": 10,
+        "subject": 29,
+        "user": 2
+    }
+},
+{
+    "model": "polls.vote",
+    "pk": 12,
+    "fields": {
+        "poll": 11,
+        "subject": 31,
+        "user": 1
+    }
+}
+]

@@ -1,0 +1,42 @@
+[
+{
+    "model": "accounts.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$36000$wasGSuG0mBdB$FIeu5SGKlpat2DaV3G/MKf3GKOVsXd7Vg6cJcrAxljg=",
+        "last_login": "2017-09-27T08:28:21.715Z",
+        "is_superuser": true,
+        "username": "gunnerjnr@live.co.uk",
+        "first_name": "",
+        "last_name": "",
+        "email": "gunnerjnr@live.co.uk",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2017-08-31T23:54:42.034Z",
+        "stripe_id": "",
+        "subscription_end": "2017-10-31T23:54:42.034Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 2,
+    "fields": {
+        "password": "pbkdf2_sha256$36000$TVAHPJrB5eGe$MkgO86L9PLrTl2Cy/kKZ9CCABm0TSED5+idp8raeD7g=",
+        "last_login": "2017-09-23T09:57:03.903Z",
+        "is_superuser": false,
+        "username": "DjWikked@aol.com",
+        "first_name": "",
+        "last_name": "",
+        "email": "DjWikked@aol.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2017-09-01T00:10:41.383Z",
+        "stripe_id": "cus_BJg6vFTb3xzdaX",
+        "subscription_end": "2017-09-29T00:10:45.141Z",
+        "groups": [],
+        "user_permissions": []
+    }
+}
+]

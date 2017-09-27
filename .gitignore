@@ -205,3 +205,6 @@ CMakeLists.txt
 DriverInclude.wxs
 
 compile_commands.json
+
+#Misc.
+*.bat
