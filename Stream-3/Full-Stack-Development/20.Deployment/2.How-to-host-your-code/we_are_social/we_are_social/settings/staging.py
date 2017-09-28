@@ -21,10 +21,10 @@ STRIPE_SECRET = os.getenv('STRIPE_SECRET', 'sk_test_DKsnvqPsLCUlxdYDw2hG1FtF')
 
 
 # Paypal environment variables
-PAYPAL_NOTIFY_URL = 'we-are-social-project-staging.herokuapp.com'
+PAYPAL_NOTIFY_URL = 'https://we-are-social-project-staging.herokuapp.com'
 PAYPAL_RECEIVER_EMAIL = 'gunnerjnr-business@live.co.uk'
 
-SITE_URL = 'we-are-social-project-staging.herokuapp.com'
+SITE_URL = 'https://we-are-social-project-staging.herokuapp.com'
 ALLOWED_HOSTS.append('we-are-social-project-staging.herokuapp.com')
 
 # Log DEBUG information to the console

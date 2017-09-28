@@ -19,8 +19,8 @@ STRIPE_PUBLISHABLE = os.getenv('STRIPE_PUBLISHABLE', 'pk_test_EDwXAGGLO8YWJr05PU
 STRIPE_SECRET = os.getenv('STRIPE_SECRET', 'sk_test_DKsnvqPsLCUlxdYDw2hG1FtF')
 
 # Paypal environment variables
-SITE_URL = 'we-are-social-project-staging.herokuapp.com'
+SITE_URL = 'http://127.0.0.1:8000'
 
-PAYPAL_NOTIFY_URL = 'we-are-social-project-staging.herokuapp.com'
+PAYPAL_NOTIFY_URL = 'https://we-are-social-project-staging.herokuapp.com'
 
 PAYPAL_RECEIVER_EMAIL = 'gunnerjnr-business@live.co.uk'
