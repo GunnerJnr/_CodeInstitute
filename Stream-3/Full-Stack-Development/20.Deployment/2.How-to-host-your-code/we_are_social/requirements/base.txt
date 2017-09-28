@@ -1,0 +1,16 @@
+arrow==0.10.0
+beautifulsoup4==4.6.0
+Django==1.11.4
+django-disqus==0.5
+django-emoticons==1.2
+django-forms-bootstrap==3.1.0
+django-paypal==0.3.6
+django-tinymce==2.6.0
+djangorestframework==3.6.4
+gunicorn==19.4
+Pillow==3.1.1
+python-dateutil==2.6.1
+reusable-blog-app==1.0.0
+six==1.10.0
+stripe==1.62.1
+wheel==0.30.0
