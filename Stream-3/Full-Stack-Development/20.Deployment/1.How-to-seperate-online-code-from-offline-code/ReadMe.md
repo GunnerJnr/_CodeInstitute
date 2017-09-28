@@ -13,7 +13,6 @@ we need to make to our project structure before we can host our code.
 Usually when working in an industry, there will be a certain process that your
 projects will go through. The steps in this process are:
 
-  
 **1. Dev** – This is the development stage, the normal process that we’ve be
 using so far. Basically what will happen is that you’ll develop your features
 and work on your bug fixes. Then these will be committed and pushed to your
@@ -37,9 +36,6 @@ bug free. Although every effort is made to make the release as bug free as
 possible, sometimes lower priority bugs are allowed into production and will be
 worked on in a later release.
 
-  
-  
-  
 With this in mind, let’s create our different environments within
 our **we_are_social** project.
 
@@ -349,5 +345,4 @@ dependencies:
  
 
 Now that we’ve got our environments ready, let’s go ahead set up Heroku to host
-our app and configure our MySQL database.  
-
+our app and configure our MySQL database.
