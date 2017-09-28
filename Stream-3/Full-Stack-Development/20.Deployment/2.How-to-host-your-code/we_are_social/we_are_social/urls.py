@@ -27,7 +27,7 @@ from paypal_store import views as paypal_views
 from products import views as product_views
 from threads import views as forum_views
 
-from .settings import MEDIA_ROOT
+from settings.base import MEDIA_ROOT
 
 urlpatterns = [  # pylint: disable-msg=C0103
     # admin backend url
