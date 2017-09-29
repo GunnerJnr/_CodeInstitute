@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% load bootstrap_tags %}
+{% load staticfiles %}
+
+{% block head_js %}
+<script src="{% static 'js/tinymce/tinymce.min.js' %}"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="application/javascript">
+    tinyMCE.init({ mode: "textareas", theme: 'modern', plugins: 'paste' })
+</script>
+{% endblock %}
+
+{% block content %}
+<section>
+    <div class="col-md-9">
+        <form method="post" action="{% url 'new_thread' subject.id %}">
+            {% csrf_token %}
+            <div class="form-group">
+                {{ thread_form | as_bootstrap }}
+                <hr>
+                {{ post_form | as_bootstrap }}
+            </div>
+            <div id="poll_form" class="form-group">
+                {{ poll_form | as_bootstrap }}
+                {{ poll_subject_formset.management_form }}
+                {% for poll_subject_form in poll_subject_formset %}
+                    {{ poll_subject_form | as_bootstrap }}
+                {% endfor %}
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="btn-primary"> Post New Thread</button>
+            </div>
+        </form>
+    </div>
+</section>
+<!-- JQuery Stuff to go in here -->
+<script>
+    function showOrHidePollForm() {
+        if ($('#id_is_a_poll').is(':checked')) {
+            $('poll_form').show();
+        } else {
+            $('poll_form').hide();
+        }
+    }
+
+    $(document).ready(showOrHidePollForm);
+    $('#id_is_a_poll').change(showOrHidePollForm);
+</script>
+{% endblock %}
