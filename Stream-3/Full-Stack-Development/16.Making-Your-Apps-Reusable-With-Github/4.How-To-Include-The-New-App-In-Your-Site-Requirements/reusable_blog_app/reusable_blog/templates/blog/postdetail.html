@@ -16,7 +16,7 @@
                     {% endif %}
                     <p>{{ post.content|linebreaks }}</p>
                     <p>
-                        <button class="btn btn-default" onclick="location.href='/blog/'">Back To Blog</button>
+                        <button class="btn btn-default" onclick="location.href='/'">Back To Blog</button>
                         <button class="btn btn-default" onclick="location.href='{% url 'edit-post' post.slug %}'">Edit</button>
                     </p>
                     <p>{{ post.published_date }} | <strong>Views:</strong> {{ post.views }} |
