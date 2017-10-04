@@ -208,3 +208,4 @@ compile_commands.json
 
 #Misc.
 *.bat
+*.cache
