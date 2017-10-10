@@ -3,8 +3,10 @@ from __future__ import unicode_literals
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework import status
+from rest_framework.permissions import IsAuthenticated
 from todo.serializers import TodoSerializer
 from todo.models import Todo
+from django.contrib.auth.models import User
 
 
 class TodoView(APIView):
@@ -12,32 +14,47 @@ class TodoView(APIView):
     TodoView used to handle the incoming requests relating to `todo` items
     """
 
+    # block access to the views unless the user is authenticated
+    permission_classes = (IsAuthenticated,)
+
     def get(self, request, pk=None):
         """
         Handle the GET request for the `/todo/` endpoint.
 
-        Retrieve a complete list of `todo` items from the Todo
-        model, serialize them to JSON and return the serialized
-        todo items.
+        Gets `username` from the `query_params` in order to retrieve the
+        `todo` items belonging to that user, then checks to see if a primary
+        key has been provided by the URL. If not, a full list of `todo` will be
+        retrieved. If a primary key has been provided then only that instance
+        will be retrieved.
+
+        If no username was found in the `query_params` then a 404 (not found)
+        error will be returned
 
         Returns the serialized `todo` objects.
         """
-        if pk is None:
-            todo_items = Todo.objects.all()
-            # Serialize the data retrieved from the DB and serialize
-            # them using the `TodoSerializer`
-            serializer = TodoSerializer(todo_items, many=True)
-            # Store the serialized data `serialized_data`
-            serialized_data = serializer.data
-            return Response(serialized_data)
+        if "username" in request.query_params:
+            if pk is None:
+                # Get the `user` based on the username provided by the
+                # `query_params`
+                user = User.objects.get(username=request.query_params["username"])
+                # Filter the `todo` items based on this `user`
+                todo_items = Todo.objects.filter(user=user)
+                # Serialize the data retrieved from the DB and serialize
+                # them using the `TodoSerializer`
+                serializer = TodoSerializer(todo_items, many=True)
+                # Store the serialized data `serialized_data`
+                serialized_data = serializer.data
+                return Response(serialized_data)
+            else:
+                # Get the object containing the pk provided by the URL
+                todo = Todo.objects.get(id=pk)
+                # Serialize the `todo` item
+                serializer = TodoSerializer(todo)
+                # Store it in the serialized_data variable and return it
+                serialized_data = serializer.data
+                return Response(serialized_data)
         else:
-            # Get the object containing the pk provided by the URL
-            todo = Todo.objects.get(id=pk)
-            # Serialize the `todo` item
-            serializer = TodoSerializer(todo)
-            # Store it in the serialized_data variable and return it
-            serialized_data = serializer.data
-            return Response(serialized_data)
+            return Response(status=status.HTTP_404_NOT_FOUND)
 
     def post(self, request):
         """
@@ -60,7 +77,15 @@ class TodoView(APIView):
             return Response(serializer.errors,
                             status=status.HTTP_400_BAD_REQUEST)
         else:
-            serializer.save()
+            # Get the `user` based on the request data (not in the serializer)
+            user = User.objects.get(username=request.data["username"])
+
+            # Get the todo item data from the serializer
+            data = serializer.data
+            # Create the new `todo` item
+            Todo.objects.create(user=user, title=data["title"],
+                                description=data["description"],
+                                status=data["status"])
             return Response(serializer.data,
                             status=status.HTTP_201_CREATED)
 
@@ -101,3 +126,4 @@ class TodoView(APIView):
         todo = Todo.objects.get(id=pk)
         todo.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
+

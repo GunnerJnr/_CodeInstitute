@@ -44,3 +44,6 @@ class UserView(APIView):
             # Finally, save the new `user` object
             user.save()
             return Response(data, status=status.HTTP_201_CREATED)
+
+    # explicitly allow unauthenticated access to these views
+    permission_classes = ()
