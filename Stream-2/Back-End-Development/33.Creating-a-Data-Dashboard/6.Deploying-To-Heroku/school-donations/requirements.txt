@@ -4,5 +4,5 @@ itsdangerous==0.24
 Jinja2==2.9.5
 MarkupSafe==1.0
 pymongo==3.4.0
-Werkzeug==0.12
+Werkzeug==0.15.3
 wheel==0.29
