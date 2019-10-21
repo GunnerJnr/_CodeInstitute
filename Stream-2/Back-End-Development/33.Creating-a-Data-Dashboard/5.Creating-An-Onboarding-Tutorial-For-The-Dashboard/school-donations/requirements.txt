@@ -1,4 +1,4 @@
-Flask==0.12
+Flask==1.0
 gunicorn==19.7.0
 itsdangerous==0.24
 Jinja2==2.9.5
