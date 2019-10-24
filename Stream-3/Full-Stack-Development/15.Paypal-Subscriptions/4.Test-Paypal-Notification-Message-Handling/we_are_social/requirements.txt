@@ -31,5 +31,5 @@ requests==2.20.0
 singledispatch==3.4.0.3
 six==1.10.0
 stripe==1.62.1
-urllib3==1.22
+urllib3==1.24.2
 wrapt==1.10.11
