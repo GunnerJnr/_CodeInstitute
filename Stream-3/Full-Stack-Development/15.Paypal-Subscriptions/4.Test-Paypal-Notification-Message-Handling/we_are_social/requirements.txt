@@ -27,7 +27,7 @@ pylint-django==0.7.2
 pylint-plugin-utils==0.2.6
 python-dateutil==2.4.2
 pytz==2017.2
-requests==2.18.4
+requests==2.20.0
 singledispatch==3.4.0.3
 six==1.10.0
 stripe==1.62.1
