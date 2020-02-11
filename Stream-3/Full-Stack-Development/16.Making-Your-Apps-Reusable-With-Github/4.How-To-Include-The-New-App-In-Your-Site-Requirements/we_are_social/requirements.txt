@@ -7,7 +7,7 @@ certifi==2017.7.27.1
 chardet==3.0.4
 colorama==0.3.9
 configparser==3.5.0
-Django==2.2.8
+Django==2.2.10
 django-ckeditor==5.3.0
 django-emoticons==1.1.2
 django-forms-bootstrap==3.1.0
