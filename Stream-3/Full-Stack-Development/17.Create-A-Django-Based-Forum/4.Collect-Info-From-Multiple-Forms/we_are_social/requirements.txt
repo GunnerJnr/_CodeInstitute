@@ -31,6 +31,6 @@ requests==2.18.4
 singledispatch==3.4.0.3
 six==1.10.0
 stripe==1.62.1
-urllib3==1.22
+urllib3==1.26.5
 wrapt==1.10.11
 git+https://github.com/GunnerJnr/reusable_blog_app.git
