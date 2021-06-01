@@ -17,7 +17,7 @@ pytz==2017.2
 requests==2.20.0
 six==1.10.0
 stripe==1.62.1
-urllib3==1.24.2
+urllib3==1.26.5
 wrapt==1.10.11
 reusable-blog-app==1.0.0
 sqlparse==0.2.3
